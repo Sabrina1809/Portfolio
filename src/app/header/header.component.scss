@@ -4,32 +4,16 @@
   background-color: $background-color;
   color: $primary1;
   font-size: 24px;
-}
-
-.button {
-  background-color: $primary2;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo-sabrina {
-    border: 1px solid gold;
-    height: 50px;
-    width: 150px;
-    overflow: hidden;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url('../../assets/img/logo-sabrina2.png');
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
 }
 
 img {
     width: 150px;
-    margin-left: 100px;
-    clip-path: inset(32% 0 40% 0);
+    clip-path: inset(28% 0 40% 0);
     &:hover {
         cursor: pointer;
     }
@@ -38,10 +22,9 @@ img {
 .menu {
     display: flex;
     gap: 92px;
-    margin-right: 100px;
     & .nav {
         display: flex;
-        gap: 16px;
+        gap: 24px;
         & a {
             text-decoration: none;
             transition: all 0.125s ease-in-out;
@@ -54,7 +37,7 @@ img {
     }
     & .language {
         display: flex;
-        gap: 8px;
+        gap: 16px;
         & .lang {
             width: 40px;
             height: 32px;
