@@ -1,0 +1,83 @@
+@import '../../styles.scss';  // Pfad zu deiner styles.scss
+
+.header {
+  background-color: $background-color;
+  color: $primary1;
+  font-size: 24px;
+}
+
+.button {
+  background-color: $primary2;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    width: 150px;
+    margin-left: 100px;
+}
+
+.menu {
+    display: flex;
+    gap: 92px;
+    margin-right: 100px;
+    & .nav {
+        display: flex;
+        gap: 16px;
+        & a {
+            text-decoration: none;
+            transition: all 0.125s ease-in-out;
+            &:hover {
+                cursor: pointer;
+                color: $primary1;
+            }
+        }
+      
+    }
+    & .language {
+        display: flex;
+        gap: 8px;
+        & .lang {
+            width: 40px;
+            height: 32px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $primary1;
+            background-color: transparent;
+            font-weight: 400;
+            border-radius: 10px;
+            transition: all 0.125s ease-in-out;
+            &:hover {
+                cursor: pointer;
+                border: 1px solid $primary2;
+                background-color: $primary2;
+                font-weight: 400;
+            }
+            &:active {
+                cursor: pointer;
+                border: 1px solid white;
+                background-color: white;
+                color: $primary2;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.lang-active {
+    border: 1px solid $primary1 !important;
+    background-color: $primary1 !important;
+    font-weight: bold !important;
+}
+
+.lang-inactive {
+    border: 1px solid $primary1;
+    background-color: transparent;
+    font-weight: 400;
+}
