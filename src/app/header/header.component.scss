@@ -16,9 +16,23 @@ header {
     justify-content: space-between;
 }
 
+.logo-sabrina {
+    border: 1px solid gold;
+    height: 50px;
+    width: 150px;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/img/logo-sabrina2.png');
+}
+
 img {
     width: 150px;
     margin-left: 100px;
+    clip-path: inset(32% 0 40% 0);
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .menu {
