@@ -1,0 +1,129 @@
+@import '../../styles.scss';  // Pfad zu deiner styles.scss
+.me-ctn {
+    position: relative;
+    width: 100vw;
+    height: 1000px;
+    max-height: calc(100vh - 100px); // optional: ganze Höhe, wenn du willst
+    // overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5vw;
+    box-sizing: border-box;
+  
+    // .bg-shadow-both {
+    //   position: absolute;
+    //   top: 10vh;
+    //   left: -2vw;
+    //   width: 40%;
+    //   height: auto;
+    //   z-index: 1;
+    //   object-fit: cover;
+    // }
+  
+    .profil-big {
+      position: absolute;
+      margin-top: -100px;
+      top: 0px; // leicht nach unten, kannst du anpassen
+      left: 0%;
+      width: 50%;
+      height: auto;
+      z-index: 2;
+      object-fit: cover;
+      border: 1px solid orange;
+    }
+  
+    .bg-curve {
+      margin-top: 250px;
+      position: absolute;
+      top: 0;
+      left: 0vw;
+      width: 100%;
+      height: auto;
+      z-index: 4; // Curve ganz oben!
+      object-fit: cover;
+      rotate: 5deg;
+      scale: 1.2;
+    }
+  
+    .me-text {
+      position: absolute;
+      margin-left: 45%; // Platz schaffen für die Bilder links
+      width: 50%;
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 2vw;
+      box-sizing: border-box;
+  
+      h1, p {
+        margin: 0 0 1rem 0;
+      }
+    }
+  }
+  
+
+  @media(max-width: 2500px) {
+    .profil-big {
+        margin-top: -50px !important;
+    }
+  }
+
+  @media(max-width: 1850px) {
+    .profil-big {
+        // margin-top: -4vh !important;
+    }
+    .bg-curve {
+        // margin-top: 15vh !important;
+    }
+  }
+
+  @media(max-width: 1400px) {
+    .profil-big {
+        // margin-top: -2vh !important;
+    }
+    .bg-curve {
+        margin-top: 150px !important;
+    }
+  }
+
+  @media(max-width: 1000px) {
+    .profil-big {
+        // margin-top: 25px !important;
+    }
+    .bg-curve {
+        // margin-top: 7vh !important;
+    }
+  }
+
+  @media(max-width: 900px) {
+    .profil-big {
+        // margin-top: 0vh !important;
+    }
+    .bg-curve {
+        margin-top: 115px !important;
+    }
+  }
+
+  @media(max-width: 750px) {
+    .profil-big {
+        margin-top: -25px !important;
+    }
+    .bg-curve {
+        margin-top: 100px !important;
+    }
+  }
+
+  @media(max-width: 600px) {
+    .bg-curve {
+        margin-top: 60px !important;
+    }
+  }
+
+  @media(max-width: 400px) {
+    .profil-big {
+        margin-top: -10px !important;
+    }
+  }
