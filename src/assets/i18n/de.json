@@ -1,8 +1,9 @@
 {
     "NAV": {
       "ABOUT": "Über mich",
-      "SKILLS": "Fähigkeiten",
-      "PORTFOLIO": "Portfolio"
+      "SKILLS": "Skills",
+      "PORTFOLIO": "Portfolio",
+      "CONTACT": "Kontakt"
     },
     "ME": {
       "IAM": "Ich bin",

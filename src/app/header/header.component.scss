@@ -2,7 +2,7 @@
 
 
 .header {
-    width: 100vw;
+    width: 100%;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -13,8 +13,7 @@
     color: $primary1;
     font-size: 24px;
     z-index: 20;
-    // display: none;
-    .fixed-width {
+    .header-desktop {
         background-color: $background-color-dark;
         width: 100%;
         max-width: 1440px;
@@ -25,72 +24,176 @@
         height: 100px;
         padding: 0 30px;
         overflow: hidden;
-        
-          z-index: 15;
-          
-img {
-    width: 150px;
-    clip-path: inset(28% 0 40% 0);
-    &:hover {
-        cursor: pointer;
-    }
-}
-
-.menu {
-    display: flex;
-    gap: 92px;
-    & .nav {
-        display: flex;
-        gap: 24px;
-        & a {
-            text-decoration: none;
-            transition: all 0.125s ease-in-out;
+        z-index: 15;
+        img {
+            width: 150px;
+            clip-path: inset(28% 0 40% 0);
             &:hover {
                 cursor: pointer;
-                color: $primary1;
             }
+        }
+        .menu-desktop {
+            display: flex;
+            gap: 92px;
+            & .nav {
+                display: flex;
+                gap: 24px;
+                & a {
+                    text-decoration: none;
+                    transition: all 0.125s ease-in-out;
+                    &:hover {
+                        cursor: pointer;
+                        color: $primary1;
+                    }
+                }
+            }
+            & .language {
+                display: flex;
+                gap: 16px;
+                & .lang {
+                    width: 40px;
+                    height: 32px;
+                    font-size: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid $primary1;
+                    background-color: transparent;
+                    font-weight: 400;
+                    border-radius: 10px;
+                    transition: all 0.125s ease-in-out;
+                    &:hover {
+                        cursor: pointer;
+                        border: 1px solid $primary2;
+                        background-color: $primary2;
+                        font-weight: 400;
+                    }
+                    &:active {
+                        cursor: pointer;
+                        border: 1px solid white;
+                        background-color: white;
+                        color: $primary2;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+    .header-mobile {
+        display: none;
+        width: 100%;
+        height: 80px;
+        margin: 0 30px;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            width: 150px;
+            margin-top: -10px;
+            margin-bottom: -25px;
+            clip-path: inset(28% 0 40% 0);
+            z-index: 30;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .burger-open {
+            display: flex;
+            gap: 3px;
+            rotate: 90deg;
+            & .burger-line {
+                font-size: larger;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .burger-close {
+            position: fixed;
+            top: 18px;
+            right: 50px;
+            display: flex;
+            z-index: 30;
+            & .burger-line {
+                font-size: larger;
+                position: absolute;
+            }
+            & .line-one {
+                rotate: 45deg !important;
+            }
+            & .line-two {
+                rotate: -45deg !important;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .nav-mobile {
+        display: flex;
+        opacity: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(65, 72, 86, 0.85);
+        transform: translateX(100%);
+        transition: transform 0.125s ease-in-out, opacity 0.125s ease-in-out;  // Hinzufügen von opacity
+        // z-index: 1000;
+      
+        &.open { 
+          opacity: 1;
+          transform: translateX(0);
+        }
+        & a {
+          width: 150px;
+          text-decoration: none;
+          position: relative;
+      
+          &:hover {
+            cursor: pointer;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 0;
+            height: 2px;
+            background-color: $primary2;
+            transition: width 0.125s ease;
+          }
+          &:active {
+            color: $primary1;
+          }
+          &:active::after {
+            width: 50px;
+          }
         }
       
-    }
-    & .language {
-        display: flex;
-        gap: 16px;
-        & .lang {
-            width: 40px;
+        .language {
+            display: flex;
+            gap: 5px;
+            width: 150px;
+          .lang {
             height: 32px;
             font-size: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid $primary1;
-            background-color: transparent;
             font-weight: 400;
-            border-radius: 10px;
             transition: all 0.125s ease-in-out;
             &:hover {
-                cursor: pointer;
-                border: 1px solid $primary2;
-                background-color: $primary2;
-                font-weight: 400;
+              cursor: pointer;
             }
-            &:active {
-                cursor: pointer;
-                border: 1px solid white;
-                background-color: white;
-                color: $primary2;
-                font-weight: bold;
-            }
+          }
         }
-    }
+      }
+      
 }
 
-    }
-   
- 
- 
-//   max-width: 1440px;
- 
-}
 
 .lang-active {
     border: 1px solid $primary1 !important;
@@ -98,8 +201,30 @@ img {
     font-weight: bold !important;
 }
 
+.lang-active-mobile {
+    color: $primary1;
+    font-weight: bold !important;
+}
+
 .lang-inactive {
     border: 1px solid $primary1;
     background-color: transparent;
     font-weight: 400;
+}
+
+.lang-inactive-mobile {
+    color: white;
+    font-weight: 400;
+}
+
+@media (max-width: 900px) {
+    .header-desktop {
+        display: none !important;
+    }
+    .header-mobile {
+        display: flex !important;
+    }
+    .nav-mobile {
+        display: flex !important;
+    }
 }

@@ -9,8 +9,11 @@ import { CommonModule } from '@angular/common';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
+
 export class HeaderComponent {
   currentLang: string = 'de';  // Setzt Deutsch als Voreinstellung
+  menuOpen: boolean = false; // <- Hier speicherst du, ob das Menü geöffnet ist.
+  
   constructor(private translate: TranslateService) {
     // Standard-Sprache einstellen
     this.translate.setDefaultLang('de');
@@ -20,5 +23,12 @@ export class HeaderComponent {
   switchLanguage(lang: string) {
     this.translate.use(lang);
     this.currentLang = lang;  // Speichert die aktuell gewählte Sprache
+  }
+  openMenu() {
+    this.menuOpen = true;
+  }
+
+  closeMenu() {
+    this.menuOpen = false;
   }
 }

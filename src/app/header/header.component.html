@@ -1,7 +1,7 @@
 <header class="header">
-  <div class="fixed-width">
+  <div class="header-desktop">
     <img src="/assets/img/logo-sabrina3.png" alt="Logo">
-    <div class="menu">
+    <div class="menu-desktop">
       <nav class="nav">
         <a href="#">{{ 'NAV.ABOUT' | translate }}</a>
         <a href="#">{{ 'NAV.SKILLS' | translate }}</a>
@@ -25,6 +25,40 @@
       </div>
     </div>
   </div>
- 
+  <div class="header-mobile">
+      <img src="/assets/img/logo-sabrina3.png" alt="Logo">
+      <div class="burger-open" *ngIf="!menuOpen" (click)="openMenu()">
+        <span class="burger-line line-one">|</span>
+        <span class="burger-line line-two">|</span>
+        <span class="burger-line line-three">|</span>
+      </div>
+      <div class="burger-close" *ngIf="menuOpen" (click)="closeMenu()">
+        <span class="burger-line line-one">|</span>
+        <span class="burger-line line-two">|</span>
+      </div>
+  </div>
+  <div class="nav-mobile" [ngClass]="{ 'open': menuOpen }">
+    <a href="#">{{ 'NAV.ABOUT' | translate }}</a>
+    <a href="#">{{ 'NAV.SKILLS' | translate }}</a>
+    <a href="#">{{ 'NAV.PORTFOLIO' | translate }}</a>
+    <a href="#">{{ 'NAV.CONTACT' | translate }}</a>
+    <div class="language">
+      <div 
+          class="lang de" 
+          [class.lang-active-mobile]="currentLang === 'de'" 
+          [class.lang-inactive-mobile]="currentLang !== 'de'" 
+          (click)="switchLanguage('de')">
+          DE
+      </div>
+      <span>/</span>
+      <div 
+        class="lang en" 
+        [class.lang-active-mobile]="currentLang === 'en'" 
+        [class.lang-inactive-mobile]="currentLang !== 'en'" 
+        (click)="switchLanguage('en')">
+        EN
+      </div>
+    </div>
+  </div>
   </header>
   
