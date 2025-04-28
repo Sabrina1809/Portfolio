@@ -3,6 +3,10 @@
       "ABOUT": "About me",
       "SKILLS": "Skills",
       "PORTFOLIO": "Portfolio"
+    },
+    "ME": {
+      "IAM": "I am",
+      "BUTTON": "Let's talk!"
     }
   }
   

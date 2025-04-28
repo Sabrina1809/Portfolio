@@ -8,31 +8,19 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 5vw;
+    // padding: 5vw;
     box-sizing: border-box;
-  
-    // .bg-shadow-both {
-    //   position: absolute;
-    //   top: 10vh;
-    //   left: -2vw;
-    //   width: 40%;
-    //   height: auto;
-    //   z-index: 1;
-    //   object-fit: cover;
-    // }
-  
+    margin-top: -70px;
     .profil-big {
       position: absolute;
       margin-top: -100px;
-      top: 0px; // leicht nach unten, kannst du anpassen
-      left: 0%;
+        top: 0;
+        right: calc(50vw);
       width: 50%;
       height: auto;
       z-index: 2;
       object-fit: cover;
-      border: 1px solid orange;
     }
-  
     .bg-curve {
       margin-top: 250px;
       position: absolute;
@@ -45,65 +33,128 @@
       rotate: 5deg;
       scale: 1.2;
     }
-  
-    .me-text {
+    .me-text-area {
+        // border: 1px solid orange;
       position: absolute;
-      margin-left: 45%; // Platz schaffen für die Bilder links
-      width: 50%;
+      left: 60%;
+      translate: -50%;
+      top: 200px;
+      width: 700px;
       z-index: 3;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
-      padding: 2vw;
-      box-sizing: border-box;
-  
-      h1, p {
-        margin: 0 0 1rem 0;
+      align-items: center;
+      gap: 24px;
+      z-index: 6;
+    //   padding: 2vw;  
+      & .me-text {
+        // border: 1px solid blue;
+        display: flex;
+        align-items: center;
+        overflow: visible;
+        & .me-text-left {
+            // border: 1px solid green;
+            rotate: -90deg;
+            font-size: 54px;
+            // font-size: clamp(1.875rem, 1.3345rem + 2.7027vw, 4.375rem);
+            margin-right: -20px;
+
+        }
+        & .me-text-right {
+
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            // border: 1px solid salmon;
+            overflow: visible;
+            & .me-text-name {
+                // font-size: 90px;
+                font-size: clamp(1.875rem, 1.1993rem + 3.3784vw, 5rem);
+                font-weight: bold;
+                line-height: 120%;
+                // border: 1px solid salmon;
+                overflow: visible;
+            }
+            & .me-text-profession {
+                // font-size: 58px;
+                font-size: clamp(1.875rem, 1.5179rem + 1.7857vw, 3.125rem);
+                text-transform: uppercase;
+                line-height: 120%;
+                color: $primary2;
+                // border: 1px solid salmon;
+                margin-top: -12px;
+            }
+        }
+      }
+      & .me-button {
+        text-decoration: none;
+        padding: 10px 15px;
+        background-color: $primary1;
+        border-radius: 7px;
+        z-index: 10;
+        transition: all 0.125s ease-in-out;
+        box-shadow: 0 0 5px black;
+
+        &:hover {
+            cursor: pointer !important;
+            padding: 10px 30px !important;
+            background-color: $primary2 !important;
+        }
       }
     }
   }
   
 
-  @media(max-width: 2500px) {
+  @media(max-width: 2400px) {
     .profil-big {
         margin-top: -50px !important;
+        // left: calc((100vw / 2) - 770px);
+    }
+    .me-text-area {
+        // right: calc(50vw - ((100vw - 1440px) / 2));
     }
   }
 
-  @media(max-width: 1850px) {
-    .profil-big {
-        // margin-top: -4vh !important;
-    }
-    .bg-curve {
-        // margin-top: 15vh !important;
+  @media(max-width: 1800px) {
+    .me-text-area {
+        // right: 50%;
+        // top: 200px !important;
+        // translate: -25% !important;
+        // scale: 0.95 !important;
     }
   }
 
-  @media(max-width: 1400px) {
+  @media(max-width: 1440px) {
     .profil-big {
-        // margin-top: -2vh !important;
+        left: 5% !important;
+    }
+    .me-text-area {
+        top: 150px !important;
+        left: calc(100% - 400px) !important;
+        scale: 0.9 !important;
     }
     .bg-curve {
         margin-top: 150px !important;
     }
   }
 
-  @media(max-width: 1000px) {
-    .profil-big {
-        // margin-top: 25px !important;
-    }
-    .bg-curve {
-        // margin-top: 7vh !important;
+  @media(max-width: 1100px) {
+    .me-text-area {
+        top: 110px !important;
+        left: calc(100% - 300px) !important;
+        scale: 0.8 !important;
     }
   }
 
   @media(max-width: 900px) {
-    .profil-big {
-        // margin-top: 0vh !important;
-    }
     .bg-curve {
         margin-top: 115px !important;
+    }
+    .me-text-area {
+        top: 90px !important;
+        left: calc(100% - 250px) !important;
+        scale: 0.7 !important;
     }
   }
 
@@ -113,6 +164,11 @@
     }
     .bg-curve {
         margin-top: 100px !important;
+    }
+    .me-text-area {
+        top: 70px !important;
+        left: calc(100% - 250px) !important;
+        scale: 0.6 !important;
     }
   }
 

@@ -26,6 +26,7 @@ $primary2: #9747FF;
     margin: 0;
     padding: 0;
     color: white;
+    box-sizing: border-box;
 }
 
 body {
@@ -34,4 +35,6 @@ body {
     position: relative;
     overflow-x: hidden;
     min-width: 320px;
+    max-width: 2400px;
+    margin: 0 auto;
 }
