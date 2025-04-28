@@ -1,16 +1,18 @@
 @import '../../styles.scss';  // Pfad zu deiner styles.scss
 .me-ctn {
+    // border: 1px solid orange;
     position: relative;
     width: 100vw;
-    height: 1000px;
-    max-height: calc(100vh - 100px); // optional: ganze Höhe, wenn du willst
+    height: fit-content;
+    max-height: 1000px;
+    // max-height: calc(100vh - 100px); // optional: ganze Höhe, wenn du willst
     // overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     // padding: 5vw;
     box-sizing: border-box;
-    margin-top: -70px;
+    margin-top: 70px;
     .profil-big {
       position: absolute;
       margin-top: -100px;
@@ -32,6 +34,7 @@
       object-fit: cover;
       rotate: 5deg;
       scale: 1.2;
+    //   opacity: 0.5;
     }
     .me-text-area {
         // border: 1px solid orange;
@@ -56,7 +59,7 @@
         & .me-text-left {
             // border: 1px solid green;
             rotate: -90deg;
-            font-size: 54px;
+            font-size: clamp(1.875rem, 1.5507rem + 1.6216vw, 3.375rem);
             // font-size: clamp(1.875rem, 1.3345rem + 2.7027vw, 4.375rem);
             margin-right: -20px;
 
@@ -149,12 +152,22 @@
 
   @media(max-width: 900px) {
     .bg-curve {
-        margin-top: 115px !important;
+        margin-top: 150px !important;
+    }
+    .profil-big {
+        width: 70%;
+       left: 50% !important;
+        translate: -50% !important;
+        margin-top: -40px !important;
     }
     .me-text-area {
-        top: 90px !important;
-        left: calc(100% - 250px) !important;
-        scale: 0.7 !important;
+        // top: 90px !important;
+        // left: calc(100% - 250px) !important;
+        // scale: 0.7 !important;
+        top: 400px !important;
+        margin: 0 auto !important;
+        left: 50% !important;
+        translate: -50% !important;
     }
   }
 
@@ -165,21 +178,36 @@
     .bg-curve {
         margin-top: 100px !important;
     }
+    // .me-text-area {
+    //     top: 70px !important;
+    //     left: calc(100% - 250px) !important;
+    //     scale: 0.6 !important;
+    // }
     .me-text-area {
-        top: 70px !important;
-        left: calc(100% - 250px) !important;
-        scale: 0.6 !important;
-    }
+      top: 320px !important;
+  }
   }
 
   @media(max-width: 600px) {
+    .profil-big {
+      margin-top: 0px !important;
+  }
     .bg-curve {
-        margin-top: 60px !important;
+        margin-top: 90px !important;
+    }
+    .me-text-area {
+      top: 260px !important;
     }
   }
 
-  @media(max-width: 400px) {
+  @media(max-width: 450px) {
     .profil-big {
-        margin-top: -10px !important;
+      margin-top: 20px !important;
+  }
+    .me-text-area {
+      top: 225px !important;
     }
+    // .profil-big {
+    //     margin-top: -10px !important;
+    // }
   }
