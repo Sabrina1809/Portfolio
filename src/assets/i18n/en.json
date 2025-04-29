@@ -9,6 +9,13 @@
       "IAM": "I am",
       "BUTTON": "Let's talk!",
       "SCROLL": "Scroll down"
-    }
+    },
+    "ABOUT": {
+      "TITLE": "About me",
+      "INTRO": "I create digital solutions with head, heart, and a feel for design. What started as curiosity has become my profession. After many years in the industry, I found my new professional home in web development. Whether it's a website, application, or interactive idea – I love building structures, finding creative paths, solving problems, and refining every detail until everything runs smoothly. And that special feeling when it all works in the end? Simply indescribable.",
+      "LOCATION": "Based in Gengenbach in the Black Forest, I’m open to remote work, freelance projects, or permanent positions. On-site? Gladly by arrangement – I'm excited about new opportunities.",
+      "LEARNING": "Every challenge is a chance to grow. I look forward to learning continuously, discovering new technologies, and sharpening my skills – always aiming for the best possible outcome.",
+      "SOLVE": "Solving problems means approaching things creatively and with structure. Determination, analytical thinking, and good collaboration are essential to me for finding the best solution."
+}
   }
   
