@@ -1,5 +1,11 @@
 @import '../../styles.scss';  // Pfad zu deiner styles.scss
-.about-ctn {
+
+.about-wrapper {
+    position: relative;
+    overflow-x: clip; // 👈 verhindert horizontales Scrollen, ohne alles abzuschneiden
+  }
+  
+  .about-ctn {
     position: relative;
     padding: 30px;
     z-index: 15;
@@ -8,51 +14,95 @@
     margin: 0 auto;
     display: flex;
     gap: 20px;
-    // border: 1px solid orange;
     justify-content: space-between;
     margin-top: -50px;
-    & .about-text-area {
-        width: 40%;
-        & h1 {
-            font-size: clamp(1.875rem, 1.1993rem + 3.3784vw, 5rem);
-            margin-bottom: 20px;
-        }
-        & p {
-            margin-bottom: 20px;
-        }
-        & .about-info-box {
-            margin-bottom: 20px;
-            display: flex;
-            align-items: top;
-            gap: 16px;
-            & img {
-                width: 30px;
-                height: 30px;
-                margin: 5px;
-            }
-        }
-    }
-    & .about-img-ctn {
-        width: 50%;
-        // border: 1px solid yellow;
+  
+    .about-text-area {
+      width: 50%;
+      z-index: 1;
+  
+      h1 {
+        font-size: clamp(1.875rem, 1.1993rem + 3.3784vw, 5rem);
+        margin-bottom: 20px;
+      }
+  
+      p {
+        margin-bottom: 20px;
+      }
+  
+      .about-info-box {
+        margin-bottom: 20px;
         display: flex;
-        align-items: center;
-        & img {
-            width: 400px;
-            height: 400px;
-            aspect-ratio: 1 / 1;
-            object-fit: cover;
-            object-position: 0 -90px;
-            border-radius: 50%;
-            border: 2px solid $primary1;
+        gap: 16px;
+  
+        img {
+          width: 30px;
+          height: 30px;
+          margin: 5px;
         }
-        & .green-line {
-            width: 100%;
-            height: 2px;
-            background-color: $primary1;
-        }
+      }
     }
-}
+  
+    .about-img-ctn {
+      width: 40%;
+      display: flex;
+      align-items: center;
+      z-index: 20;
+  
+      img.about-img {
+        width: 400px;
+        height: 400px;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        object-position: 0 -90px;
+        border-radius: 50%;
+        border: 2px solid $primary1; // Beispiel-Farbe für $primary1
+      }
+  
+      .green-line {
+        width: 100%;
+        height: 2px;
+        background-color: $primary1;
+      }
+    }
+  
+    // .shadow {
+    //   position: absolute;
+    //   width: 50%;
+    //   height: auto;
+    //   right: -20%; // 👈 hängt über rechten Rand
+    //   top: -30%;
+    //   z-index: 10;
+    //   pointer-events: none;
+    // }
+    .shadow {
+        position: absolute;
+        width: 50%;
+        height: auto;
+        right: -20%;
+        top: -30%;
+        z-index: 10;
+        pointer-events: none;
+        opacity: 0;
+        animation: fadeInFloat 3s ease-out forwards;
+        animation-delay: 0.5s;
+      }
+  }
+  
+  @keyframes fadeInFloat {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    50% {
+      opacity: 0.5;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
 @media(max-width: 1800px) {
     .about-ctn {
@@ -67,9 +117,9 @@
             & img {
                 width: 300px !important;
                 height: 300px !important;
+                object-position: 0 -60px !important;
             }
         }
-      
     }
 }
 
