@@ -4,11 +4,12 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { MeComponent } from './me/me.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { AboutComponent } from './about/about.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HeaderComponent, MeComponent, TranslateModule],
+  imports: [CommonModule, RouterOutlet, HeaderComponent, MeComponent, TranslateModule, AboutComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
