@@ -34,8 +34,8 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
         'assets/img/display-screenshot/pokedex-2-oH.png',
         'assets/img/display-screenshot/pokedex-3-oH.png'
       ],
-      githubLink: 'https://github.com/user/el-pollo-loco',
-      liveLink: 'https://your-pollo-game.netlify.app',
+      githubLink: 'https://github.com/Sabrina1809/Pokedex3',
+      liveLink: 'https://sabrina-fritz.developerakademie.net/Modul9-Pokedex3/index.html',
       currentImageIndex: 0,
       key: "POKEDEX"
     },
@@ -48,8 +48,8 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
         'assets/img/display-screenshot/join-3-oH.png',
         'assets/img/display-screenshot/join-4-oH.png'
       ],
-      githubLink: 'https://github.com/user/join',
-      liveLink: 'https://your-join-app.netlify.app',
+      githubLink: 'https://github.com/Sabrina1809/Join',
+      liveLink: 'https://join-384.developerakademie.net/Join/log_in.html',
       currentImageIndex: 0,
       key: "JOIN"
     },
@@ -61,8 +61,8 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
         'assets/img/display-screenshot/pollo-2-oH.png',
         'assets/img/display-screenshot/pollo-3-oH.png'
       ],
-      githubLink: 'https://github.com/user/el-pollo-loco',
-      liveLink: 'https://your-pollo-game.netlify.app',
+      githubLink: 'https://github.com/Sabrina1809/El-Pollo-Loco',
+      liveLink: 'https://sabrina-fritz.developerakademie.net/Modul12-ElPolloLoco/index.html',
       currentImageIndex: 0,
       key: "ELPOLLOLOCO"
     },
@@ -72,7 +72,7 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
       images: [
         'assets/img/display-screenshot/portfolio1.png'
       ],
-      githubLink: 'https://github.com/user/el-pollo-loco',
+      githubLink: 'https://github.com/Sabrina1809/Portfolio',
       liveLink: 'https://your-pollo-game.netlify.app',
       currentImageIndex: 0,
       key: "PORTFOLIO"

@@ -4,7 +4,7 @@
         <h1>Portfolio</h1>
         <div class="purple-line line-right"></div>
     </div>
-    <p>Explore a selection of my work here - Interact with projects to see my skills in action.</p>
+    <p>{{ 'PORTFOLIO.INTRO' | translate }}</p>
     <div class="portfolio-projects">
         <div
             class="project-ctn"
@@ -25,7 +25,7 @@
             </div>
             <p class="project-description">{{ 'PORTFOLIO.PROJECTS.' + project.key + '.DESCRIPTION' | translate }}</p>
             <div class="button-line">
-                <a *ngIf="project.key !== 'PORTFOLIO'" class="button btn-test">{{ 'PORTFOLIO.BUTTONS.LIVE' | translate }}</a>
+                <a [href]="project.liveLink" *ngIf="project.key !== 'PORTFOLIO'" class="button btn-test">{{ 'PORTFOLIO.BUTTONS.LIVE' | translate }}</a>
                 <a [href]="project.githubLink" target="_blank" class="button btn-github">GitHub</a>
             </div>
           </div>

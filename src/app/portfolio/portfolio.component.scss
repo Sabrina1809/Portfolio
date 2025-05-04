@@ -139,7 +139,7 @@ height: auto;
     // transition: ;
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 1s ease, transform 1s ease;
+    transition: opacity 1s ease, transform 0.125s ease;
     margin: 0 auto;
     &.show {
       opacity: 1;
@@ -151,6 +151,7 @@ height: auto;
     &:hover {
         transform: scale(1.05);
         filter: drop-shadow(0 0 10px black);
+        cursor: pointer;
     }
 }
 
@@ -171,31 +172,7 @@ height: auto;
       filter: grayscale(0) brightness(1);
     }
   }
-  
-  
 
-// .project-title {
-//     // font-family: "Courier New", monospace;
-//     overflow: hidden;
-//     // width: 0;
-//     white-space: nowrap;
-//     animation: typing 2s steps(30) 1s forwards, blink-caret 0.75s step-end infinite;
-//   }
-  
-//   @keyframes typing {
-//     from {
-//       width: 0;
-//     }
-//     to {
-//       width: 100%;
-//     }
-//   }
-  
-//   @keyframes blink-caret {
-//     50% {
-//       border-color: transparent;
-//     }
-//   }
 
 @media(max-width: 1200px) {
     .portfolio-projects {
