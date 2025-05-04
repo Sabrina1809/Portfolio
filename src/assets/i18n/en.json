@@ -23,6 +23,27 @@
       "LEARNING": "I'm excited to learn new skills to make every project a success.",
       "CONTACT": "Get in touch",
       "IMG_LERN": "Continiually lerning"
+    },
+    "PORTFOLIO": {
+      "INTRO": "Dive into my project world – interactive, responsive, and crafted with passion.",
+      "BUTTONS": {
+        "LIVE": "try out",
+        "GITHUB": "GitHub"
+      },
+      "PROJECTS": {
+        "JOIN": {
+          "DESCRIPTION": "A modern task management tool that simplifies teamwork. Featuring intuitive drag-and-drop, user management, status tracking, and a responsive interface."
+        },
+        "POKEDEX": {
+          "DESCRIPTION": "An interactive Pokédex with API integration, detailed info, type assignments, search function, and a lovingly designed presentation of each Pokémon."
+        },
+        "ELPOLLOLOCO": {
+          "DESCRIPTION": "A Jump'n'Run game – developed with object-oriented JavaScript. With animated characters, sound effects, various difficulty levels, and dynamic gameplay, El Pollo Loco is a project full of attention to detail. Help our Mexican friend Pepe take down the crazy chickens. ¡Arriba!"
+        },
+        "PORTFOLIO": {
+          "DESCRIPTION": "My personal portfolio – modern, performant, and modularly structured."
+        }
+      }
     }
   }
   

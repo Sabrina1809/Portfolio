@@ -100,7 +100,7 @@
         z-index: 12;
 
         animation: slideUpFade 2.5s ease-out forwards;
-        animation-delay: 1s;
+        animation-delay: 0.8s;
         opacity: 0; // initial hidden
         
         // Alle Texte innerhalb .me-text dürfen nicht umbrechen und sollen sichtbar sein
@@ -174,13 +174,9 @@
 
   @keyframes slideUpFade {
     0% {
-     
       transform: scale(0.5);
       opacity: 0;
     }
-    // 50% {
-    //   opacity: 0;
-    // }
     100% {
       transform: translateY(0);
       transform: scale(1);

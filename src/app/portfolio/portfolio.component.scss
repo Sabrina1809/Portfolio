@@ -1,0 +1,245 @@
+@import '../../styles.scss';  // Pfad zu deiner styles.scss
+
+
+.portfolio-ctn {
+    width: 100%;
+    max-width: 1440px;
+    padding: 70px 30px 0 30px;
+    margin: 0 auto;
+    text-align: center;
+    & .portfolio-title {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: right;
+        & .line-left {
+            width: 50px;
+            height: 2px;
+            background-color: $primary2;
+        }
+        & h1 {
+            font-size: clamp(1.875rem, 1.1993rem + 3.3784vw, 5rem);
+            display: inline;
+        }
+        & .line-right {
+            width: 40%;
+            height: 2px;
+            background-color: $primary2;
+        }
+    }
+    & .portfolio-projects {
+        // display: flex;
+        // flex-direction: column;
+        & .project-ctn {
+            margin: 100px auto;
+            display: flex;
+            gap: 100px;
+            justify-content: center;
+            align-items: start;
+            text-align: left;
+            & .project-info {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                & .project-title {
+                    color: $primary2;
+                    font-weight: bold;
+                    font-size: 32px;
+                }
+                & .project-skills {
+                    & .project-skill {
+                        padding: 0px 15px;
+                        border-right: 1px solid $primary1;
+                        color: $primary1;
+                        font-size: 24px;
+                        &:first-child {
+                            padding-left: 0;
+                        }
+                        &:last-child {
+                            border-right: none;
+                            padding-right: 0;
+                        }
+                    }
+                }
+                & .project-description {
+                    font-size: 16px;
+                }
+                & .button-line {
+                    display: flex;
+                    gap: 70px;
+                    & .button {
+                        text-decoration: none;
+                        padding: 15px 30px;
+                        border-radius: 10px;
+                        transition: all 0.125s ease-in-out;
+                        font-size: 24px;
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                    & .btn-test {
+                        border: 1px solid $primary2;
+                        background-color: $primary2;
+                        &:hover {
+                            border: 1px solid $primary1;
+                            background-color: $primary1;
+                        }
+                    }
+                    & .btn-github {
+                        border: 1px solid $primary1;
+                        background-color: transparent;
+                        &:hover {
+                            background-color: $primary1;
+                        }
+                    }
+                }
+            }
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+            text-align: right;
+            & .button-line {
+                justify-content: right;
+            }
+        }
+        }
+    }
+}
+
+.laptop-wrapper {
+position: relative;
+width: 600px;
+height: auto;
+
+.laptop-frame {
+  width: 100%;
+  display: block;
+  z-index: 2;
+  position: relative;
+}
+
+.laptop-screen {
+  position: absolute;
+  top: 12.5%; // passe diese Werte an den "Display"-Ausschnitt an
+  left: 9%;
+  width: 82%;
+  height: 68%;
+  object-fit: cover;
+  z-index: 1;
+  border-radius: 4px;
+  transition: opacity 0.5s ease-in-out;
+}
+}
+
+.project-img {
+    width: 500px;
+    height: auto;
+    object-fit: contain;
+    transition: all 0.125s ease-in-out, opacity 0.5s ease-in-out;
+    // transition: ;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+    margin: 0 auto;
+    &.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    &.fade {
+        opacity: 0.7;
+    };
+    &:hover {
+        transform: scale(1.05);
+        filter: drop-shadow(0 0 10px black);
+    }
+}
+
+  
+  .project-info {
+    transform: perspective(1000px) rotateY(90deg) scale(0.95);
+    opacity: 0;
+    transition:
+      transform 0.8s ease,
+      opacity 0.8s ease,
+      filter 0.8s ease;
+    transform-origin: left;
+    margin: 0 auto;
+    filter: grayscale(1) brightness(0.9);
+    &.flip {
+      transform: perspective(1000px) rotateY(0) scale(1);
+      opacity: 1;
+      filter: grayscale(0) brightness(1);
+    }
+  }
+  
+  
+
+// .project-title {
+//     // font-family: "Courier New", monospace;
+//     overflow: hidden;
+//     // width: 0;
+//     white-space: nowrap;
+//     animation: typing 2s steps(30) 1s forwards, blink-caret 0.75s step-end infinite;
+//   }
+  
+//   @keyframes typing {
+//     from {
+//       width: 0;
+//     }
+//     to {
+//       width: 100%;
+//     }
+//   }
+  
+//   @keyframes blink-caret {
+//     50% {
+//       border-color: transparent;
+//     }
+//   }
+
+@media(max-width: 1200px) {
+    .portfolio-projects {
+        margin-top: 70px !important;
+    }
+    .project-ctn {
+        flex-direction: column;
+        justify-content: center !important;
+        gap: 30px !important;
+        margin: 30px auto 100px auto !important;
+        &:nth-child(even) {
+            flex-direction: column !important;
+            text-align: left !important;
+            // & .button-line {
+            //     justify-content: right;
+            // }
+        }
+        & .project-info {
+            text-align: center;
+        }
+        & .project-skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        & .button-line {
+            justify-content: center !important;
+        }
+        & .project-img {
+            width: 80%;
+            max-width: 500px;
+        }
+    }
+}
+
+@media(max-width: 750px) {
+    .button-line {
+        scale: 0.9 !important;
+        gap: 40px !important;
+    }
+}
+
+@media(max-width: 500px) {
+    .button-line {
+        scale: 0.8 !important;
+    }
+}

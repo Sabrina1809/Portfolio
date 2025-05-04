@@ -6,11 +6,12 @@ import { MeComponent } from './me/me.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HeaderComponent, MeComponent, TranslateModule, AboutComponent, SkillsComponent],
+  imports: [CommonModule, RouterOutlet, HeaderComponent, MeComponent, TranslateModule, AboutComponent, SkillsComponent, PortfolioComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

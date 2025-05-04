@@ -1,0 +1,38 @@
+<div class="portfolio-ctn">
+    <div class="portfolio-title">
+        <div class="purple-line line-left"></div>
+        <h1>Portfolio</h1>
+        <div class="purple-line line-right"></div>
+    </div>
+    <p>Explore a selection of my work here - Interact with projects to see my skills in action.</p>
+    <div class="portfolio-projects">
+        <div
+            class="project-ctn"
+            *ngFor="let project of projects; let i = index"
+            [class.visible]="project.visible"
+        >
+            <img
+            [src]="project.images[project.currentImageIndex]"
+            alt="{{ project.title }} Screenshot"
+            class="project-img"
+            [class.fade]="project.isFading"
+            [class.show]="project.visible"
+            />
+          <div class="project-info"  [class.flip]="project.visible">
+            <p class="project-title">{{ project.title }}</p>
+            <div class="project-skills">
+              <span class="project-skill" *ngFor="let skill of project.skills">{{ skill }}</span>
+            </div>
+            <p class="project-description">{{ 'PORTFOLIO.PROJECTS.' + project.key + '.DESCRIPTION' | translate }}</p>
+            <div class="button-line">
+                <a *ngIf="project.key !== 'PORTFOLIO'" class="button btn-test">{{ 'PORTFOLIO.BUTTONS.LIVE' | translate }}</a>
+                <a [href]="project.githubLink" target="_blank" class="button btn-github">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+
+  
+  
