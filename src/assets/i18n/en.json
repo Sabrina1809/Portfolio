@@ -16,6 +16,13 @@
       "LOCATION": "Based in Gengenbach in the Black Forest, I’m open to remote work, freelance projects, or permanent positions. On-site? Gladly by arrangement – I'm excited about new opportunities.",
       "LEARNING": "Every challenge is a chance to grow. I look forward to learning continuously, discovering new technologies, and sharpening my skills – always aiming for the best possible outcome.",
       "SOLVE": "Solving problems means approaching things creatively and with structure. Determination, analytical thinking, and good collaboration are essential to me for finding the best solution."
-}
+    }, 
+    "SKILLS": {
+      "CURRENT": "I create smart, aesthetic, and functional web solutions using modern skills and tools.",
+      "QUESTION": "Looking for <span class='highlight'>another skill</span>?",
+      "LEARNING": "I'm excited to learn new skills to make every project a success.",
+      "CONTACT": "Get in touch",
+      "IMG_LERN": "Continiually lerning"
+    }
   }
   

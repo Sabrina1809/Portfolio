@@ -5,11 +5,12 @@ import { HeaderComponent } from './header/header.component';
 import { MeComponent } from './me/me.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { AboutComponent } from './about/about.component';
+import { SkillsComponent } from './skills/skills.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HeaderComponent, MeComponent, TranslateModule, AboutComponent],
+  imports: [CommonModule, RouterOutlet, HeaderComponent, MeComponent, TranslateModule, AboutComponent, SkillsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

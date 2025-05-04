@@ -16,6 +16,13 @@
       "LOCATION": "Mein zu Hause ist in Gengenbach im Schwarzwald, ich bin offen für Remote-Arbeit, Freelancer-Projekte oder Festanstellungen. Vor Ort? Gerne nach Absprache – ich freue mich auf spannende Möglichkeiten.",
       "LEARNING": "Jede Herausforderung ist eine Chance, zu wachsen. Ich freue mich darauf, immer weiter zu lernen, neue Technologien zu entdecken und meine Fähigkeiten auszubauen – um das bestmögliche Ergebnis zu erzielen.",
       "SOLVE": "Probleme zu lösen heißt für mich, kreativ und strukturiert an die Sache heranzugehen. Zielstrebigkeit, analytisches Denken und ein guter Austausch im Team sind für mich unverzichtbar, um die beste Lösung zu finden."
+    }, 
+    "SKILLS": {
+      "CURRENT": "Ich entwickle durchdachte, ästhetische und funktionale Weblösungen mit modernen Skills und Tools.",
+      "QUESTION": "Fehlt ein <span class='highlight'>bestimmter Skill</span>?",
+      "LEARNING": "Ich eigne mir gerne Neues an, um jedes Projekt erfolgreich umzusetzen.",  
+      "CONTACT": "Kontaktiere mich",
+      "IMG_LERN": "lernfreudig"
     }
   }
   

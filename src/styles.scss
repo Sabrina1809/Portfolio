@@ -39,3 +39,14 @@ body {
     max-width: 2400px;
     margin: 0 auto;
 }
+
+.highlight {
+  color: $primary2 !important;
+}
+
+.me-text-name, 
+.about-title,
+.skills-title, 
+h1 {
+  font-size: clamp(1.875rem, 1.1993rem + 3.3784vw, 5rem) !important;
+}

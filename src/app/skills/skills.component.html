@@ -1,0 +1,25 @@
+
+<div class="skills-ctn">
+    <div class="part-one">
+        <div class="skills-title-ctn">
+            <h1 class="skills-title">Skills</h1>
+            <div class="purple-line"></div>
+        </div>
+        <p> {{ 'SKILLS.CURRENT' | translate}} </p>
+    </div>
+    <div class="skills-icons part-two">
+        <div class="skill" *ngFor="let skill of skills">
+            <img [src]="skill.icon" [alt]="skill.name" />
+            <span>{{ skill.name }}</span>
+        </div>
+        <div class="skill-purple">
+            <img src="assets/img/skills/learning-purple.png" alt="lerning">
+            <span> {{ 'SKILLS.IMG_LERN' | translate}} </span>
+        </div>
+    </div>
+    <div class="part-three">
+        <p class="skills-question" [innerHTML]="'SKILLS.QUESTION' | translate"></p>
+        <p> {{ 'SKILLS.LEARNING' | translate}} </p>
+        <div class="skills-contact-btn"> {{ 'SKILLS.CONTACT' | translate}} </div>
+    </div>
+</div>
