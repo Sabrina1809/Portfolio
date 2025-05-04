@@ -8,14 +8,14 @@
         <p> {{ 'SKILLS.CURRENT' | translate}} </p>
     </div>
     <div class="skills-icons part-two">
-        <div class="skill" *ngFor="let skill of skills">
+        <div class="skill" *ngFor="let skill of skills" #skillElement>
             <img [src]="skill.icon" [alt]="skill.name" />
             <span>{{ skill.name }}</span>
-        </div>
-        <div class="skill-purple">
-            <img src="assets/img/skills/learning-purple.png" alt="lerning">
-            <span> {{ 'SKILLS.IMG_LERN' | translate}} </span>
-        </div>
+          </div>
+          <div class="skill-purple" #skillPurple>
+            <img src="assets/img/skills/learning-purple.png" alt="learning" />
+            <span>{{ 'SKILLS.IMG_LERN' | translate }}</span>
+          </div>          
     </div>
     <div class="part-three">
         <p class="skills-question" [innerHTML]="'SKILLS.QUESTION' | translate"></p>

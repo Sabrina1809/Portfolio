@@ -96,14 +96,36 @@
 }
 
 .skill-purple {
-    & span {
-        color: $primary2;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+  
+    &.animate-in {
+      opacity: 1;
+      transform: translateY(0);
     }
-}
+  
+    & span {
+      color: $primary2;
+    }
+  }
+  
 
 .skills-ctn .skills-text .skills-question .highlight {
     color: #9747FF !important;
 }
+
+.skill {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+  }
+  
+  .skill.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
   
 @media(max-width: 900px) {
     .part-one {
