@@ -13,12 +13,16 @@
     .profil-big {
       position: absolute;
       margin-top: -100px;
-        top: 0;
-        right: 50%;
+      top: 0;
+      right: 50%;
       width: 50%;
       height: auto;
       z-index: 2;
       object-fit: cover;
+
+      animation: zoomInFade 2.5s ease-out forwards;
+      animation-delay: 0.4s;
+      opacity: 0; // initial hidden
     }
     .bg-curve-wrapper {
       // border: 1px solid orange;
@@ -94,6 +98,11 @@
         align-items: center;
         gap: 24px;
         z-index: 12;
+
+        animation: slideUpFade 2.5s ease-out forwards;
+        animation-delay: 1s;
+        opacity: 0; // initial hidden
+        
         // Alle Texte innerhalb .me-text dürfen nicht umbrechen und sollen sichtbar sein
         & .me-text {
           display: flex;
@@ -151,16 +160,41 @@
       }
     }
   }
+
+  @keyframes zoomInFade {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes slideUpFade {
+    0% {
+     
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    // 50% {
+    //   opacity: 0;
+    // }
+    100% {
+      transform: translateY(0);
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
   
   @keyframes scrollHintAnim {
     0%, 100% {
       transform: translateX(0);
-      // color: white;
       opacity: 1;
     }
     50% {
-      transform: translateX(5px);
-      // color: $primary2;
+      transform: translateX(8px);
       opacity: 0.75;
     }
   }
@@ -181,7 +215,6 @@
     .bg-curve {
       margin-top: 600px !important;
     }
-   
   }
 
   @media(max-width: 1600px) {
@@ -195,13 +228,10 @@
 
   @media(max-width: 1440px) {
     .profil-big {
-        // left: 5% !important;
         scale: 0.9;
         margin-top: 0px !important;
     }
     .me-text-area {
-        // top: 150px !important;
-        // left: calc(100% - 500px) !important;
         scale: 0.8 !important;
     }
     .bg-curve {
@@ -221,14 +251,6 @@
     }
     .me-text-area {
       bottom: 67% !important;
-    }
-  }
-
-  @media(max-width: 1100px) {
-    .me-text-area {
-        // top: 110px !important;
-        // left: calc(100% - 350px) !important;
-        // scale: 0.8 !important;
     }
   }
 
