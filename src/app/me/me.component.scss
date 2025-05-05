@@ -13,7 +13,7 @@
     .profil-big {
       position: absolute;
       margin-top: -100px;
-      top: 0;
+      top: -3%;
       right: 50%;
       width: 50%;
       height: auto;
@@ -37,7 +37,8 @@
         z-index: 10;
         display: block;
         position: relative; // !!! WICHTIG: NICHT absolute !!!
-        margin-top: 1000px;
+        // margin-top: 1000px;
+        margin-top: 50%;
       }
       
       .social-ctn {
@@ -88,7 +89,7 @@
       .me-text-area {
         position: absolute;
         bottom: 53%;
-        left: 60%;
+        left: 58%;
         translate: -50%;
         width: max-content;
         max-width: 700px;
@@ -200,78 +201,111 @@
 
   @media(max-width: 2400px) {
     .profil-big {
-        margin-top: -50px !important;
+        // margin-top: -50px !important;
     }
   }
 
-  @media(max-width: 2000px) {
+  @media(max-width: 2100px) {
+    .me-ctn {
+      margin-bottom: -10% !important;
+    }
+    .me-text-area {
+      bottom: 56% !important;
+    }
     .bg-curve {
-      margin-top: 800px !important;
+      margin-top: 33% !important;
+    }
+    .profil-big {
+      scale: 0.9 !important;
+    }
+    .social-ctn {
+      bottom: 37% !important;
     }
   }
 
   @media(max-width: 1800px) {
+    .me-text-area {
+      bottom: 60% !important;
+    }
     .bg-curve {
-      margin-top: 600px !important;
+      margin-top: 24% !important;
+    }
+    .social-ctn {
+      bottom: 41% !important;
+    }
+    .me-ctn {
+      margin-bottom: -20% !important;
     }
   }
 
   @media(max-width: 1600px) {
-    .bg-curve {
-      margin-top: 500px !important;
+    .profil-big {
+      scale: 0.8 !important;
+      // top: 5% !important;
     }
     .me-text-area {
-      bottom: 60% !important;
+      scale: 0.8 !important;
+      bottom: 64% !important;
+      left: 54% !important;
+    }
+    .bg-curve {
+      margin-top: 15% !important;
+    }
+    .social-ctn {
+      bottom: 45% !important;
+    }
+    .me-ctn {
+      margin-bottom: -28% !important;
     }
   }
 
   @media(max-width: 1440px) {
     .profil-big {
-        scale: 0.9;
-        margin-top: 0px !important;
+        top: 2% !important;
     }
     .me-text-area {
-        scale: 0.8 !important;
+        scale: 0.6 !important;
+        bottom: 70% !important;
     }
     .bg-curve {
-        margin-top: 350px !important;
+        margin-top: 7% !important;
     }
     .social-ctn {
-      bottom: 39% !important;
+      bottom: 48% !important;
+    }
+    .me-ctn {
+      margin-bottom: -33% !important;
     }
   }
 
-  @media(max-width: 1250px) {
+  @media(max-width: 1300px) {
     .bg-curve {
-      margin-top: 150px !important;
+      margin-top: 3% !important;
     }
-    .social-ctn {
-      bottom: 42% !important;
-    }
-    .me-text-area {
-      bottom: 67% !important;
+    .me-ctn {
+      margin-bottom: -36% !important;
     }
   }
 
   @media(max-width: 900px) {
     .bg-curve {
-        margin-top: 100px !important;
+        margin-top: 2% !important;
     }
     .profil-big {
-        width: 70%;
-       left: 50% !important;
+        // width: 70%;
+        left: 50% !important;
         translate: -50% !important;
-        margin-top: -40px !important;
+        top: 0% !important;
     }
     .me-text-area {
-        bottom: 27% !important;
+        bottom: 30% !important;
         margin: 0 auto !important;
         left: 50% !important;
         translate: -50% !important;
         z-index: 12 !important;
     }
     .social-ctn {
-      bottom: 20% !important;
+      bottom: 24% !important;
     }
     .social-links {
       scale: 0.9 !important;
@@ -286,16 +320,16 @@
 
   @media(max-width: 750px) {
     .profil-big {
-        margin-top: -45px !important;
+        top: 3% !important;
     }
     .bg-curve {
-        margin-top: 60px !important;
+        margin-top: 0% !important;
     }
     .me-text-area {
-      top: 320px !important;
+      bottom: 25% !important;
   }
     .social-ctn {
-      bottom: 13% !important;
+      bottom: 15% !important;
       & p {
         display: none !important;
       }
@@ -304,19 +338,19 @@
 
   @media(max-width: 650px) {
     .social-ctn {
-      bottom: 10% !important;
+      // bottom: 10% !important;
     }
   }
 
   @media(max-width: 600px) {
     .profil-big {
-      margin-top: -30px !important;
+      top: 5% !important;
   }
     .bg-curve {
-        margin-top: 50px !important;
+        // margin-top: 50px !important;
     }
     .me-text-area {
-      top: 260px !important;
+      bottom: 20% !important;
     }
     .social-ctn {
       & img {
@@ -330,6 +364,12 @@
   }
 
   @media(max-width: 520px) {
+    .profil-big {
+      top: 8% !important;
+  }
+  .me-text-area {
+    bottom: 17% !important;
+  }
     .social-ctn {
       bottom: 7% !important;
     }
@@ -337,40 +377,47 @@
 
   @media(max-width: 470px) {
     .social-ctn {
-      bottom: 0% !important;
+      // bottom: 0% !important;
     }
   }
 
   @media(max-width: 450px) {
-
+    .social-ctn {
+      bottom: 3% !important;
+    }
     .purple-line {
       width: 75px !important;
   }
   .profil-big {
-    margin-top: -20px !important;
+    top: 12% !important;
   }
     .bg-curve {
-      margin-top: 40px !important;
+      // margin-top: 40px !important;
   }
     .me-text-area {
-      // top: 225px !important;
-      scale: 0.7 !important;
-      top: 230px !important;
+      bottom: 10% !important;
+      scale: 0.5 !important;
+      // top: 230px !important;
     }
   }
 
-  @media(max-width: 380px) {
+  @media(max-width: 400px) {
+    .bg-curve {
+      margin-top: -2% !important;
+    }
+    .profil-big {
+      top: 18% !important;
+    }
     .me-text-area {
-      scale: 0.6;
-      // padding-bottom: 20px;
+      bottom: 5% !important;
     }
     .social-ctn {
-      bottom: -12% !important;
+      // bottom: -12% !important;
     }
   }
 
   @media(max-width: 340px) {
     .social-ctn {
-      bottom: -14% !important;
+      // bottom: -14% !important;
     }
   }

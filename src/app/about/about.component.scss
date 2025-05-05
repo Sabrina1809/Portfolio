@@ -118,7 +118,7 @@
 
 @media(max-width: 900px) {
     .about-ctn {
-        margin-top: -150px !important;
+        margin-top: 20% !important;
         .about-text-area {
             width: 100% !important;
         }
@@ -130,18 +130,12 @@
 
 @media(max-width: 750px) {
     .about-ctn {
-        margin-top: -50px !important;
+        margin-top: 25% !important;
     }
 }
 
 @media(max-width: 550px) {
     .about-ctn {
-        margin-top: 0px !important;
-    }
-}
-
-@media(max-width: 380px) {
-    .about-ctn {
-        margin-top: 50px !important;
+      margin-top: 30% !important;
     }
 }
