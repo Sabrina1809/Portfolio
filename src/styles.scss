@@ -28,6 +28,7 @@ $primary2: #9747FF;
     color: white;
     box-sizing: border-box;
     // border: 1px solid orange;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -44,9 +45,6 @@ body {
   color: $primary2 !important;
 }
 
-.me-text-name, 
-.about-title,
-.skills-title, 
-h1 {
-  font-size: clamp(1.875rem, 1.1993rem + 3.3784vw, 5rem) !important;
+.title-fontsize {
+  font-size: clamp(1.875rem, 1.4464rem + 2.1429vw, 3.375rem);
 }

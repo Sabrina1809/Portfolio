@@ -98,7 +98,7 @@
         align-items: center;
         gap: 24px;
         z-index: 12;
-
+        
         animation: slideUpFade 2.5s ease-out forwards;
         animation-delay: 0.8s;
         opacity: 0; // initial hidden
@@ -127,9 +127,11 @@
             flex-wrap: nowrap;
       
             & .me-text-name {
-              font-size: clamp(1.875rem, 1.1993rem + 3.3784vw, 5rem);
+              font-size: clamp(3.125rem, 2.5893rem + 2.6786vw, 5rem);
               font-weight: bold;
-              line-height: 120%;
+              // line-height: 120%;
+              height: clamp(3.125rem, 2.5893rem + 2.6786vw, 5rem);
+              margin-bottom: 6%;
             }
       
             & .me-text-profession {
@@ -137,7 +139,7 @@
               text-transform: uppercase;
               line-height: 120%;
               color: $primary2;
-              margin-top: -12px;
+              // margin-top: -12px;
             }
           }
         }
@@ -163,11 +165,11 @@
 
   @keyframes zoomInFade {
     0% {
-      opacity: 0;
+    opacity: 0;
       transform: scale(0.9);
-    }
+  }
     100% {
-      opacity: 1;
+    opacity: 1;
       transform: scale(1);
     }
   }
@@ -178,12 +180,13 @@
       opacity: 0;
     }
     100% {
-      transform: translateY(0);
+    transform: translateY(0);
       transform: scale(1);
       opacity: 1;
     }
   }
   
+
   @keyframes scrollHintAnim {
     0%, 100% {
       transform: translateX(0);

@@ -1,6 +1,7 @@
 <div class="me-ctn">
-      <img class="profil-big" src="assets/img/profil/1e-shadow2.png" alt="">
-     <div class="bg-curve-wrapper">
+    <img class="profil-big" [class.show]="showContent" src="assets/img/profil/1e-shadow2.png" alt="">
+
+    <div class="bg-curve-wrapper">
         <img class="bg-curve" src="assets/img/background/28. Hero Background.png" alt="">
         <div class="social-ctn">
             <div class="social-links">
@@ -11,17 +12,17 @@
             </div>
             <p class="scroll-down"> {{ 'ME.SCROLL' | translate}} ➞</p>
         </div> 
-        <div class="me-text-area">
+        <div class="me-text-area" [class.show]="showContent">
             <div class="me-text">
-                <div class="me-text-left">{{ 'ME.IAM' | translate }}</div>
-                <div class="me-text-right">
-                    <p class="me-text-name">Sabrina Fritz</p>
-                    <p class="me-text-profession">Frontend Developer</p>
-                </div>
+              <div class="me-text-left">{{ 'ME.IAM' | translate }}</div>
+              <div class="me-text-right">
+                <p class="me-text-name">{{ typedName }}</p>
+                <p class="me-text-profession">Frontend Developer</p>
+              </div>
             </div>
             <a class="me-button" href="#">
-                {{ 'ME.BUTTON' | translate }}
+              {{ 'ME.BUTTON' | translate }}
             </a>
-        </div>
+          </div>
     </div>
 </div>
