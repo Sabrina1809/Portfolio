@@ -54,6 +54,7 @@
             justify-content: right;
             gap: 20px;
             z-index: 50;
+            margin-bottom: 20px;
             & .skills-title {
                 // font-size: clamp(1.875rem, 1.1993rem + 3.3784vw, 5rem) !important;
             }
@@ -183,7 +184,7 @@
 
 @media(max-width: 660px) {
     .skills-icons {
-        justify-content: center !important;
+        // justify-content: center !important;
     }
     .skills-contact-btn {
         margin: 20px auto 0 auto !important;
