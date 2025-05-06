@@ -30,9 +30,9 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
       title: 'Pokedex',
       skills: ['HTML', 'CSS', 'JavaScript', 'Rest Api'],
       images: [
-        'assets/img/display-screenshot/pokedex-1-oH.png',
-        'assets/img/display-screenshot/pokedex-2-oH.png',
-        'assets/img/display-screenshot/pokedex-3-oH.png'
+        'assets/img/display-screenshot/good/pokedex1.png',
+        'assets/img/display-screenshot/good/pokedex2.png',
+        'assets/img/display-screenshot/good/pokedex3.png'
       ],
       githubLink: 'https://github.com/Sabrina1809/Pokedex3',
       liveLink: 'https://sabrina-fritz.developerakademie.net/Modul9-Pokedex3/index.html',
@@ -43,10 +43,10 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
       title: 'Join',
       skills: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
       images: [
-        'assets/img/display-screenshot/join-1-oH.png',
-        'assets/img/display-screenshot/join-2-oH.png',
-        'assets/img/display-screenshot/join-3-oH.png',
-        'assets/img/display-screenshot/join-4-oH.png'
+        'assets/img/display-screenshot/good/join1.png',
+        'assets/img/display-screenshot/good/join2.png',
+        'assets/img/display-screenshot/good/join3.png',
+        'assets/img/display-screenshot/good/join4.png'
       ],
       githubLink: 'https://github.com/Sabrina1809/Join',
       liveLink: 'https://join-384.developerakademie.net/Join/log_in.html',
@@ -57,9 +57,9 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
       title: 'El Pollo Loco',
       skills: ['HTML', 'CSS', 'JavaScript'],
       images: [
-        'assets/img/display-screenshot/pollo-1-oH.png',
-        'assets/img/display-screenshot/pollo-2-oH.png',
-        'assets/img/display-screenshot/pollo-3-oH.png'
+        'assets/img/display-screenshot/good/pollo1.png',
+        'assets/img/display-screenshot/good/pollo2.png',
+        'assets/img/display-screenshot/good/pollo3.png'
       ],
       githubLink: 'https://github.com/Sabrina1809/El-Pollo-Loco',
       liveLink: 'https://sabrina-fritz.developerakademie.net/Modul12-ElPolloLoco/index.html',
@@ -70,7 +70,8 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
       title: 'Portfolio',
       skills: ['HTML', 'SCSS', 'TypeScript', 'Angular', '♥'],
       images: [
-        'assets/img/display-screenshot/portfolio1.png'
+        'assets/img/display-screenshot/good/portfolio1.png',
+        'assets/img/display-screenshot/good/portfolio2.png'
       ],
       githubLink: 'https://github.com/Sabrina1809/Portfolio',
       liveLink: 'https://your-pollo-game.netlify.app',
