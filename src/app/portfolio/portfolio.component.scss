@@ -1,10 +1,56 @@
 @import '../../styles.scss';  // Pfad zu deiner styles.scss
 
+.portfolio-wrapper {
+    position: relative;
+    overflow-x: clip;
+}
+
+.shadow {
+    position: absolute;
+    width: 70%;
+    height: auto;
+    left: -20%;
+    top: 20%;
+    z-index: 10;
+    pointer-events: none;
+    opacity: 0;
+    animation: fadeInFloat 3s ease-out forwards;
+    animation-delay: 0.5s;
+  }
+
+  .shadow-two {
+    position: absolute;
+    width: 70%;
+    height: auto;
+    right: -20%;
+    top: 60%;
+    // transform: rotate(-40deg);
+    z-index: 10;
+    pointer-events: none;
+    opacity: 0;
+    animation: fadeInFloat 3s ease-out forwards;
+    animation-delay: 0.5s;
+  }
+
+  @keyframes fadeInFloat {
+    0% {
+      opacity: 0;
+      transform: translateY(20px) rotate(-40deg);
+    }
+    50% {
+      opacity: 0.5;
+      transform: translateY(10px) rotate(-40deg);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) rotate(-40deg);
+    }
+  }
 
 .portfolio-ctn {
     width: 100%;
     max-width: 1440px;
-    padding: 70px 30px 0 30px;
+    padding: 70px 50px 0 50px;
     margin: 0 auto;
     text-align: center;
     & .portfolio-title {
@@ -31,12 +77,14 @@
         // display: flex;
         // flex-direction: column;
         & .project-ctn {
+            position: relative;
             margin: 100px auto;
             display: flex;
             gap: 100px;
             justify-content: center;
             align-items: start;
             text-align: left;
+            z-index: 13;
             & .project-info {
                 width: 100%;
                 display: flex;
@@ -46,22 +94,36 @@
                     color: $primary2;
                     font-weight: bold;
                     font-size: 32px;
+                    text-shadow:
+                    -0.5px -0.5px 0  rgba(0, 0, 0, 0.25),
+                     0.5px -0.5px 0  rgba(0, 0, 0, 0.25),
+                    -0.5px  0.5px 0  rgba(0, 0, 0, 0.25),
+                     0.5px  0.5px 0  rgba(0, 0, 0, 0.25);
                 }
                 & .project-skills {
                     display: flex;
-                    justify-content: center;
+                    gap: 10px;
+                    // justify-content: left;
                     align-items: center;
                     & .project-skill {
-                        padding: 0px 15px;
-                        margin-bottom: 10px;
-                        border-right: 2px solid $primary1;
+                        // padding: 0px 15px;
+                        // margin-bottom: 10px;
+                        // border-right: 2px solid $primary1;
                         color: $primary1;
                         font-size: 24px;
-                        height: 20px;
-                        display: flex;
-                    justify-content: center;
-                    align-items: center;
+               
+                        text-shadow:
+                        -0.5px -0.5px 0  rgba(0, 0, 0, 0.25),
+                        0.5px -0.5px 0  rgba(0, 0, 0, 0.25),
+                        -0.5px  0.5px 0  rgba(0, 0, 0, 0.25),
+                        0.5px  0.5px 0  rgba(0, 0, 0, 0.25);
+                      
+                        width: fit-content;
                         overflow: visible;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 20px;
                         &:first-child {
                             padding-left: 0;
                         }
@@ -83,6 +145,7 @@
                         border-radius: 10px;
                         transition: all 0.125s ease-in-out;
                         font-size: 24px;
+                        box-shadow: 0 0 1px black;
                         &:hover {
                             cursor: pointer;
                         }
@@ -102,14 +165,27 @@
                             background-color: $primary1;
                         }
                     }
+                    // &:nth-child(odd) {
+                    //     justify-content: right;
+                    //     // flex-direction: row-reverse;
+                    //     text-align: right;
+                    //     & .project-skills {
+                    //         justify-content: right;
+                    //     }
+                    // }
                 }
+                
             }
         &:nth-child(even) {
+            justify-content: right;
             flex-direction: row-reverse;
             text-align: right;
             & .button-line {
                 justify-content: right;
-            }
+            }   
+            & .project-skills {
+                justify-content: right;
+            }         
         }
         }
     }
@@ -140,6 +216,12 @@ height: auto;
 }
 }
 
+.project-img-link {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
 .project-img {
     width: 500px;
     height: auto;
@@ -148,8 +230,9 @@ height: auto;
     // transition: ;
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 1s ease, transform 0.125s ease;
+    transition: opacity 1s ease, filter 0.125s ease, transform 0.125s ease-in-out;
     margin: 0 auto;
+    filter: drop-shadow(0 0 5px black);
     &.show {
       opacity: 1;
       transform: translateY(0);
@@ -158,8 +241,8 @@ height: auto;
         opacity: 0.7;
     };
     &:hover {
-        transform: scale(1.05);
-        filter: drop-shadow(0 0 10px black);
+        transform: scale(1.02);
+        filter: drop-shadow(0 0 15px white);
         cursor: pointer;
     }
 }
@@ -182,7 +265,7 @@ height: auto;
     }
   }
 
-
+  
 @media(max-width: 1200px) {
     .portfolio-projects {
         margin-top: 70px !important;
@@ -195,17 +278,19 @@ height: auto;
         &:nth-child(even) {
             flex-direction: column !important;
             text-align: left !important;
-            // & .button-line {
-            //     justify-content: right;
-            // }
+            justify-content: center !important;
         }
         & .project-info {
             text-align: center;
         }
         & .project-skills {
-            display: flex;
+            display: flex !important;
+            justify-content: center !important;
+            max-width: 80%;
+            margin: 0 auto;
             flex-wrap: wrap;
-            justify-content: center;
+            text-align: center;
+            // gap: 10px 0px !important;
         }
         & .button-line {
             justify-content: center !important;

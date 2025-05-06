@@ -1,25 +1,27 @@
-
-<div class="skills-ctn">
-    <div class="part-one">
-        <div class="skills-title-ctn">
-            <h1 class="skills-title title-fontsize">Skills</h1>
-            <div class="purple-line"></div>
+<div class="skills-wrapper"  id="skills">
+    <div class="skills-ctn">
+        <div class="part-one">
+            <div class="skills-title-ctn">
+                <h1 class="skills-title title-fontsize">Skills</h1>
+                <div class="purple-line"></div>
+            </div>
+            <p> {{ 'SKILLS.CURRENT' | translate}} </p>
         </div>
-        <p> {{ 'SKILLS.CURRENT' | translate}} </p>
-    </div>
-    <div class="skills-icons part-two">
-        <div class="skill" *ngFor="let skill of skills" #skillElement>
-            <img [src]="skill.icon" [alt]="skill.name" />
-            <span>{{ skill.name }}</span>
-          </div>
-          <div class="skill-purple" #skillPurple>
-            <img src="assets/img/skills/learning-purple.png" alt="learning" />
-            <span>{{ 'SKILLS.IMG_LERN' | translate }}</span>
-          </div>          
-    </div>
-    <div class="part-three">
-        <p class="skills-question" [innerHTML]="'SKILLS.QUESTION' | translate"></p>
-        <p> {{ 'SKILLS.LEARNING' | translate}} </p>
-        <div class="skills-contact-btn"> {{ 'SKILLS.CONTACT' | translate}} </div>
+        <div class="skills-icons part-two">
+            <div class="skill" *ngFor="let skill of skills" #skillElement>
+                <img [src]="skill.icon" [alt]="skill.name" />
+                <span>{{ skill.name }}</span>
+            </div>
+            <div class="skill-purple" #skillPurple>
+                <img src="assets/img/skills/learning-purple.png" alt="learning" />
+                <span>{{ 'SKILLS.IMG_LERN' | translate }}</span>
+            </div>          
+        </div>
+        <div class="part-three">
+            <p class="skills-question" [innerHTML]="'SKILLS.QUESTION' | translate"></p>
+            <p> {{ 'SKILLS.LEARNING' | translate}} </p>
+            <div class="skills-contact-btn"> {{ 'SKILLS.CONTACT' | translate}} </div>
+        </div>
+        <img class="shadow" src="assets/img/background/shadow-green-skills.png" alt="" />
     </div>
 </div>

@@ -1,5 +1,38 @@
 @import '../../styles.scss';  // Pfad zu deiner styles.scss
-  
+
+.skills-wrapper {
+    position: relative;
+    overflow-x: clip;
+}
+
+.shadow {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    left: -30%;
+    top: 0;
+    z-index: 10;
+    pointer-events: none;
+    opacity: 0;
+    animation: fadeInFloat 3s ease-out forwards;
+    animation-delay: 0.5s;
+  }
+
+  @keyframes fadeInFloat {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    50% {
+      opacity: 0.5;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
 .skills-ctn {
     display: flex;
     flex-direction: column;
@@ -13,6 +46,7 @@
         padding-left: 53%;
         position: absolute;
         right: 0;
+        z-index: 13;
         & .skills-title-ctn {
             display: flex;
             width: 100%;
@@ -62,6 +96,7 @@
     }
     & .part-two {
         width: 50%;
+        z-index: 13;
     }
     & .part-three {
         position: absolute;
@@ -71,8 +106,9 @@
         align-items: end;
         flex-direction: column;
         padding-left: 53%;
+        z-index: 13;
         & .skills-question {
-            font-size: 28px;
+            font-size: 24px;
             font-weight: bold;
             margin-bottom: 20px;
         }

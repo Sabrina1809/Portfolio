@@ -3,9 +3,9 @@
     <img src="assets/img/logo-sabrina3.png" alt="Logo">
     <div class="menu-desktop">
       <nav class="nav">
-        <a href="#">{{ 'NAV.ABOUT' | translate }}</a>
-        <a href="#">{{ 'NAV.SKILLS' | translate }}</a>
-        <a href="#">{{ 'NAV.PORTFOLIO' | translate }}</a>
+        <a href="#about">{{ 'NAV.ABOUT' | translate }}</a>
+        <a href="#skills">{{ 'NAV.SKILLS' | translate }}</a>
+        <a href="#portfolio">{{ 'NAV.PORTFOLIO' | translate }}</a>
       </nav>
       <div class="language">
         <div 
@@ -38,10 +38,10 @@
       </div>
   </div>
   <div class="nav-mobile" [ngClass]="{ 'open': menuOpen }">
-    <a href="#">{{ 'NAV.ABOUT' | translate }}</a>
-    <a href="#">{{ 'NAV.SKILLS' | translate }}</a>
-    <a href="#">{{ 'NAV.PORTFOLIO' | translate }}</a>
-    <a href="#">{{ 'NAV.CONTACT' | translate }}</a>
+    <a href="#about" (click)="closeMenu()">{{ 'NAV.ABOUT' | translate }}</a>
+    <a href="#skills" (click)="closeMenu()">{{ 'NAV.SKILLS' | translate }}</a>
+    <a href="#portfolio" (click)="closeMenu()">{{ 'NAV.PORTFOLIO' | translate }}</a>
+    <a href="#contact" (click)="closeMenu()">{{ 'NAV.CONTACT' | translate }}</a>
     <div class="language">
       <div 
           class="lang de" 

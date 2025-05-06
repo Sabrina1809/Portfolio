@@ -1,11 +1,4 @@
-import { 
-  Component, 
-  AfterViewInit, 
-  ElementRef, 
-  QueryList, 
-  ViewChild, 
-  ViewChildren 
-} from '@angular/core';
+import { Component, AfterViewInit, ElementRef, QueryList, ViewChild, ViewChildren } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 
@@ -63,57 +56,3 @@ export class SkillsComponent implements AfterViewInit {
 }
 
 
-// import { 
-//   Component, 
-//   AfterViewInit, 
-//   ElementRef, 
-//   QueryList, 
-//   ViewChildren 
-// } from '@angular/core';
-// import { TranslateModule } from '@ngx-translate/core';
-// import { CommonModule } from '@angular/common';
-
-// @Component({
-//   selector: 'app-skills',
-//   standalone: true,
-//   imports: [TranslateModule, CommonModule],
-//   templateUrl: './skills.component.html',
-//   styleUrl: './skills.component.scss'
-// })
-// export class SkillsComponent implements AfterViewInit {
-
-//   skills = [
-//     { name: 'Angular', icon: 'assets/img/skills/angular.png' },
-//     { name: 'Rest Api', icon: 'assets/img/skills/api.png' },
-//     { name: 'CSS', icon: 'assets/img/skills/css.png' },
-//     { name: 'Sass', icon: 'assets/img/skills/sass.png' },
-//     { name: 'Firebase', icon: 'assets/img/skills/firebase.png' },
-//     { name: 'Git', icon: 'assets/img/skills/git.png' },
-//     { name: 'HTML', icon: 'assets/img/skills/html.png' },
-//     { name: 'JavaScript', icon: 'assets/img/skills/javascript.png' },
-//     { name: 'Material Design', icon: 'assets/img/skills/material.png' },
-//     { name: 'Scrum', icon: 'assets/img/skills/scrum.png' },
-//     { name: 'TypeScript', icon: 'assets/img/skills/typescript.png' }
-//   ];
-
-//   @ViewChildren('skillElement', { read: ElementRef })
-//   skillElements!: QueryList<ElementRef>;
-  
-
-//   ngAfterViewInit() {
-//     const observer = new IntersectionObserver((entries) => {
-//       entries.forEach(entry => {
-//         if (entry.isIntersecting) {
-//           entry.target.classList.add('animate-in');
-//           observer.unobserve(entry.target);
-//         }
-//       });
-//     }, { threshold: 0.1 });
-
-//     this.skillElements.forEach((skillEl, index) => {
-//       const el = skillEl.nativeElement;
-//       el.style.transitionDelay = `${index * 100}ms`; // optional für Stagger-Effekt
-//       observer.observe(el);
-//     });
-//   }
-// }

@@ -217,7 +217,7 @@
     font-weight: 400;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
     .header-desktop {
         display: none !important;
     }
@@ -225,6 +225,7 @@
         display: flex !important;
         & img {
             width: 120px !important;
+            margin-top: 0px !important;
           }
           & .burger-line {
             font-size: 20px !important;
@@ -233,6 +234,13 @@
     .nav-mobile {
         display: flex !important;
     }
+    .burger-open {
+        margin-top: 18px !important;
+    }
+    .burger-close {
+        top: 18px !important;
+    }
+
 }
 
 @media(max-width: 600px) {
