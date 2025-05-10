@@ -22,9 +22,7 @@
         }
         & .form-intro-ctn {
             display: flex;
-            // flex-direction: column;
             gap: 10%;
-           
             & .intro {
                 display: flex;
                 flex-direction: column;
@@ -42,10 +40,14 @@
                     flex-direction: column;
                     gap: 16px;
                     width: 100%;
+                    z-index: 20;
+                    position: relative;
                     & .error-message-input {
                         color: #e61c40;
                         margin-top: 5px;
                         margin-bottom: 16px;
+                        visibility: hidden;
+                        opacity: 0;
                     }
                     & label {
                         display: none;
@@ -62,10 +64,22 @@
                             color: white;
                             padding: 10px 20px;
                             font-size: 16px;
+                            z-index: 30;
+                            position: relative;
                             &::placeholder {
                                 color: white;
                                 font-family: 'Poppins';
                             }
+                            &:hover {
+                                border: 1px solid #1CDAE6;
+                            }
+                        }
+                        & .user-feedback-icon {
+                            position: absolute;
+                            right: 10px;
+                            top: 7px;
+                            filter: drop-shadow(0px 0px 1px black);
+                            display: none;
                         }
                     }
                     & .checkbox-line {
@@ -79,29 +93,107 @@
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            color: $primary1;
-                            font-weight: bold;
                             border: 2px solid $primary1;
+                            & span {
+                                color: $primary1;
+                                font-weight: bold;
+                                visibility: hidden;
+                                opacity: 0;
+                            }
+                            &:hover {
+                                cursor: pointer;
+                            }
                         }
+                    }
+                    & .error-checkbox {
+                        visibility: hidden;
+                        opacity: 0;
+                        color: #E61C40;
                     }
                     & .btn-send-message {
                         padding: 10px 20px;
                         width: fit-content;
                         text-align: center;
-                        margin: 0 auto;
+                        margin: 10px auto 0 auto;
                         border-radius: 8px;
-                        background-color: gray;
+                        background-color: $primary1;
                         border: none;
                         font-size: 18px;
+                        transition: all 0.125s ease-in-out;
                         &:hover {
                             cursor: pointer;
                         }
+                        &:hover {
+                            scale: 1.1;
+                            background-color: $primary2;
+                        }
                     }
-                   
                 }
             }
-          
         }
-       
+    }
+}
+
+.shadow {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    left: -10%;
+    bottom: -20%;
+    z-index: 10;
+    pointer-events: none;
+    opacity: 1;
+    animation: fadeInFloat 3s ease-out forwards;
+    animation-delay: 0.5s;
+  }
+
+.input-ok {
+    input[type=text],[type=email], textarea {
+        border: 1px solid #70E61C !important;
+    };
+    img {
+        display: flex !important;
+    }
+}
+
+.input-not-ok {
+    input[type=text],[type=email], textarea {
+        border: 1px solid #E61C40 !important;
+    };
+    img {
+        display: flex !important;
+    }
+    p {
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+}
+
+.checkbox-ok {
+    span {
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+}
+
+.checkbox-not-ok {
+        visibility: visible !important;
+        opacity: 1 !important;
+}
+
+@media (max-width: 1100px) {
+    .form-intro-ctn {
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100% !important;
+        gap: 40px !important;
+        & .intro {
+            // margin-left: -10%;
+            width: 80% !important;
+        }
+        & .form-ctn {
+            width: 80% !important;
+        }
     }
 }

@@ -44,7 +44,25 @@
           "DESCRIPTION": "Mein persönliches Portfolio – modern, performant und modular aufgebaut."
         }
       }
+    },
+    "CONTACT": {
+      "TITLE": "Kontakt",
+      "INTRO" : {
+        "FIRST" : "Du hast eine Idee und brauchst eine Lösung?",
+        "SECOND" : "Von der ersten Idee bis zur fertigen Anwendung: ich gestalte und entwickle strukturiert, sorgfältig und mit viel Liebe zum Detail.",
+        "THIRD": "Lass uns starten – <b>ich freue mich auf deine Nachricht.</b>"
+      },
+      "INPUT" : {
+        "NAME-PLACEHOLDER" : "Dein Name",
+        "NAME-ERROR" : "Dein Name ist erforderlich.",
+        "EMAIL-PLACEHOLDER" : "Deine Email",
+        "EMAIL-ERROR" : "Deine Email ist erforderlich.",
+        "MESSAGE-PLACEHOLDER": "Deine Nachricht",
+        "MESAGE-ERROR" : "Du hast keine Nachricht erfasst."
+      }, 
+      "PRIVACY" : "Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Daten wie darin beschrieben zu.",
+      "PRIVACY-ERROR" : "Bitte akzeptiere die Datenschutzbedingungen.",
+      "SEND" : "Nachricht senden :)"
     }
-
   }
   

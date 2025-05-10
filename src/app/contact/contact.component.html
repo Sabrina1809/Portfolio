@@ -2,49 +2,50 @@
     <div class="contact-ctn">
         <div class="title-line">
             <div class="purple-line"></div>
-            <h1 class="title-fontsize">Contact</h1>
+            <h1 class="title-fontsize"> {{ 'CONTACT.TITLE' | translate }} </h1>
         </div>
         <div class="form-intro-ctn">
             <div class="intro">
-                <p class="question">Got a problem to solve?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro laudantium deserunt repudiandae doloribus amet consequuntur error fugiat totam sapiente obcaecati.</p>
-                <p>Need a frontend developer? Contact me!</p>
+                <p class="question"> {{ 'CONTACT.INTRO.FIRST' | translate }} </p>
+                <p> {{ 'CONTACT.INTRO.SECOND' | translate }} </p>
+                <p [innerHTML]="'CONTACT.INTRO.THIRD' | translate"></p>
             </div>
             <div class="form-ctn">
                 <form action="">
-                    <div class="input-ctn">
+                    <div class="input-ctn input-not-ok">
                         <label for="name"></label>
                         <div class="icon-ctn">
-                            <input type="text" name="" id="name" placeholder="Your name">
-                            <img src="" alt="">
+                            <input type="text" name="" id="name" placeholder=" {{ 'CONTACT.INPUT.NAME-PLACEHOLDER' | translate }} ">
+                            <img class="user-feedback-icon" src="assets/img/contact/error.png" alt="error">
                         </div>
-                        <p class="error-message-input">Your name is required</p>
+                        <p class="error-message-input"> {{ 'CONTACT.INPUT.NAME-ERROR' | translate }} </p>
                     </div>
-                    <div class="input-ctn">
+                    <div class="input-ctn input-ok">
                         <label for="email"></label>
                         <div class="icon-ctn">
-                            <input type="email" name="" id="email" placeholder="Your email">
-                            <img src="" alt="">
+                            <input type="email" name="" id="email" placeholder=" {{ 'CONTACT.INPUT.EMAIL-PLACEHOLDER' | translate }} ">
+                            <img class="user-feedback-icon" src="assets/img/contact/ok.png" alt="ok">
                         </div>
-                        <p class="error-message-input">Your email is required</p>
+                        <p class="error-message-input"> {{ 'CONTACT.INPUT.EMAIL-ERROR' | translate }} </p>
                     </div>
                     <div class="input-ctn">
                             <label for="message"></label>
                             <div class="icon-ctn">
-                                <textarea name="" id="message"  rows="10" placeholder="Your Message"></textarea>
-                                <img src="" alt="">
+                                <textarea name="" id="message"  rows="10" placeholder=" {{ 'CONTACT.INPUT.MESSAGE-PLACEHOLDER' | translate }} "></textarea>
+                                <img class="user-feedback-icon" src="assets/img/contact/error.png" alt="error">
                             </div>
-                            <p class="error-message-input">Your message is empty</p>
+                            <p class="error-message-input"> {{ 'CONTACT.INPUT.MESSAGE-ERROR' | translate }} </p>
                     </div>
                     <div class="checkbox-line">
-                        <label for="check-privacy"></label>
-                        <div class="checkbox">✓</div>
-                        <p>DATENSCHUTZ usw Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nihil?</p>
+                        <div class="checkbox"><span>✓</span></div>
+                        <p> {{ 'CONTACT.PRIVACY' | translate }} </p>
                     </div>
-                    <p class="error-message-input">Please accept the privacy policy.</p>
-                    <button disabled class="btn-send-message" type="submit">Send message :)</button>
+                    <p class="error-checkbox checkbox-not-ok"> {{ 'CONTACT.PRIVACY-ERROR' | translate }} </p>
+                    <button class="btn-send-message" type="submit"> {{ 'CONTACT.SEND' | translate }} </button>
                 </form>
             </div>
         </div>
+        <img class="shadow" src="assets/img/background/shadow-purple-contact.png" alt="" />
+
     </div>
 </div>
