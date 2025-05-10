@@ -11,37 +11,63 @@
                 <p [innerHTML]="'CONTACT.INTRO.THIRD' | translate"></p>
             </div>
             <div class="form-ctn">
-                <form action="">
-                    <div class="input-ctn input-not-ok">
+                <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+                    <div class="input-ctn"
+                        [class.input-ok]="name.valid && (name.dirty || name.touched)" 
+                        [class.input-not-ok]="name.invalid && (name.dirty || name.touched)">
                         <label for="name"></label>
                         <div class="icon-ctn">
-                            <input type="text" name="" id="name" placeholder=" {{ 'CONTACT.INPUT.NAME-PLACEHOLDER' | translate }} ">
-                            <img class="user-feedback-icon" src="assets/img/contact/error.png" alt="error">
+                            <input #name="ngModel" [(ngModel)]="contactData.name" type="text" name="name" id="name" required placeholder=" {{ 'CONTACT.INPUT.NAME-PLACEHOLDER' | translate }} ">
+                            <img class="user-feedback-icon" [src]="name.valid ? 'assets/img/contact/ok.png' : 'assets/img/contact/error.png'" alt="feedback"/>
                         </div>
                         <p class="error-message-input"> {{ 'CONTACT.INPUT.NAME-ERROR' | translate }} </p>
                     </div>
-                    <div class="input-ctn input-ok">
+                    <div class="input-ctn"
+                        [class.input-ok]="email.valid && (email.dirty || email.touched)" 
+                        [class.input-not-ok]="email.invalid && (email.dirty || email.touched)">
                         <label for="email"></label>
                         <div class="icon-ctn">
-                            <input type="email" name="" id="email" placeholder=" {{ 'CONTACT.INPUT.EMAIL-PLACEHOLDER' | translate }} ">
-                            <img class="user-feedback-icon" src="assets/img/contact/ok.png" alt="ok">
+                            <input #email="ngModel" [(ngModel)]="contactData.email" type="email" name="email" id="email" required placeholder=" {{ 'CONTACT.INPUT.EMAIL-PLACEHOLDER' | translate }} " pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                            <img class="user-feedback-icon" [src]="email.valid ? 'assets/img/contact/ok.png' : 'assets/img/contact/error.png'" alt="feedback"/>
                         </div>
                         <p class="error-message-input"> {{ 'CONTACT.INPUT.EMAIL-ERROR' | translate }} </p>
                     </div>
-                    <div class="input-ctn">
-                            <label for="message"></label>
-                            <div class="icon-ctn">
-                                <textarea name="" id="message"  rows="10" placeholder=" {{ 'CONTACT.INPUT.MESSAGE-PLACEHOLDER' | translate }} "></textarea>
-                                <img class="user-feedback-icon" src="assets/img/contact/error.png" alt="error">
-                            </div>
-                            <p class="error-message-input"> {{ 'CONTACT.INPUT.MESSAGE-ERROR' | translate }} </p>
+                    <div class="input-ctn" 
+                        [class.input-ok]="message.valid && (message.dirty || message.touched)" 
+                        [class.input-not-ok]="message.invalid && (message.dirty || message.touched)">
+                        <label for="message"></label>
+                        <div class="icon-ctn">
+                            <textarea
+                            id="message"
+                            name="message"
+                            rows="10"
+                            required
+                            minlength="10"
+                            placeholder="{{ 'CONTACT.INPUT.MESSAGE-PLACEHOLDER' | translate }}"
+                            [(ngModel)]="contactData.message"
+                            #message="ngModel"
+                            ></textarea>
+                            <img class="user-feedback-icon" [src]="message.valid ? 'assets/img/contact/ok.png' : 'assets/img/contact/error.png'" alt="feedback"/>
+                        </div>
+                        <p class="error-message-input">
+                            {{ 'CONTACT.INPUT.MESSAGE-ERROR' | translate }}
+                        </p>
                     </div>
                     <div class="checkbox-line">
-                        <div class="checkbox"><span>✓</span></div>
+                        <div class="checkbox" (click)="toggleCheckbox()">
+                            <span [ngClass]="checkboxChecked ? 'checkbox-ok' : ''">✓</span>
+                        </div>
                         <p> {{ 'CONTACT.PRIVACY' | translate }} </p>
                     </div>
-                    <p class="error-checkbox checkbox-not-ok"> {{ 'CONTACT.PRIVACY-ERROR' | translate }} </p>
-                    <button class="btn-send-message btn-disabled" type="submit"> {{ 'CONTACT.SEND' | translate }} </button>
+                    <p class="error-checkbox" [ngClass]="!checkboxChecked ? 'checkbox-not-ok' : ''"> {{ 'CONTACT.PRIVACY-ERROR' | translate }} </p>
+                    <button
+                    class="btn-send-message"
+                    type="submit"
+                    [ngClass]="{'btn-disabled': !contactForm.valid || !checkboxChecked}"
+                    [disabled]="!contactForm.valid || !checkboxChecked"
+                  >
+                    {{ 'CONTACT.SEND' | translate }}
+                  </button>                
                 </form>
             </div>
         </div>

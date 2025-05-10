@@ -58,7 +58,7 @@
         "EMAIL-PLACEHOLDER" : "Deine Email",
         "EMAIL-ERROR" : "Deine Email ist erforderlich.",
         "MESSAGE-PLACEHOLDER": "Deine Nachricht",
-        "MESAGE-ERROR" : "Du hast keine Nachricht erfasst."
+        "MESSAGE-ERROR" : "Mindestens 10 Zeichen."
       }, 
       "PRIVACY" : "Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Daten wie darin beschrieben zu.",
       "PRIVACY-ERROR" : "Bitte akzeptiere die Datenschutzbedingungen.",

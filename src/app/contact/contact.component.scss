@@ -66,6 +66,7 @@
                             font-size: 16px;
                             z-index: 30;
                             position: relative;
+                            outline: none;
                             &::placeholder {
                                 color: white;
                                 font-family: 'Poppins';
@@ -99,6 +100,7 @@
                                 font-weight: bold;
                                 visibility: hidden;
                                 opacity: 0;
+                                transition: all 0.125s ease-in-out; /* Sanfte Übergänge */
                             }
                             &:hover {
                                 cursor: pointer;
@@ -109,6 +111,8 @@
                         visibility: hidden;
                         opacity: 0;
                         color: #E61C40;
+                        transition: all 0.125s ease-in-out; 
+
                     }
                     & .btn-send-message {
                         padding: 10px 20px;
@@ -121,6 +125,7 @@
                         transition: all 0.125s ease-in-out;
                         background-color: $primary1;
                         pointer-events: default;
+                        scale: 1.0;
                         &:hover {
                             cursor: pointer;
                             scale: 1.1;
@@ -175,10 +180,9 @@
 }
 
 .checkbox-ok {
-    span {
         visibility: visible !important;
         opacity: 1 !important;
-    }
+        transition: all 0.125s ease-in-out; 
 }
 
 .checkbox-not-ok {
