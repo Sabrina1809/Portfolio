@@ -116,14 +116,13 @@
                         text-align: center;
                         margin: 10px auto 0 auto;
                         border-radius: 8px;
-                        background-color: $primary1;
                         border: none;
                         font-size: 18px;
                         transition: all 0.125s ease-in-out;
+                        background-color: $primary1;
+                        pointer-events: default;
                         &:hover {
                             cursor: pointer;
-                        }
-                        &:hover {
                             scale: 1.1;
                             background-color: $primary2;
                         }
@@ -132,6 +131,12 @@
             }
         }
     }
+}
+
+.btn-disabled {
+    pointer-events: none !important;
+    background-color: gray !important;
+    scale: 0.9 !important;
 }
 
 .shadow {
@@ -145,7 +150,7 @@
     opacity: 1;
     animation: fadeInFloat 3s ease-out forwards;
     animation-delay: 0.5s;
-  }
+}
 
 .input-ok {
     input[type=text],[type=email], textarea {
