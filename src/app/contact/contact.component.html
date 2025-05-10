@@ -67,7 +67,8 @@
                     [disabled]="!contactForm.valid || !checkboxChecked"
                   >
                     {{ 'CONTACT.SEND' | translate }}
-                  </button>                
+                  </button>     
+                  <p class="thank-you" [ngClass]="{'thank-you-visible': showThankYou}">Vielen Dank für deine Nachricht.</p>           
                 </form>
             </div>
         </div>
