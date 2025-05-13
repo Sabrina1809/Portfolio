@@ -1,0 +1,23 @@
+.impressum-ctn {
+    width: 100%;
+    max-width: 1440px;
+    margin: 100px auto 0 auto;
+    padding: 30px;
+    min-height: calc(100vh - 275px);
+    & h1 {
+        margin-bottom: 20px;
+    }
+    & h2 {
+        margin-bottom: 10px;
+        margin-top: 20px;
+        font-weight: 400;
+        line-height: 1.0;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .impressum-ctn {
+        min-height: calc(100vh - 320px);
+    }
+}

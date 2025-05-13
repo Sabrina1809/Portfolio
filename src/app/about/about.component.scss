@@ -2,7 +2,56 @@
 
 .about-wrapper {
     position: relative;
-    overflow-x: clip; // 👈 verhindert horizontales Scrollen, ohne alles abzuschneiden
+    overflow-x: clip; 
+      & .image-ctn {
+        // border: 1px solid orange;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 45%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        // margin-bottom: -130px;
+        // margin-top: 70px;
+        z-index: 25;
+          & .about-img {
+            z-index: 100;
+          width: 400px;
+          height: 400px;
+          aspect-ratio: 1 / 1;
+          object-fit: cover;
+          object-position: 0 -90px;
+          border-radius: 50%;
+          border: 2px solid $primary1; // Beispiel-Farbe für $primary1
+          // position: absolute;
+          // right: 50%;
+          // top: 50%;
+        }
+    
+        .green-line {
+          // z-index: 100;
+          // position: absolute;
+          // right: 0;
+          right: calc(50% - 400px);
+          top: calc(50% + 200px);
+          width: 100%;
+          height: 2px;
+          background-color: $primary1;
+        }
+        //  & .about-img {
+        //     // text-align: center;
+        //     margin-left: 59%;
+        // }
+        // & .green-line {
+        //     position: absolute;
+        //     right: 0;
+        //     width: calc(41% - 160px);
+        //     height: 2px;
+        //     background-color: $primary2;
+        // }
+       
+     }// 👈 verhindert horizontales Scrollen, ohne alles abzuschneiden
     .about-ctn {
       position: relative;
       padding: 30px;
@@ -55,21 +104,21 @@
         align-items: center;
         z-index: 20;
     
-        img.about-img {
-          width: 400px;
-          height: 400px;
-          aspect-ratio: 1 / 1;
-          object-fit: cover;
-          object-position: 0 -90px;
-          border-radius: 50%;
-          border: 2px solid $primary1; // Beispiel-Farbe für $primary1
-        }
+        // img.about-img {
+        //   width: 400px;
+        //   height: 400px;
+        //   aspect-ratio: 1 / 1;
+        //   object-fit: cover;
+        //   object-position: 0 -90px;
+        //   border-radius: 50%;
+        //   border: 2px solid $primary1; // Beispiel-Farbe für $primary1
+        // }
     
-        .green-line {
-          width: 100%;
-          height: 2px;
-          background-color: $primary1;
-        }
+        // .green-line {
+        //   width: 100%;
+        //   height: 2px;
+        //   background-color: $primary1;
+        // }
       }
   
       .shadow {
@@ -118,13 +167,13 @@
 @media(max-width: 1440px) {
     .about-ctn {
         // margin-top: -27% !important;
-        & .about-img-ctn {
-            & img {
-                width: 300px !important;
-                height: 300px !important;
-                object-position: 0 -60px !important;
-            }
-        }
+        // & .about-img-ctn {
+        //     & img {
+        //         width: 300px !important;
+        //         height: 300px !important;
+        //         object-position: 0 -60px !important;
+        //     }
+        // }
     }
 }
 
@@ -146,10 +195,11 @@
       .about-text-area {
         width: 100% !important;
     }
-    .about-img-ctn {
+ 
+  }
+     .image-ctn {
         display: none !important;
     }
-  }
 }
 
 @media(max-width: 900px) {

@@ -3,14 +3,43 @@
 .portfolio-wrapper {
     position: relative;
     overflow-x: clip;
+     & .title-line {
+        margin-top: 70px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-top: 100px;
+        & .line-left {
+            position: absolute;
+            left: calc(40% - 150px);
+            // top: 40px;
+            width: 10%;
+            height: 2px;
+            background-color: $primary2;
+        }
+        & h1 {
+            text-align: center;
+            margin: 0 auto;
+        }
+        & .line-right {
+            position: absolute;
+            right: 0;
+            // top: 40px;
+            width: calc(50% - 150px);
+            height: 2px;
+            background-color: $primary2;
+        }
+    }
 }
 
 .shadow {
     position: absolute;
     width: 70%;
+    max-width: 1000px;
     height: auto;
-    left: -20%;
-    top: 20%;
+    max-height: 1000px;
+    left: 10%;
+    bottom: 30%;
     z-index: 10;
     pointer-events: none;
     opacity: 0;
@@ -21,9 +50,11 @@
   .shadow-two {
     position: absolute;
     width: 70%;
+    max-width: 1000px;
     height: auto;
-    right: -20%;
-    top: 60%;
+    max-height: 1000px;
+    right: 0;
+    bottom: 0;
     // transform: rotate(-40deg);
     z-index: 10;
     pointer-events: none;
@@ -35,15 +66,15 @@
   @keyframes fadeInFloat {
     0% {
       opacity: 0;
-      transform: translateY(20px) rotate(-40deg);
+    //   transform: translateY(20px) rotate(-40deg);
     }
     50% {
       opacity: 0.5;
-      transform: translateY(10px) rotate(-40deg);
+    //   transform: translateY(10px) rotate(-40deg);
     }
     100% {
       opacity: 1;
-      transform: translateY(0) rotate(-40deg);
+    //   transform: translateY(0) rotate(-40deg);
     }
   }
 
@@ -53,27 +84,27 @@
     padding: 70px 50px 0 50px;
     margin: 0 auto;
     text-align: center;
-    & .portfolio-title {
-        display: flex;
-        gap: 20px;
-        align-items: center;
-        justify-content: right;
-        margin-bottom: 20px;
-        & .line-left {
-            width: 50px;
-            height: 2px;
-            background-color: $primary2;
-        }
-        & h1 {
-            // font-size: clamp(1.875rem, 1.1993rem + 3.3784vw, 5rem);
-            display: inline;
-        }
-        & .line-right {
-            width: 40%;
-            height: 2px;
-            background-color: $primary2;
-        }
-    }
+    // & .portfolio-title {
+    //     display: flex;
+    //     gap: 20px;
+    //     align-items: center;
+    //     justify-content: right;
+    //     margin-bottom: 20px;
+    //     & .line-left {
+    //         width: 50px;
+    //         height: 2px;
+    //         background-color: $primary2;
+    //     }
+    //     & h1 {
+    //         // font-size: clamp(1.875rem, 1.1993rem + 3.3784vw, 5rem);
+    //         display: inline;
+    //     }
+    //     & .line-right {
+    //         width: 40%;
+    //         height: 2px;
+    //         background-color: $primary2;
+    //     }
+    // }
     & .portfolio-projects {
         // display: flex;
         // flex-direction: column;
@@ -268,6 +299,21 @@ height: auto;
 
   
 @media(max-width: 1100px) {
+    .title-line {
+        padding-top: 50px !important;
+        & .line-left {
+            left: 25% !important;
+            // top: 35px !important;
+            width: 10% !important;
+        }
+        & h1 {
+            // text-align: center;
+        }
+        & .line-right {
+            // top: 35px !important;
+            width: 35% !important;
+        }
+    }
     .portfolio-projects {
         margin-top: 70px !important;
     }
@@ -304,6 +350,17 @@ height: auto;
 }
 
 @media(max-width: 750px) {
+     .title-line {
+        & .line-left {
+            left: 20% !important;
+            // top: 30px !important;
+            width: 10% !important;
+        }
+        & .line-right {
+            // top: 30px !important;
+            width: 32% !important;
+        }
+    }
     .button-line {
         scale: 0.9 !important;
         gap: 40px !important;
@@ -311,6 +368,17 @@ height: auto;
 }
 
 @media(max-width: 500px) {
+    .title-line {
+        & .line-left {
+            left: 18% !important;
+            // top: 27px !important;
+            width: 10% !important;
+        }
+        & .line-right {
+            // top: 27px !important;
+            width: 28% !important;
+        }
+    }
     .button-line {
         scale: 0.8 !important;
         gap: 30px !important;

@@ -1,9 +1,10 @@
 <div class="contact-wrapper"  id="contact" >
+    <div class="title-line">
+        <div class="purple-line"></div>
+        <h1 class="title-fontsize"> {{ 'CONTACT.TITLE' | translate }} </h1>
+    </div>
     <div class="contact-ctn">
-        <div class="title-line">
-            <div class="purple-line"></div>
-            <h1 class="title-fontsize"> {{ 'CONTACT.TITLE' | translate }} </h1>
-        </div>
+       
         <div class="form-intro-ctn">
             <div class="intro">
                 <p class="question"> {{ 'CONTACT.INTRO.FIRST' | translate }} </p>
@@ -57,7 +58,11 @@
                         <div class="checkbox" (click)="toggleCheckbox()">
                             <span [ngClass]="checkboxChecked ? 'checkbox-ok' : ''">✓</span>
                         </div>
-                        <p> {{ 'CONTACT.PRIVACY' | translate }} </p>
+                        <p class="privacy-accept">
+                            {{ 'CONTACT.PRIVACY_PART1' | translate }}
+                            <a class="highlight" [routerLink]="['/privacy-policy']">{{ 'CONTACT.PRIVACY_LINK' | translate }}</a>
+                            {{ 'CONTACT.PRIVACY_PART2' | translate }}
+                          </p>
                     </div>
                     <p class="error-checkbox" [ngClass]="!checkboxChecked ? 'checkbox-not-ok' : ''"> {{ 'CONTACT.PRIVACY-ERROR' | translate }} </p>
                     <button

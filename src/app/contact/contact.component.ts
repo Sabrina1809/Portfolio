@@ -2,12 +2,13 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [TranslateModule, CommonModule, FormsModule],
+  imports: [TranslateModule, CommonModule, FormsModule, RouterModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -54,9 +55,10 @@ export class ContactComponent {
      
       console.log('mail gesendet');
       this.showThankYou = true; // Zeige Nachricht
-      this.checkboxChecked = false; // Checkbox zurücksetzen
+    
       setTimeout(() => {
         this.showThankYou = false; // Nach 5s wieder ausblenden
+        this.checkboxChecked = false; // Checkbox zurücksetzen
         ngForm.resetForm();
       }, 5000);
     }

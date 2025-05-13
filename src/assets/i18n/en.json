@@ -60,10 +60,80 @@
         "MESSAGE-PLACEHOLDER": "Your message",
         "MESAGE-ERROR" : "At least 10 characters."
       }, 
-      "PRIVACY" : "I've read the privacy policy ans agree to the processing of my data as outlined.",
+      "PRIVACY_PART1": "I've read the",
+      "PRIVACY_LINK": "privacy policy",
+      "PRIVACY_PART2": "and agree to the processing of my data as outlined.",
       "PRIVACY-ERROR" : "Please accept the privacy policy.",
-      "SEND" : "Send message :)"
-    }
+      "SEND" : "Send message :)",
+      "THANK-YOU" : "Thank you for your message."
+    },
+    "PRIVACY": {
+    "TITLE": "Privacy Policy",
 
-  }
+    "GENERAL": {
+      "TITLE": "1. General Information",
+      "TEXT": "The protection of your personal data is of particular concern to me. I treat your personal data confidentially and in accordance with the legal data protection regulations as well as this privacy policy."
+    },
+
+    "CONTROLLER": {
+      "TITLE": "2. Responsible Party",
+      "TEXT-NAME": "Sabrina Fritz",
+      "TEXT-STREET": "Mühlmatt 54",
+      "TEXT-CITY": "77723 Gengenbach",
+      "TEXT-MAIL": "E-Mail: kontakt@deine-domain.de"
+    },
+
+    "FORMDATA": {
+      "TITLE": "3. Collection and Storage of Personal Data when Using the Contact Form",
+      "INTRO": "When you send me a message via the contact form, the following data is collected:",
+      "LIST": [
+        "Name",
+        "Email address",
+        "Content of the message"
+      ],
+      "NOTE": "This data is stored solely for the purpose of processing your request and for possible follow-up inquiries. No transfer to third parties takes place."
+    },
+
+    "LEGALBASIS": {
+      "TITLE": "4. Legal Basis",
+      "TEXT": "The processing of the entered data takes place in accordance with Art. 6 para. 1 lit. a GDPR (consent) and Art. 6 para. 1 lit. b GDPR (pre-contractual measures)."
+    },
+
+    "STORAGE": {
+      "TITLE": "5. Storage Duration",
+      "TEXT": "Your data will be deleted as soon as it is no longer required for processing your request and no legal retention periods apply."
+    },
+    
+    "RIGHTS": {
+      "TITLE": "6. Your Rights",
+      "TEXT": "You have the right to:",
+      "LIST": [
+        "Access your stored data (Art. 15 GDPR)",
+        "Correct inaccurate data (Art. 16 GDPR)",
+        "Delete your data (Art. 17 GDPR)",
+        "Limit processing (Art. 18 GDPR)",
+        "Data portability (Art. 20 GDPR)",
+        "Object to processing (Art. 21 GDPR)",
+        "Withdraw your consent (Art. 7 para. 3 GDPR)"
+      ],
+      "NOTE": "In addition, you have the right to file a complaint with a supervisory authority (Art. 77 GDPR)."
+    },
+
+    "SSL": {
+      "TITLE": "7. SSL/TLS Encryption",
+      "TEXT": "This website uses SSL encryption for security reasons and to protect the transmission of confidential content. You can recognize an encrypted connection by the 'https://' in the browser's address bar."
+    },
+
+    "HOSTING": {
+      "TITLE": "8. Hosting",
+      "TEXT": "The website is hosted by an external service provider (e.g., Netlify, GitHub Pages, Vercel, IONOS, etc.). During this process, technical data (e.g., IP address, time of page access) may be processed. This processing takes place on the basis of a legitimate interest pursuant to Art. 6 para. 1 lit. f GDPR."
+    },
+
+    "CONTACT": {
+      "TITLE": "9. Contact",
+      "TEXT": "If you have any questions regarding data protection, feel free to contact me at any time:\nE-mail: contact@your-domain.com"
+    }
+  },
+  "LEGAL-NOTICE" : "Impressum"
+}
   

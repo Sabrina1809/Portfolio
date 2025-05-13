@@ -1,25 +1,32 @@
 @import '../../styles.scss'; 
 
 .contact-wrapper {
+    // border: 1px solid orange;
     position: relative;
     overflow-x: clip;
+    & .title-line {
+        position: relative;
+        display: flex;
+        align-items: center;
+        & .purple-line {
+            position: absolute;
+            // top: 40px;
+            width: 30%;
+            height: 2px;
+            background-color: $primary2;
+        }
+        & h1 {
+            margin-left: 32%;
+        }
+    }
+    
     & .contact-ctn {
         width: 100%;
         max-width: 1440px;
         position: relative;
         padding: 30px;
         margin: 0 auto;
-        & .title-line {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            margin-bottom: 20px;
-            & .purple-line {
-                width: 30%;
-                height: 2px;
-                background-color: $primary2;
-            }
-        }
+     
         & .form-intro-ctn {
             display: flex;
             gap: 10%;
@@ -106,13 +113,23 @@
                                 cursor: pointer;
                             }
                         }
+                        .privacy-accept {
+                            .highlight {
+                              color: $primary1;
+                              cursor: pointer;
+                              text-decoration: none;
+                            }
+                        }
+                        ::ng-deep .privacy-accept .highlight:hover {
+                        text-decoration: underline;
+                        cursor: pointer;
+                        } 
                     }
                     & .error-checkbox {
                         visibility: hidden;
                         opacity: 0;
                         color: #E61C40;
                         transition: all 0.125s ease-in-out; 
-
                     }
                     & .btn-send-message {
                         padding: 10px 20px;
@@ -224,6 +241,21 @@
 }
 
 @media (max-width: 1100px) {
+    .title-line {
+        & .purple-line {
+            // top: 30px !important;
+            width: 37% !important;
+            // height: 2px;
+            // background-color: $primary2;
+        }
+        & h1 {
+            margin: 0 auto !important;
+            text-align: center;
+            // position: absolute;
+            // left: 50%;
+            // transform: translate(-50%);
+        }
+    }
     .form-intro-ctn {
         flex-direction: column !important;
         justify-content: center !important;
@@ -236,6 +268,43 @@
         }
         & .form-ctn {
             width: 80% !important;
+        }
+    }
+    .shadow {
+        bottom: -10% !important;
+        max-height: 500px !important;
+    }
+}
+
+@media (max-width: 700px) {
+        .title-line {
+        & .purple-line {
+            top: 28px !important;
+            width: 32% !important;
+        }
+    }
+}
+
+@media(max-width: 550px) {
+    .shadow {
+        bottom: 0% !important;
+    }
+}
+
+@media (max-width: 500px) {
+        .title-line {
+        & .purple-line {
+            top: 24px !important;
+            width: 30% !important;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+        .title-line {
+        & .purple-line {
+            // top: 24px !important;
+            width: 27% !important;
         }
     }
 }

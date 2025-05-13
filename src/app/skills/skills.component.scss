@@ -3,6 +3,24 @@
 .skills-wrapper {
     position: relative;
     overflow-x: clip;
+     & .title-line {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-bottom: -130px;
+        margin-top: 70px;
+        & .purple-line {
+            position: absolute;
+            right: 0;
+            width: calc(41% - 160px);
+            height: 2px;
+            background-color: $primary2;
+        }
+        & h1 {
+            // text-align: center;
+            margin-left: 59%;
+        }
+     }
 }
 
 .shadow {
@@ -46,24 +64,26 @@
         padding-left: 53%;
         position: absolute;
         right: 0;
+        height: 100px;
         z-index: 13;
-        & .skills-title-ctn {
-            display: flex;
-            width: 100%;
-            align-items: center;
-            justify-content: right;
-            gap: 20px;
-            z-index: 50;
-            margin-bottom: 20px;
-            & .skills-title {
-                // font-size: clamp(1.875rem, 1.1993rem + 3.3784vw, 5rem) !important;
-            }
-            & .purple-line {
-                width: 100px;
-                height: 2px;
-                background-color: $primary2;
-            }
-        }
+        top: 100px;
+        // & .skills-title-ctn {
+        //     display: flex;
+        //     width: 100%;
+        //     align-items: center;
+        //     justify-content: right;
+        //     gap: 20px;
+        //     z-index: 50;
+        //     margin-bottom: 20px;
+        //     & .skills-title {
+        //         // font-size: clamp(1.875rem, 1.1993rem + 3.3784vw, 5rem) !important;
+        //     }
+        //     & .purple-line {
+        //         width: 100px;
+        //         height: 2px;
+        //         background-color: $primary2;
+        //     }
+        // }
         & p {
             margin-bottom: 20px;
         }
@@ -162,7 +182,29 @@
     opacity: 1;
     transform: translateY(0);
   }
-  
+ 
+@media (max-width: 1600px) {
+    .purple-line {
+        // width: 27% !important;
+    }
+        h1 {
+        // text-align: center;
+        // margin-left: 60% !important;
+    }
+}
+
+@media (max-width: 1100px) {
+    .purple-line {
+        width: calc(50% - 90px) !important;
+    }
+        h1 {
+        // text-align: center;
+        margin: 0 auto !important;
+    }
+    .part-two {
+        margin-top: 100px !important;
+    }
+}
   
 @media(max-width: 900px) {
     .part-one {
@@ -183,6 +225,9 @@
 } 
 
 @media(max-width: 660px) {
+      .purple-line {
+        width: calc(50% - 80px) !important;
+    }
     .skills-icons {
         // justify-content: center !important;
     }

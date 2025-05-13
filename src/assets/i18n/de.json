@@ -60,9 +60,80 @@
         "MESSAGE-PLACEHOLDER": "Deine Nachricht",
         "MESSAGE-ERROR" : "Mindestens 10 Zeichen."
       }, 
-      "PRIVACY" : "Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Daten wie darin beschrieben zu.",
+      "PRIVACY_PART1": "Ich habe die",
+      "PRIVACY_LINK": "Datenschutzerklärung",
+      "PRIVACY_PART2": "gelesen und stimme der Verarbeitung meiner Daten wie darin beschrieben zu.",
       "PRIVACY-ERROR" : "Bitte akzeptiere die Datenschutzbedingungen.",
-      "SEND" : "Nachricht senden :)"
-    }
+      "SEND" : "Nachricht senden :)",
+      "THANK-YOU" : "Vielen Dank für deine Nachricht."
+    },
+    "PRIVACY": {
+      "TITLE": "Datenschutzerklärung",
+  
+      "GENERAL": {
+        "TITLE": "1. Allgemeine Hinweise",
+        "TEXT": "Der Schutz deiner persönlichen Daten ist mir ein besonderes Anliegen. Ich behandle deine personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung."
+      },
+  
+      "CONTROLLER": {
+        "TITLE": "2. Verantwortliche Stelle",
+        "TEXT-NAME": "Sabrina Fritz",
+        "TEXT-STREET": "Mühlmatt 54",
+        "TEXT-CITY": "77723 Gengenbach",
+        "TEXT-MAIL": "E-Mail: kontakt@deine-domain.de"
+      },
+  
+      "FORMDATA": {
+        "TITLE": "3. Erhebung und Speicherung personenbezogener Daten bei Nutzung des Kontaktformulars",
+        "INTRO": "Wenn du mir über das Kontaktformular eine Nachricht schreibst, werden folgende Daten erhoben:",
+        "LIST": [
+          "Name",
+          "E-Mail-Adresse",
+          "Inhalt der Nachricht"
+        ],
+        "NOTE": "Diese Daten werden ausschließlich zum Zweck der Bearbeitung deiner Anfrage und für mögliche Anschlussfragen gespeichert. Eine Weitergabe an Dritte erfolgt nicht."
+      },
+  
+      "LEGALBASIS": {
+        "TITLE": "4. Rechtsgrundlage",
+        "TEXT": "Die Verarbeitung der eingegebenen Daten erfolgt gemäß Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) und Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen)."
+      },
+  
+      "STORAGE": {
+        "TITLE": "5. Speicherdauer",
+        "TEXT": "Deine Daten werden gelöscht, sobald sie für die Bearbeitung deiner Anfrage nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungsfristen bestehen."
+      },
+  
+      "RIGHTS": {
+        "TITLE": "6. Deine Rechte",
+        "TEXT": "Du hast jederzeit das Recht auf:",
+        "LIST": [
+          "Auskunft über deine gespeicherten Daten (Art. 15 DSGVO)",
+          "Berichtigung unrichtiger Daten (Art. 16 DSGVO)",
+          "Löschung deiner Daten (Art. 17 DSGVO)",
+          "Einschränkung der Verarbeitung (Art. 18 DSGVO)",
+          "Datenübertragbarkeit (Art. 20 DSGVO)",
+          "Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)",
+          "Widerruf deiner Einwilligung (Art. 7 Abs. 3 DSGVO)"
+        ],
+        "NOTE": "Zudem steht dir ein Beschwerderecht bei einer Aufsichtsbehörde zu (Art. 77 DSGVO)."
+      },
+  
+      "SSL": {
+        "TITLE": "7. SSL- bzw. TLS-Verschlüsselung",
+        "TEXT": "Diese Website nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte eine SSL-Verschlüsselung. Du erkennst eine verschlüsselte Verbindung an der Adresszeile deines Browsers (\"https://\")."
+      },
+  
+      "HOSTING": {
+        "TITLE": "8. Hosting",
+        "TEXT": "Die Website wird bei einem externen Dienstleister gehostet (z. B. Netlify, GitHub Pages, Vercel, IONOS o. ä.). Dabei können technische Daten (z. B. IP-Adresse, Zeitpunkt des Seitenaufrufs) verarbeitet werden. Diese Verarbeitung erfolgt auf Grundlage eines berechtigten Interesses gemäß Art. 6 Abs. 1 lit. f DSGVO."
+      },
+  
+      "CONTACT": {
+        "TITLE": "9. Kontakt",
+        "TEXT": "Bei Fragen zum Datenschutz kannst du dich jederzeit an mich wenden:\nE-Mail: kontakt@deine-domain.de"
+      }
+    },
+    "LEGAL-NOTICE" : "Impressum"
   }
   

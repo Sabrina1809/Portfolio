@@ -1,0 +1,51 @@
+<section class="privacy-policy">
+    <h1>{{ 'PRIVACY.TITLE' | translate }}</h1>
+  
+    <!-- 1. Allgemeine Hinweise -->
+    <h2>{{ 'PRIVACY.GENERAL.TITLE' | translate }}</h2>
+    <p>{{ 'PRIVACY.GENERAL.TEXT' | translate }}</p>
+  
+    <!-- 2. Verantwortliche Stelle -->
+    <h2>{{ 'PRIVACY.CONTROLLER.TITLE' | translate }}</h2>
+    <p>{{ 'PRIVACY.CONTROLLER.TEXT-NAME' | translate }}</p>
+    <p>{{ 'PRIVACY.CONTROLLER.TEXT-STREET' | translate }}</p>
+    <p>{{ 'PRIVACY.CONTROLLER.TEXT-CITY' | translate }}</p>
+    <p>{{ 'PRIVACY.CONTROLLER.TEXT-MAIL' | translate }}</p>
+  
+    <!-- 3. Kontaktformular -->
+    <h2>{{ 'PRIVACY.FORMDATA.TITLE' | translate }}</h2>
+    <p>{{ 'PRIVACY.FORMDATA.INTRO' | translate }}</p>
+    <ul>
+      <li *ngFor="let item of ('PRIVACY.FORMDATA.LIST' | translate)">{{ item }}</li>
+    </ul>
+    <p>{{ 'PRIVACY.FORMDATA.NOTE' | translate }}</p>
+  
+    <!-- 4. Rechtsgrundlage -->
+    <h2>{{ 'PRIVACY.LEGALBASIS.TITLE' | translate }}</h2>
+    <p>{{ 'PRIVACY.LEGALBASIS.TEXT' | translate }}</p>
+  
+    <!-- 5. Speicherdauer -->
+    <h2>{{ 'PRIVACY.STORAGE.TITLE' | translate }}</h2>
+    <p>{{ 'PRIVACY.STORAGE.TEXT' | translate }}</p>
+  
+    <!-- 6. Rechte -->
+    <h2>{{ 'PRIVACY.RIGHTS.TITLE' | translate }}</h2>
+    <p>{{ 'PRIVACY.RIGHTS.TEXT' | translate }}</p>
+    <ul>
+      <li *ngFor="let right of ('PRIVACY.RIGHTS.LIST' | translate)">{{ right }}</li>
+    </ul>
+    <p>{{ 'PRIVACY.RIGHTS.NOTE' | translate }}</p>
+  
+    <!-- 7. SSL-Verschlüsselung -->
+    <h2>{{ 'PRIVACY.SSL.TITLE' | translate }}</h2>
+    <p>{{ 'PRIVACY.SSL.TEXT' | translate }}</p>
+  
+    <!-- 8. Hosting -->
+    <h2>{{ 'PRIVACY.HOSTING.TITLE' | translate }}</h2>
+    <p>{{ 'PRIVACY.HOSTING.TEXT' | translate }}</p>
+  
+    <!-- 9. Kontakt -->
+    <h2>{{ 'PRIVACY.CONTACT.TITLE' | translate }}</h2>
+    <p>{{ 'PRIVACY.CONTACT.TEXT' | translate }}</p>
+  </section>
+<app-footer></app-footer>
