@@ -12,5 +12,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './legal-notice.component.scss'
 })
 export class LegalNoticeComponent {
-
+  goBack(): void {
+  window.history.back();
+}
 }

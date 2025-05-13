@@ -159,7 +159,48 @@
             }
         }
     }
+   .arrow-up {
+        width: 35px;
+        height: 35px;
+        aspect-ratio: 1 / 1;
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        border-radius: 50%;
+        border: 2px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.125s ease-in-out;
+        z-index: 90;
+  img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .arrow-green {
+    display: none;
+  }
+
+  .arrow-white {
+    display: flex;
+  }
+
+  &:hover {
+    cursor: pointer;
+    border: 2px solid $primary1;
+    .arrow-green {
+      display: flex;
+    }
+
+    .arrow-white {
+      display: none;
+    }
+  }
 }
+
+}
+
 
 .thank-you-visible {
     animation: show-message 6s ease-in-out;

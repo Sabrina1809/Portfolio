@@ -71,5 +71,7 @@ export class ContactComponent {
     this.checkboxChecked = !this.checkboxChecked;
   }
 
-
+  scrollToTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }
