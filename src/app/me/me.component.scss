@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: flex-start;
     box-sizing: border-box;
-    margin-top: 70px;
+    margin-top: 120px;
     .profil-big {
       position: absolute;
       // margin-top: -100px;
@@ -306,16 +306,16 @@
 
   @media(max-width: 1100px) {
     .bg-curve {
-        margin-top: 22% !important;
+        margin-top: 40% !important;
     }
     .profil-big {
-        width: 60% !important;
+        width: 75% !important;
         left: 50% !important;
         translate: -50% !important;
         top: -6% !important;
     }
     .me-text-area {
-        bottom: 25% !important;
+        bottom: 17% !important;
         margin: 0 auto !important;
         left: 50% !important;
         translate: -50% !important;
@@ -325,23 +325,26 @@
       scale: 0.8 !important;
     }
     .social-ctn {
-      bottom: 18% !important;
+      bottom: 5% !important;
     }
     .social-links {
-      bottom: 13% !important;
+      bottom: 0% !important;
     }
     .purple-line {
       width: calc(50% - 80px) !important;
     }
   }
 
-  @media(max-width: 900px) {
+  @media(max-width: 930px) {
+       .bg-curve {
+        margin-top: 33% !important;
+    }
     .me-text {
       scale: 0.75 !important;
       margin-left: -5% !important;
     }
     .me-text-area {
-      bottom: 20% !important;
+      bottom: 14% !important;
     }
     .social-ctn {
       bottom: 10% !important;
@@ -350,7 +353,7 @@
       display: none !important;
     }
       .social-links {
-      bottom: 8% !important;
+      bottom: 4% !important;
     }
   }
 
@@ -360,42 +363,46 @@
       margin-left: -7% !important;
     }
     .me-text-area {
-      bottom: 17% !important;
+      // bottom: 17% !important;
     }
     .social-ctn {
-      bottom: 5% !important;
+      // bottom: 5% !important;
     }
         .social-links {
-      bottom: 5% !important;
+      // bottom: 5% !important;
     }
   }
 
-  @media(max-width: 550px) {
+  @media(max-width: 600px) {
     .me-text-area {
       scale: 0.9 !important;
-      bottom: 11% !important;
+      bottom: 8% !important;
       max-width: 300px !important;
       margin-left: -10%;
     }
     .social-ctn {
       bottom: 0% !important;
     }
-          .social-links {
+    .social-links {
       bottom: -3% !important;
     }
   }
 
-  @media(max-width: 400px) {
+  @media(max-width: 450px) {
+      .profil-big {
+        width: 80% !important;
+        top: -10% !important;
+    }
     .me-text {
       scale: 0.65 !important;
     }
     .me-text-area {
-      bottom: 2% !important;
+      bottom: -0% !important;
     }
     .social-ctn {
       bottom: -12% !important;
     }
     .social-links {
-      bottom: -10% !important;
+      bottom: -15% !important;
     }
   }

@@ -191,7 +191,8 @@
 
 @media(max-width: 1100px) {
   .about-ctn {
-      margin-top: -10% !important;
+      margin-top: 5% !important;
+      padding: 30px 70px !important;
       .about-text-area {
         width: 100% !important;
     }
@@ -203,9 +204,10 @@
 }
 
 @media(max-width: 900px) {
-    .about-ctn {
-        margin-top: -5% !important;
-    }
+
+     .about-ctn {
+      padding: 30px 50px !important;
+     }
 }
 
 @media(max-width: 750px) {
@@ -219,9 +221,16 @@
 
 @media(max-width: 550px) {
     .about-ctn {
-      margin-top: 5% !important;
+      margin-top: 10% !important;
+       padding: 30px !important;
     }
     .shadow {
       // top: -10% !important;
+    }
+}
+
+@media(max-width: 450px) {
+    .about-ctn {
+      margin-top: 20% !important;
     }
 }

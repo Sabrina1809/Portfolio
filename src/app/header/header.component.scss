@@ -82,14 +82,15 @@
     .header-mobile {
         display: none;
         width: 100%;
-        height: 50px;
+        // height: 50px;
+        // height: 100px;
         margin: 0 30px;
         justify-content: space-between;
         align-items: center;
         img {
             width: 150px;
-            margin-top: -10px;
-            margin-bottom: -25px;
+            // margin-top: -10px;
+            // margin-bottom: -25px;
             clip-path: inset(28% 0 40% 0);
             z-index: 30;
             &:hover {
@@ -100,6 +101,7 @@
             display: flex;
             gap: 3px;
             rotate: 90deg;
+            margin-top: -15px;
             & .burger-line {
                 font-size: larger;
             }
@@ -109,8 +111,8 @@
         }
         .burger-close {
             position: fixed;
-            top: 25px;
-            right: 45px;
+            top: 45px;
+            right: 50px;
             display: flex;
             z-index: 30;
             & .burger-line {
@@ -223,28 +225,40 @@
     }
     .header-mobile {
         display: flex !important;
-        & img {
-            width: 120px !important;
-            margin-top: 0px !important;
-          }
-          & .burger-line {
-            font-size: 20px !important;
-          }
+        margin: 0px 50px !important;
     }
     .nav-mobile {
         display: flex !important;
     }
-    .burger-open {
-        margin-top: 18px !important;
-    }
-    .burger-close {
-        top: 18px !important;
-    }
-
 }
 
 @media(max-width: 600px) {
+     .header-mobile {
+        img {
+            width: 100px !important;
+        }
+        .burger-open {
+            margin-top: -5px !important;
+            & .burger-line {
+                font-size: smaller !important;
+            }
+        }
+        .burger-close {
+            & .burger-line {
+                font-size: smaller !important;
+            }
+            & .line-one {
+                rotate: 45deg !important;
+            }
+            & .line-two {
+                rotate: -45deg !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
     .header-mobile {
-       
-      }
+        margin: 0px 30px !important;
+    }
 }
