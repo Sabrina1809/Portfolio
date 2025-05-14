@@ -55,7 +55,7 @@
 .skills-ctn {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     margin: 70px auto 70px auto;
     max-width: 1440px;
     text-align: right;
@@ -64,7 +64,7 @@
     & .part-one {
         padding-left: 53%;
         position: absolute;
-        right: 0;
+        right: 30px;
         height: 100px;
         z-index: 13;
         top: 100px;
@@ -119,11 +119,12 @@
     & .part-two {
         width: 50%;
         z-index: 13;
+        padding-left: 30px;
     }
     & .part-three {
         position: absolute;
         top: 170px;
-        right: 0;
+        right: 30px;
         display: flex;
         align-items: end;
         flex-direction: column;
@@ -135,7 +136,7 @@
             margin-bottom: 20px;
         }
         & .skills-contact-btn {
-            margin-top: 20px;
+            margin-top: 30px;
             text-decoration: none;
             padding: 10px 15px;
             background-color: $primary1;
@@ -204,22 +205,34 @@
     }
     .part-two {
         margin-top: 100px !important;
+        padding-left: 50px !important;
+    }
+    .part-one {
+        right: 50px !important;
+    }
+
+    .part-three {
+        right: 50px !important;
     }
 }
   
 @media(max-width: 900px) {
     .part-one {
-        padding-left: 0% !important;
+        right: 0 !important;
+        padding: 0 50px !important;
         position: relative !important;
     }
     .part-two {
         width: 100% !important;
+        padding: 0 50px !important;
+        margin-bottom: 20px;
     }
     .skills-icons {
         justify-content: right !important;
     }
     .part-three {
-        padding-left: 0% !important;
+        right: 0 !important;
+          padding: 0 50px !important;
         position: relative !important;
         top: unset !important;
     }
@@ -233,6 +246,27 @@
         // justify-content: center !important;
     }
     .skills-contact-btn {
-        margin: 20px auto 0 auto !important;
+        margin: 40px auto 0 auto !important;
+    }
+}
+
+@media (max-width: 550px) {
+    .part-one {
+        padding: 0 30px !important;
+    }
+     .part-two {
+        padding: 0 30px !important;
+    }
+    .part-three {
+        padding: 0 30px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .part-one {
+        height: 120px !important;
+    }
+    .part-two {
+        gap: 2px !important;
     }
 }

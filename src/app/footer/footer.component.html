@@ -3,7 +3,7 @@
         <!-- <a href="#top"><img src="assets/img/logo-sabrina3.png" alt="Logo"></a> -->
         <div class="logo-ctn">
             <img src="assets/img/logo-sabrina3.png" alt="Logo">
-             <a [routerLink]="['/legal-notice']">{{ 'LEGAL-NOTICE' | translate }}</a>
+             <a class="legal-link" [routerLink]="['/legal-notice']" (click)="scrollToTop()">{{ 'LEGAL-NOTICE' | translate }}</a>
         </div>
         <p>© Sabrina Fritz 2025</p>
         <div class="social-links">
@@ -16,10 +16,17 @@
         <img class="logo-footer" src="assets/img/logo-sabrina3.png" alt="Logo">
         <p class="footer-name">© Sabrina Fritz 2025</p>
         <div class="social-links">
-            <img src="assets/img/social/github.png" alt="">
-            <img src="assets/img/social/mail.png" alt="">
-            <img src="assets/img/social/linkedin.png" alt="">
+            <a href="https://github.com/Sabrina1809" target="_blank">     
+                <img src="assets/img/social/github.png" alt="github logo">
+            </a>
+            <a href="mailto:Sabrina_Fritz@gmx.net">        
+                <img src="assets/img/social/mail.png" alt="mail">
+            </a>
+            <a href="https://www.linkedin.com/in/sabrina-fritz-1b4281337/" target="_blank">  
+                <img src="assets/img/social/linkedin.png" alt="linkedin logo">
+            </a>
+          
         </div>
-        <a [routerLink]="['/legal-notice']">{{ 'LEGAL-NOTICE' | translate }}</a>
+        <a class="legal-link" [routerLink]="['/legal-notice']" (click)="scrollToTop()">{{ 'LEGAL-NOTICE' | translate }}</a>
     </div>
 </footer>

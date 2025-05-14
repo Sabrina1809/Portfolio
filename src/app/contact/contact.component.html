@@ -60,11 +60,23 @@
                         </div>
                         <p class="privacy-accept">
                             {{ 'CONTACT.PRIVACY_PART1' | translate }}
-                            <a class="highlight" [routerLink]="['/privacy-policy']">{{ 'CONTACT.PRIVACY_LINK' | translate }}</a>
+                            <a class="highlight" [routerLink]="['/privacy-policy/']" (click)="scrollToTop()" fragment="top">{{ 'CONTACT.PRIVACY_LINK' | translate }}</a>
                             {{ 'CONTACT.PRIVACY_PART2' | translate }}
                           </p>
                     </div>
-                    <p class="error-checkbox" [ngClass]="!checkboxChecked ? 'checkbox-not-ok' : ''"> {{ 'CONTACT.PRIVACY-ERROR' | translate }} </p>
+                    <!-- <p class="error-checkbox" [ngClass]="!checkboxChecked ? 'checkbox-not-ok' : ''"> {{ 'CONTACT.PRIVACY-ERROR' | translate }} </p> -->
+                    <!-- <p class="error-checkbox"
+                    *ngIf="contactForm.valid && !checkboxChecked"
+                    [ngClass]="'checkbox-not-ok'">
+                    {{ 'CONTACT.PRIVACY-ERROR' | translate }}
+                    </p> -->
+<p class="error-checkbox"
+   [ngClass]="{
+     'checkbox-not-ok': contactForm.valid && !checkboxChecked,
+     'invisible': !contactForm.valid || checkboxChecked
+   }">
+   {{ 'CONTACT.PRIVACY-ERROR' | translate }}
+</p>
                     <button
                     class="btn-send-message"
                     type="submit"

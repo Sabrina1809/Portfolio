@@ -31,4 +31,8 @@ export class HeaderComponent {
   closeMenu() {
     this.menuOpen = false;
   }
+
+    scrollToTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }

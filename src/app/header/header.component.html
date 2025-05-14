@@ -1,6 +1,6 @@
 <header id="top" class="header">
   <div class="header-desktop">
-    <a href="#top"><img src="assets/img/logo-sabrina3.png" alt="Logo"></a>
+    <a href="#top"><img src="assets/img/logo-sabrina3.png" alt="Logo" (click)="scrollToTop()"></a>
     <!-- <img src="assets/img/logo-sabrina3.png" alt="Logo"> -->
     <div class="menu-desktop">
       <nav class="nav">
@@ -27,7 +27,7 @@
     </div>
   </div>
   <div class="header-mobile">
-      <img src="assets/img/logo-sabrina3.png" alt="Logo">
+      <img src="assets/img/logo-sabrina3.png" alt="Logo" (click)="scrollToTop()">
       <div class="burger-open" *ngIf="!menuOpen" (click)="openMenu()">
         <span class="burger-line line-one">|</span>
         <span class="burger-line line-two">|</span>
