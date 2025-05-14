@@ -58,7 +58,7 @@
             "EMAIL-PLACEHOLDER" : "Your email",
             "EMAIL-ERROR" : "Your email is required.",
             "MESSAGE-PLACEHOLDER": "Your message",
-            "MESAGE-ERROR" : "At least 10 characters."
+            "MESSAGE-ERROR" : "At least 10 characters."
         }, 
         "PRIVACY_PART1": "I've read the",
         "PRIVACY_LINK": "privacy policy",
