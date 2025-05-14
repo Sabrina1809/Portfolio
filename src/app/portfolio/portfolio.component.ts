@@ -2,6 +2,9 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit, AfterViewInit, ElementRef, ViewChildren, QueryList } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
+/**
+ * Represents a project in the portfolio.
+ */
 interface Project {
     title: string;
     skills: string[];
@@ -14,6 +17,9 @@ interface Project {
     visible?: boolean; // 
 }
 
+/**
+ * Component responsible for displaying the portfolio of projects.
+ */
 @Component({
     selector: 'app-portfolio',
     standalone: true,
@@ -21,6 +27,12 @@ interface Project {
     templateUrl: './portfolio.component.html',
     styleUrls: ['./portfolio.component.scss'],
 })
+
+/**
+ * Component that displays a portfolio of projects, each with a title, skills, images, and links to live versions and repositories.
+ * It handles fading between images, detecting when projects are visible in the viewport, and initializing the project data.
+ * The component also manages the dynamic display of project content as it enters the user's view.
+ */
 export class PortfolioComponent implements OnInit, AfterViewInit {
     @ViewChildren('projectElement', { read: ElementRef }) projectElements!: QueryList<ElementRef>;
     projects: Project[] = [
@@ -78,6 +90,9 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
         },
     ];
 
+    /**
+     * Initializes the component, sets initial states, and starts the image fade animation.
+     */
     ngOnInit(): void {
         this.projects.forEach((project, i) => {
             project.isFading = false;
@@ -86,25 +101,30 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
         });
     }
 
+    /**
+     * Initializes the intersection observer to detect visibility of projects.
+     */
     ngAfterViewInit(): void {
         const observer = new IntersectionObserver(
-        (entries) => {
-            entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const index = +entry.target.getAttribute('data-index')!;
-                this.projects[index].visible = true;
-            }
-            });
-        },
-        { threshold: 0.3 }
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        this.projects[+entry.target.getAttribute('data-index')!].visible = true;
+                    }
+                });
+            },
+            { threshold: 0.3 }
         );
-        const elements = document.querySelectorAll('.project-ctn');
-        elements.forEach((el, index) => {
+        document.querySelectorAll('.project-ctn').forEach((el, index) => {
             el.setAttribute('data-index', index.toString());
             observer.observe(el);
         });
     }
 
+    /**
+     * Fades to the next image in the project’s image array.
+     * @param index The index of the project to update.
+     */
     fadeToNextImage(index: number): void {
         const project = this.projects[index];
         project.isFading = true;

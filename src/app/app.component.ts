@@ -10,6 +10,11 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 
+/**
+ * The root component of the application.
+ * It sets up the main layout, imports necessary child components, and manages language switching.
+ * This component serves as the entry point of the app and contains the header, footer, and routing logic.
+ */
 @Component({
     selector: 'app-root',
     standalone: true,
@@ -18,14 +23,28 @@ import { FooterComponent } from './footer/footer.component';
     styleUrl: './app.component.scss'
 })
 
+/**
+ * The root component of the application that includes the main layout structure.
+ * It imports necessary modules and components like the header, footer, skills, portfolio, etc.
+ * The component also handles language switching functionality using the `ngx-translate` service.
+ */
 export class AppComponent {
     title = 'portfolio';
 
+    /**
+     * Initializes the `TranslateService` to manage language settings for the application.
+     * Adds languages ('de', 'en') and sets the default language to 'de'.
+     * @param translate The `TranslateService` instance for handling translations.
+     */
     constructor(private translate: TranslateService) {
-        translate.addLangs(['de', 'en']);   // verfügbare Sprachen
-        translate.setDefaultLang('de');     // Standardsprache
+        translate.addLangs(['de', 'en']);
+        translate.setDefaultLang('de');
     }
 
+    /**
+     * Switches the language of the application.
+     * @param lang The language code to switch to ('de' or 'en').
+     */
     switchLanguage(lang: string) {
         this.translate.use(lang);
     }

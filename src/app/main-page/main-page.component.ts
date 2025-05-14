@@ -13,6 +13,9 @@ import { FooterComponent } from '../footer/footer.component';
   templateUrl: './main-page.component.html',
   styleUrl: './main-page.component.scss'
 })
+/**
+ * MainPageComponent serves as the main container for the website, displaying various sections like Me, About, Skills, Portfolio, Contact, and Footer.
+ */
 export class MainPageComponent {
 
 }
