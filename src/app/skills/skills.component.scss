@@ -130,6 +130,10 @@
         flex-direction: column;
         padding-left: 53%;
         z-index: 13;
+        & a {
+            text-decoration: none;
+        }
+     
         & .skills-question {
             font-size: 24px;
             font-weight: bold;

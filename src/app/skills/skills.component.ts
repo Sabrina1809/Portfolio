@@ -12,17 +12,17 @@ import { CommonModule } from '@angular/common';
 export class SkillsComponent implements AfterViewInit {
 
   skills = [
-    { name: 'Angular', icon: 'assets/img/skills/angular.png' },
-    { name: 'Rest Api', icon: 'assets/img/skills/api.png' },
-    { name: 'CSS', icon: 'assets/img/skills/css.png' },
-    { name: 'Sass', icon: 'assets/img/skills/sass.png' },
-    { name: 'Firebase', icon: 'assets/img/skills/firebase.png' },
-    { name: 'Git', icon: 'assets/img/skills/git.png' },
     { name: 'HTML', icon: 'assets/img/skills/html.png' },
+    { name: 'CSS', icon: 'assets/img/skills/css.png' },
     { name: 'JavaScript', icon: 'assets/img/skills/javascript.png' },
+    { name: 'Rest Api', icon: 'assets/img/skills/api.png' },
+    { name: 'Firebase', icon: 'assets/img/skills/firebase.png' },
+    { name: 'Angular', icon: 'assets/img/skills/angular.png' },
+    { name: 'TypeScript', icon: 'assets/img/skills/typescript.png' },
+    { name: 'Sass', icon: 'assets/img/skills/sass.png' },
+    { name: 'Git', icon: 'assets/img/skills/git.png' },
     { name: 'Material Design', icon: 'assets/img/skills/material.png' },
-    { name: 'Scrum', icon: 'assets/img/skills/scrum.png' },
-    { name: 'TypeScript', icon: 'assets/img/skills/typescript.png' }
+    { name: 'Scrum', icon: 'assets/img/skills/scrum.png' }
   ];
 
   @ViewChildren('skillElement', { read: ElementRef })

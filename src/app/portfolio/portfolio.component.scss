@@ -373,13 +373,14 @@ height: auto;
     .shadow {
         bottom: 60% !important;
     }
-}
-
-@media (max-width: 550px) {
-    .portfolio-ctn {
-        padding: 70px 30px 0 30px !important;
+     .portfolio-ctn {
+        padding: 50px 30px 0 30px !important;
+        & .portfolio-projects {
+            margin-top: 50px !important;
+        }
     }
 }
+
 
 @media(max-width: 500px) {
     .title-line {

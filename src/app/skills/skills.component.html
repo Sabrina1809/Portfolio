@@ -5,10 +5,6 @@
     </div>
     <div class="skills-ctn">
         <div class="part-one">
-            <!-- <div class="skills-title-ctn">
-                <h1 class="skills-title title-fontsize">Skills</h1>
-                <div class="purple-line"></div>
-            </div> -->
             <p> {{ 'SKILLS.CURRENT' | translate}} </p>
         </div>
         <div class="skills-icons part-two">
@@ -24,7 +20,10 @@
         <div class="part-three">
             <p class="skills-question" [innerHTML]="'SKILLS.QUESTION' | translate"></p>
             <p> {{ 'SKILLS.LEARNING' | translate}} </p>
-            <div class="skills-contact-btn"> {{ 'SKILLS.CONTACT' | translate}} </div>
+            <a href="#contact">
+                <div class="skills-contact-btn"> {{ 'SKILLS.CONTACT' | translate}} </div>
+            </a>
+            
         </div>
         <img class="shadow" src="assets/img/background/shadow-green-skills.png" alt="" />
     </div>

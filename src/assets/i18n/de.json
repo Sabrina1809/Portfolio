@@ -134,6 +134,14 @@
         "TEXT": "Bei Fragen zum Datenschutz kannst du dich jederzeit an mich wenden:\nE-Mail: kontakt@deine-domain.de"
       }
     },
-    "LEGAL-NOTICE" : "Impressum"
+     "LEGAL-NOTICE" : "Impressum",
+       "LEGAL-PAGE" : {
+        "TITLE" : "Legal notice",
+        "HEADER-ONE" : "Angaben gemäß § 5 TMG:",
+        "PHONE" : "Telefon",
+        "HEADER-TWO" : "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:",
+        "TEXT" : "Sabrina Fritz (Anschrift wie oben)"
+      } 
+     
   }
   

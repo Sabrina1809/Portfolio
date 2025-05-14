@@ -134,6 +134,13 @@
       "TEXT": "If you have any questions regarding data protection, feel free to contact me at any time:\nE-mail: contact@your-domain.com"
     }
   },
-  "LEGAL-NOTICE" : "Impressum"
+  "LEGAL-NOTICE" : "Legal notice",
+  "LEGAL-PAGE": {
+    "TITLE": "Legal Notice",
+    "HEADER-ONE": "Information according to § 5 TMG:",
+    "PHONE": "Phone",
+    "HEADER-TWO": "Responsible for content according to § 55 para. 2 RStV:",
+    "TEXT": "Sabrina Fritz (address as above)"
+  }
 }
-  
+ 
