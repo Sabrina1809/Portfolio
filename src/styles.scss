@@ -7,40 +7,61 @@
     src: url('./assets/fonts/poppins-v23-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* poppins-700 - latin */
-  @font-face {
+@font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
     src: url('./assets/fonts/poppins-v23-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
+}
 
-// Variablen für Farben definieren
 $background-color-dark: #141d2f;
 $background-color-light: rgb(26,36,56);
 $primary1: #70E61C;
 $primary2: #9747FF;
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: $background-color-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, $primary1, $primary2);
+  border-radius: 10px;
+  border: 2px solid $background-color-dark;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, lighten($primary1, 10%), lighten($primary2, 10%));
+  &:hover {
+    cursor: grab;
+  }
+}
+
+::-webkit-scrollbar-corner {
+  background: $background-color-dark;
+}
 
 * {
     margin: 0;
     padding: 0;
     color: white;
     box-sizing: border-box;
-    // border: 1px solid orange;
     -webkit-tap-highlight-color: transparent;
     scroll-behavior: smooth;
 }
 
 input:-webkit-autofill,
 textarea:-webkit-autofill {
-  background-color: transparent !important;
-  color: white !important;
-  -webkit-text-fill-color: white !important;
-  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
-  transition: background-color 9999s ease-in-out 0s !important;
+    background-color: transparent !important;
+    color: white !important;
+    -webkit-text-fill-color: white !important;
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+    transition: background-color 9999s ease-in-out 0s !important;
 }
-
 
 body {
     background-color: $background-color-dark;
@@ -48,14 +69,13 @@ body {
     position: relative;
     overflow-x: hidden;
     min-width: 320px;
-    // max-width: 2400px;
     margin: 0 auto;
 }
 
 .highlight {
-  color: $primary2 !important;
+    color: $primary2 !important;
 }
 
 .title-fontsize {
-  font-size: clamp(1.875rem, 1.4464rem + 2.1429vw, 3.375rem);
+    font-size: clamp(1.875rem, 1.4464rem + 2.1429vw, 3.375rem);
 }

@@ -4,7 +4,6 @@
         <h1 class="title-fontsize"> {{ 'CONTACT.TITLE' | translate }} </h1>
     </div>
     <div class="contact-ctn">
-       
         <div class="form-intro-ctn">
             <div class="intro">
                 <p class="question"> {{ 'CONTACT.INTRO.FIRST' | translate }} </p>
@@ -50,9 +49,7 @@
                             ></textarea>
                             <img class="user-feedback-icon" [src]="message.valid ? 'assets/img/contact/ok.png' : 'assets/img/contact/error.png'" alt="feedback"/>
                         </div>
-                        <p class="error-message-input">
-                            {{ 'CONTACT.INPUT.MESSAGE-ERROR' | translate }}
-                        </p>
+                        <p class="error-message-input"> {{ 'CONTACT.INPUT.MESSAGE-ERROR' | translate }} </p>
                     </div>
                     <div class="checkbox-line">
                         <div class="checkbox" (click)="toggleCheckbox()">
@@ -64,37 +61,29 @@
                             {{ 'CONTACT.PRIVACY_PART2' | translate }}
                           </p>
                     </div>
-                    <!-- <p class="error-checkbox" [ngClass]="!checkboxChecked ? 'checkbox-not-ok' : ''"> {{ 'CONTACT.PRIVACY-ERROR' | translate }} </p> -->
-                    <!-- <p class="error-checkbox"
-                    *ngIf="contactForm.valid && !checkboxChecked"
-                    [ngClass]="'checkbox-not-ok'">
-                    {{ 'CONTACT.PRIVACY-ERROR' | translate }}
-                    </p> -->
-<p class="error-checkbox"
-   [ngClass]="{
-     'checkbox-not-ok': contactForm.valid && !checkboxChecked,
-     'invisible': !contactForm.valid || checkboxChecked
-   }">
-   {{ 'CONTACT.PRIVACY-ERROR' | translate }}
-</p>
+                    <p class="error-checkbox"
+                        [ngClass]="{
+                        'checkbox-not-ok': contactForm.valid && !checkboxChecked,
+                        'invisible': !contactForm.valid || checkboxChecked
+                    }">
+                        {{ 'CONTACT.PRIVACY-ERROR' | translate }}
+                    </p>
                     <button
-                    class="btn-send-message"
-                    type="submit"
-                    [ngClass]="{'btn-disabled': !contactForm.valid || !checkboxChecked}"
-                    [disabled]="!contactForm.valid || !checkboxChecked"
-                  >
-                    {{ 'CONTACT.SEND' | translate }}
-                  </button>     
-                  <p class="thank-you" [ngClass]="{'thank-you-visible': showThankYou}">Vielen Dank für deine Nachricht.</p>           
+                        class="btn-send-message"
+                        type="submit"
+                        [ngClass]="{'btn-disabled': !contactForm.valid || !checkboxChecked}"
+                        [disabled]="!contactForm.valid || !checkboxChecked"
+                    >
+                        {{ 'CONTACT.SEND' | translate }}
+                    </button>     
+                    <p class="thank-you" [ngClass]="{'thank-you-visible': showThankYou}">{{ 'CONTACT.THANK-YOU' | translate }}</p>           
                 </form>
             </div>
         </div>
         <img class="shadow" src="assets/img/background/shadow-purple-contact.png" alt="" />
-            <div class="arrow-up" (click)="scrollToTop()">
-                <img class="arrow-white" src="assets/img/contact/arrow-white.png" alt="arrow up">
-                <img class="arrow-green" src="assets/img/contact/arrow-green.png" alt="arrow up">
-            </div>
-      
+        <div class="arrow-up" (click)="scrollToTop()">
+            <img class="arrow-white" src="assets/img/contact/arrow-white.png" alt="arrow up">
+            <img class="arrow-green" src="assets/img/contact/arrow-green.png" alt="arrow up">
+        </div>
     </div>
-
 </div>

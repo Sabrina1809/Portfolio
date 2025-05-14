@@ -11,22 +11,22 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [CommonModule, RouterOutlet, HeaderComponent, MeComponent, TranslateModule, AboutComponent, SkillsComponent, PortfolioComponent, ContactComponent, FooterComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+    selector: 'app-root',
+    standalone: true,
+    imports: [CommonModule, RouterOutlet, HeaderComponent, MeComponent, TranslateModule, AboutComponent, SkillsComponent, PortfolioComponent, ContactComponent, FooterComponent],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss'
 })
-export class AppComponent {
-  title = 'portfolio';
-   // NEU:
-   constructor(private translate: TranslateService) {
-    translate.addLangs(['de', 'en']);   // verfügbare Sprachen
-    translate.setDefaultLang('de');     // Standardsprache
-  }
 
-  // NEU:
-  switchLanguage(lang: string) {
-    this.translate.use(lang);
-  }
+export class AppComponent {
+    title = 'portfolio';
+
+    constructor(private translate: TranslateService) {
+        translate.addLangs(['de', 'en']);   // verfügbare Sprachen
+        translate.setDefaultLang('de');     // Standardsprache
+    }
+
+    switchLanguage(lang: string) {
+        this.translate.use(lang);
+    }
 }

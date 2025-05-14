@@ -1,5 +1,4 @@
-@import '../../styles.scss';  // Pfad zu deiner styles.scss
-
+@import '../../styles.scss';
 
 .header {
     width: 100%;
@@ -82,16 +81,12 @@
     .header-mobile {
         display: none;
         width: 100%;
-        // height: 50px;
-        // height: 100px;
         margin: 0 30px;
         justify-content: space-between;
         align-items: center;
         z-index: 100;
         img {
             width: 150px;
-            // margin-top: -10px;
-            // margin-bottom: -25px;
             clip-path: inset(28% 0 40% 0);
             z-index: 30;
             &:hover {
@@ -131,7 +126,6 @@
             }
         }
     }
-
     .nav-mobile {
         display: flex;
         opacity: 0;
@@ -146,57 +140,52 @@
         bottom: 0;
         background-color: rgba(0, 0, 0, 0.85);
         transform: translateX(100%);
-        transition: transform 0.125s ease-in-out, opacity 0.125s ease-in-out;  // Hinzufügen von opacity
-        // z-index: 1000;
+        transition: transform 0.125s ease-in-out, opacity 0.125s ease-in-out;
         z-index: 90;
-        &.open { 
-          opacity: 1;
-          transform: translateX(0);
-        }
-        & a {
-          width: 150px;
-          text-decoration: none;
-          position: relative;
-      
-          &:hover {
-            cursor: pointer;
-          }
-          &::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: -2px;
-            width: 0;
-            height: 2px;
-            background-color: $primary2;
-            transition: width 0.125s ease;
-          }
-          &:active {
-            color: $primary1;
-          }
-          &:active::after {
-            width: 50px;
-          }
-        }
-      
-        .language {
-            display: flex;
-            gap: 5px;
-            width: 150px;
-          .lang {
-            height: 32px;
-            font-size: 20px;
-            font-weight: 400;
-            transition: all 0.125s ease-in-out;
-            &:hover {
-              cursor: pointer;
+            &.open { 
+                opacity: 1;
+                transform: translateX(0);
             }
-          }
+            & a {
+                width: 150px;
+                text-decoration: none;
+                position: relative;
+                &:hover {
+                    cursor: pointer;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -2px;
+                    width: 0;
+                    height: 2px;
+                    background-color: $primary2;
+                    transition: width 0.125s ease;
+                }
+                &:active {
+                    color: $primary1;
+                }
+                &:active::after {
+                    width: 50px;
+                }
+            }
+            .language {
+                display: flex;
+                gap: 5px;
+                width: 150px;
+            .lang {
+                height: 32px;
+                font-size: 20px;
+                font-weight: 400;
+                transition: all 0.125s ease-in-out;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
         }
-      }
-      
+    } 
 }
-
 
 .lang-active {
     border: 1px solid $primary1 !important;
@@ -263,9 +252,8 @@
 @media (max-width: 550px) {
     .header-mobile {
         margin: 0px 30px !important;
-        &   .burger-close {
-        right: 45px !important;
+        & .burger-close {
+            right: 45px !important;
+        }
     }
-    }
-  
 }

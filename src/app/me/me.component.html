@@ -1,30 +1,27 @@
 <div class="me-ctn">
-    <img class="profil-big" [class.show]="showContent" src="assets/img/profil/1e-shadow2.png" alt="">
+    <img class="profil-big" [class.show]="showContent" src="assets/img/profil/1e-shadow2.png" alt="Sabrina">
     <div class="social-links">
         <div class="purple-line"></div>
         <div class="img-ctn">
-          <a href="https://github.com/Sabrina1809" target="_blank"><img src="assets/img/social/github.png" alt="github logo"></a>
-          <a href="mailto:Sabrina_Fritz@gmx.net"><img src="assets/img/social/mail.png" alt=""></a>
-          <a href="https://www.linkedin.com/in/sabrina-fritz-1b4281337/" target="_blank"><img src="assets/img/social/linkedin.png" alt=""></a>
+            <a href="https://github.com/Sabrina1809" target="_blank"><img src="assets/img/social/github.png" alt="github logo"></a>
+            <a href="mailto:Sabrina_Fritz@gmx.net"><img src="assets/img/social/mail.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/sabrina-fritz-1b4281337/" target="_blank"><img src="assets/img/social/linkedin.png" alt=""></a>
         </div>
     </div>
     <div class="bg-curve-wrapper">
         <img class="bg-curve" src="assets/img/background/28. Hero Background.png" alt="">
         <div class="social-ctn">
-           
             <p class="scroll-down"> {{ 'ME.SCROLL' | translate}} ➞</p>
         </div> 
         <div class="me-text-area" [class.show]="showContent">
             <div class="me-text">
-              <div class="me-text-left">{{ 'ME.IAM' | translate }}</div>
-              <div class="me-text-right">
-                <p class="me-text-name">{{ typedName }}</p>
-                <p class="me-text-profession">Frontend Developer</p>
-              </div>
+                <div class="me-text-left">{{ 'ME.IAM' | translate }}</div>
+                <div class="me-text-right">
+                    <p class="me-text-name">{{ typedName }}</p>
+                    <p class="me-text-profession">Frontend Developer</p>
+                </div>
             </div>
-            <a class="me-button" href="#contact">
-              {{ 'ME.BUTTON' | translate }}
-            </a>
-          </div>
+            <a class="me-button" href="#contact">{{ 'ME.BUTTON' | translate }}</a>
+        </div>
     </div>
 </div>

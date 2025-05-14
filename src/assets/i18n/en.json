@@ -1,146 +1,137 @@
 {
     "NAV": {
-      "ABOUT": "About me",
-      "SKILLS": "Skills",
-      "PORTFOLIO": "Portfolio",
-      "CONTACT": "Contact"
+        "ABOUT": "About me",
+        "SKILLS": "Skills",
+        "PORTFOLIO": "Portfolio",
+        "CONTACT": "Contact"
     },
     "ME": {
-      "IAM": "I am",
-      "BUTTON": "Let's talk!",
-      "SCROLL": "Scroll down"
+        "IAM": "I am",
+        "BUTTON": "Let's talk!",
+        "SCROLL": "Scroll down"
     },
     "ABOUT": {
-      "TITLE": "About me",
-      "INTRO": "Digital solutions developed with heart, mind, and a passion for design. After many years in the industry, I found my new professional home in web development. Whether it's a website, application, or interactive idea – I love building structures, finding creative paths, solving problems, and refining every detail until everything runs smoothly. And that special feeling when it all works in the end? Simply indescribable.",
-      "LOCATION": "Based in Gengenbach in the Black Forest, I’m open to remote work, freelance projects, or permanent positions. On-site? Gladly by arrangement – I'm excited about new opportunities.",
-      "LEARNING": "Every challenge is a chance to grow. I look forward to learning continuously, discovering new technologies, and sharpening my skills – always aiming for the best possible outcome.",
-      "SOLVE": "Solving problems means approaching things creatively and with structure. Determination, analytical thinking, and good collaboration are essential to me for finding the best solution."
+        "TITLE": "About me",
+        "INTRO": "Digital solutions developed with heart, mind, and a passion for design. After many years in the industry, I found my new professional home in web development. Whether it's a website, application, or interactive idea – I love building structures, finding creative paths, solving problems, and refining every detail until everything runs smoothly. And that special feeling when it all works in the end? Simply indescribable.",
+        "LOCATION": "Based in Gengenbach in the Black Forest, I’m open to remote work, freelance projects, or permanent positions. On-site? Gladly by arrangement – I'm excited about new opportunities.",
+        "LEARNING": "Every challenge is a chance to grow. I look forward to learning continuously, discovering new technologies, and sharpening my skills – always aiming for the best possible outcome.",
+        "SOLVE": "Solving problems means approaching things creatively and with structure. Determination, analytical thinking, and good collaboration are essential to me for finding the best solution."
     }, 
     "SKILLS": {
-      "CURRENT": "I create smart, aesthetic, and functional web solutions using modern skills and tools.",
-      "QUESTION": "Looking for <span class='highlight'>another skill</span>?",
-      "LEARNING": "I'm excited to learn new skills to make every project a success.",
-      "CONTACT": "Get in touch",
-      "IMG_LERN": "Continiually lerning"
+        "CURRENT": "I create smart, aesthetic, and functional web solutions using modern skills and tools.",
+        "QUESTION": "Looking for <span class='highlight'>another skill</span>?",
+        "LEARNING": "I'm excited to learn new skills to make every project a success.",
+        "CONTACT": "Get in touch",
+        "IMG_LERN": "Continiually lerning"
     },
     "PORTFOLIO": {
-      "INTRO": "Dive into my project world – interactive, responsive, and crafted with passion.",
-      "BUTTONS": {
-        "LIVE": "try out",
-        "GITHUB": "GitHub"
-      },
-      "PROJECTS": {
-        "JOIN": {
-          "DESCRIPTION": "A modern task management tool that simplifies teamwork. Featuring intuitive drag-and-drop, user management, status tracking, and a responsive interface."
+        "INTRO": "Dive into my project world – interactive, responsive, and crafted with passion.",
+        "BUTTONS": {
+            "LIVE": "try out",
+            "GITHUB": "GitHub"
         },
-        "POKEDEX": {
-          "DESCRIPTION": "An interactive Pokédex with API integration, detailed info, type assignments, search function, and a lovingly designed presentation of each Pokémon."
-        },
-        "ELPOLLOLOCO": {
-          "DESCRIPTION": "A Jump'n'Run game – developed with object-oriented JavaScript. With animated characters, sound effects, various difficulty levels, and dynamic gameplay, El Pollo Loco is a project full of attention to detail. Help our Mexican friend Pepe take down the crazy chickens. ¡Arriba!"
-        },
-        "PORTFOLIO": {
-          "DESCRIPTION": "My personal portfolio – modern, performant, and modularly structured."
+        "PROJECTS": {
+            "JOIN": {
+            "DESCRIPTION": "A modern task management tool that simplifies teamwork. Featuring intuitive drag-and-drop, user management, status tracking, and a responsive interface."
+            },
+            "POKEDEX": {
+            "DESCRIPTION": "An interactive Pokédex with API integration, detailed info, type assignments, search function, and a lovingly designed presentation of each Pokémon."
+            },
+            "ELPOLLOLOCO": {
+            "DESCRIPTION": "A Jump'n'Run game – developed with object-oriented JavaScript. With animated characters, sound effects, various difficulty levels, and dynamic gameplay, El Pollo Loco is a project full of attention to detail. Help our Mexican friend Pepe take down the crazy chickens. ¡Arriba!"
+            },
+            "PORTFOLIO": {
+            "DESCRIPTION": "My personal portfolio – modern, performant, and modularly structured."
+            }
         }
-      }
     },
     "CONTACT": {
-      "TITLE": "Contact",
-      "INTRO" : {
-        "FIRST" : "Got an idea and need a solution?",
-        "SECOND" : "From the first idea to the final application: I design and develop in a structured, meticulous way, with great attention to detail.",
-        "THIRD" : "Let’s get started – <b>I’m looking forward to your message.</b>"
-      },
-      "INPUT" : {
-        "NAME-PLACEHOLDER" : "Your name",
-        "NAME-ERROR" : "Your name is required.",
-        "EMAIL-PLACEHOLDER" : "Your email",
-        "EMAIL-ERROR" : "Your email is required.",
-        "MESSAGE-PLACEHOLDER": "Your message",
-        "MESAGE-ERROR" : "At least 10 characters."
-      }, 
-      "PRIVACY_PART1": "I've read the",
-      "PRIVACY_LINK": "privacy policy",
-      "PRIVACY_PART2": "and agree to the processing of my data as outlined.",
-      "PRIVACY-ERROR" : "Please accept the privacy policy.",
-      "SEND" : "Send message :)",
-      "THANK-YOU" : "Thank you for your message."
+        "TITLE": "Contact",
+        "INTRO" : {
+            "FIRST" : "Got an idea and need a solution?",
+            "SECOND" : "From the first idea to the final application: I design and develop in a structured, meticulous way, with great attention to detail.",
+            "THIRD" : "Let’s get started – <b>I’m looking forward to your message.</b>"
+        },
+        "INPUT" : {
+            "NAME-PLACEHOLDER" : "Your name",
+            "NAME-ERROR" : "Your name is required.",
+            "EMAIL-PLACEHOLDER" : "Your email",
+            "EMAIL-ERROR" : "Your email is required.",
+            "MESSAGE-PLACEHOLDER": "Your message",
+            "MESAGE-ERROR" : "At least 10 characters."
+        }, 
+        "PRIVACY_PART1": "I've read the",
+        "PRIVACY_LINK": "privacy policy",
+        "PRIVACY_PART2": "and agree to the processing of my data as outlined.",
+        "PRIVACY-ERROR" : "Please accept the privacy policy.",
+        "SEND" : "Send message :)",
+        "THANK-YOU" : "Thank you for your message."
     },
     "PRIVACY": {
-    "TITLE": "Privacy Policy",
-
-    "GENERAL": {
-      "TITLE": "1. General Information",
-      "TEXT": "The protection of your personal data is of particular concern to me. I treat your personal data confidentially and in accordance with the legal data protection regulations as well as this privacy policy."
-    },
-
-    "CONTROLLER": {
-      "TITLE": "2. Responsible Party",
-      "TEXT-NAME": "Sabrina Fritz",
-      "TEXT-STREET": "Mühlmatt 54",
-      "TEXT-CITY": "77723 Gengenbach",
-      "TEXT-MAIL": "E-Mail: kontakt@deine-domain.de"
-    },
-
-    "FORMDATA": {
-      "TITLE": "3. Collection and Storage of Personal Data when Using the Contact Form",
-      "INTRO": "When you send me a message via the contact form, the following data is collected:",
-      "LIST": [
-        "Name",
-        "Email address",
-        "Content of the message"
-      ],
-      "NOTE": "This data is stored solely for the purpose of processing your request and for possible follow-up inquiries. No transfer to third parties takes place."
-    },
-
-    "LEGALBASIS": {
-      "TITLE": "4. Legal Basis",
-      "TEXT": "The processing of the entered data takes place in accordance with Art. 6 para. 1 lit. a GDPR (consent) and Art. 6 para. 1 lit. b GDPR (pre-contractual measures)."
-    },
-
-    "STORAGE": {
-      "TITLE": "5. Storage Duration",
-      "TEXT": "Your data will be deleted as soon as it is no longer required for processing your request and no legal retention periods apply."
-    },
-    
-    "RIGHTS": {
-      "TITLE": "6. Your Rights",
-      "TEXT": "You have the right to:",
-      "LIST": [
-        "Access your stored data (Art. 15 GDPR)",
-        "Correct inaccurate data (Art. 16 GDPR)",
-        "Delete your data (Art. 17 GDPR)",
-        "Limit processing (Art. 18 GDPR)",
-        "Data portability (Art. 20 GDPR)",
-        "Object to processing (Art. 21 GDPR)",
-        "Withdraw your consent (Art. 7 para. 3 GDPR)"
-      ],
-      "NOTE": "In addition, you have the right to file a complaint with a supervisory authority (Art. 77 GDPR)."
-    },
-
-    "SSL": {
-      "TITLE": "7. SSL/TLS Encryption",
-      "TEXT": "This website uses SSL encryption for security reasons and to protect the transmission of confidential content. You can recognize an encrypted connection by the 'https://' in the browser's address bar."
-    },
-
-    "HOSTING": {
-      "TITLE": "8. Hosting",
-      "TEXT": "The website is hosted by an external service provider (e.g., Netlify, GitHub Pages, Vercel, IONOS, etc.). During this process, technical data (e.g., IP address, time of page access) may be processed. This processing takes place on the basis of a legitimate interest pursuant to Art. 6 para. 1 lit. f GDPR."
-    },
-
-    "CONTACT": {
-      "TITLE": "9. Contact",
-      "TEXT": "If you have any questions regarding data protection, feel free to contact me at any time:\nE-mail: contact@your-domain.com"
-    }
+        "TITLE": "Privacy Policy",
+        "GENERAL": {
+        "TITLE": "1. General Information",
+        "TEXT": "The protection of your personal data is of particular concern to me. I treat your personal data confidentially and in accordance with the legal data protection regulations as well as this privacy policy."
+        },
+        "CONTROLLER": {
+            "TITLE": "2. Responsible Party",
+            "TEXT-NAME": "Sabrina Fritz",
+            "TEXT-STREET": "Mühlmatt 54",
+            "TEXT-CITY": "77723 Gengenbach",
+            "TEXT-MAIL": "E-Mail: kontakt@deine-domain.de"
+        },
+        "FORMDATA": {
+            "TITLE": "3. Collection and Storage of Personal Data when Using the Contact Form",
+            "INTRO": "When you send me a message via the contact form, the following data is collected:",
+            "LIST": [
+                "Name",
+                "Email address",
+                "Content of the message"
+            ],
+            "NOTE": "This data is stored solely for the purpose of processing your request and for possible follow-up inquiries. No transfer to third parties takes place."
+        },
+        "LEGALBASIS": {
+            "TITLE": "4. Legal Basis",
+            "TEXT": "The processing of the entered data takes place in accordance with Art. 6 para. 1 lit. a GDPR (consent) and Art. 6 para. 1 lit. b GDPR (pre-contractual measures)."
+        },
+        "STORAGE": {
+            "TITLE": "5. Storage Duration",
+            "TEXT": "Your data will be deleted as soon as it is no longer required for processing your request and no legal retention periods apply."
+        },
+        "RIGHTS": {
+            "TITLE": "6. Your Rights",
+            "TEXT": "You have the right to:",
+            "LIST": [
+                "Access your stored data (Art. 15 GDPR)",
+                "Correct inaccurate data (Art. 16 GDPR)",
+                "Delete your data (Art. 17 GDPR)",
+                "Limit processing (Art. 18 GDPR)",
+                "Data portability (Art. 20 GDPR)",
+                "Object to processing (Art. 21 GDPR)",
+                "Withdraw your consent (Art. 7 para. 3 GDPR)"
+            ],
+            "NOTE": "In addition, you have the right to file a complaint with a supervisory authority (Art. 77 GDPR)."
+        },
+        "SSL": {
+            "TITLE": "7. SSL/TLS Encryption",
+            "TEXT": "This website uses SSL encryption for security reasons and to protect the transmission of confidential content. You can recognize an encrypted connection by the 'https://' in the browser's address bar."
+        },
+        "HOSTING": {
+            "TITLE": "8. Hosting",
+            "TEXT": "The website is hosted by an external service provider (e.g., Netlify, GitHub Pages, Vercel, IONOS, etc.). During this process, technical data (e.g., IP address, time of page access) may be processed. This processing takes place on the basis of a legitimate interest pursuant to Art. 6 para. 1 lit. f GDPR."
+        },
+        "CONTACT": {
+            "TITLE": "9. Contact",
+            "TEXT": "If you have any questions regarding data protection, feel free to contact me at any time:\nE-mail: contact@your-domain.com"
+        }
   },
   "LEGAL-NOTICE" : "Legal notice",
   "LEGAL-PAGE": {
-    "TITLE": "Legal Notice",
-    "HEADER-ONE": "Information according to § 5 TMG:",
-    "PHONE": "Phone",
-    "HEADER-TWO": "Responsible for content according to § 55 para. 2 RStV:",
-    "TEXT": "Sabrina Fritz (address as above)"
-  }
+        "TITLE": "Legal Notice",
+        "HEADER-ONE": "Information according to § 5 TMG:",
+        "PHONE": "Phone",
+        "HEADER-TWO": "Responsible for content according to § 55 para. 2 RStV:",
+        "TEXT": "Sabrina Fritz (address as above)"
+  },
+  "THANK-YOU" : "Thank you for your message." 
 }
- 

@@ -1,38 +1,38 @@
 import { Component } from '@angular/core';
-import { TranslateService, TranslateModule } from '@ngx-translate/core'; // <- TranslateModule importieren
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-header',
-  standalone: true,
-  imports: [CommonModule, TranslateModule],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+    selector: 'app-header',
+    standalone: true,
+    imports: [CommonModule, TranslateModule],
+    templateUrl: './header.component.html',
+    styleUrl: './header.component.scss'
 })
 
 export class HeaderComponent {
-  currentLang: string = 'de';  // Setzt Deutsch als Voreinstellung
-  menuOpen: boolean = false; // <- Hier speicherst du, ob das Menü geöffnet ist.
-  
-  constructor(private translate: TranslateService) {
-    // Standard-Sprache einstellen
-    this.translate.setDefaultLang('de');
-    this.translate.use('de');
-  }
+    currentLang: string = 'de';
+    menuOpen: boolean = false;
+    
+    constructor(private translate: TranslateService) {
+        this.translate.setDefaultLang('de');
+        this.translate.use('de');
+    }
 
-  switchLanguage(lang: string) {
-    this.translate.use(lang);
-    this.currentLang = lang;  // Speichert die aktuell gewählte Sprache
-  }
-  openMenu() {
-    this.menuOpen = true;
-  }
+    switchLanguage(lang: string) {
+        this.translate.use(lang);
+        this.currentLang = lang;
+    }
 
-  closeMenu() {
-    this.menuOpen = false;
-  }
+    openMenu() {
+        this.menuOpen = true;
+    }
+
+    closeMenu() {
+        this.menuOpen = false;
+    }
 
     scrollToTop(): void {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
 }

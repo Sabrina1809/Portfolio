@@ -1,7 +1,6 @@
 @import '../../styles.scss'; 
 
 .contact-wrapper {
-    // border: 1px solid orange;
     position: relative;
     overflow-x: clip;
     & .title-line {
@@ -10,7 +9,6 @@
         align-items: center;
         & .purple-line {
             position: absolute;
-            // top: 40px;
             width: 30%;
             height: 2px;
             background-color: $primary2;
@@ -19,14 +17,12 @@
             margin-left: 32%;
         }
     }
-    
     & .contact-ctn {
         width: 100%;
         max-width: 1440px;
         position: relative;
         padding: 30px;
         margin: 0 auto;
-     
         & .form-intro-ctn {
             display: flex;
             gap: 10%;
@@ -52,7 +48,6 @@
                     & .error-message-input {
                         color: #e61c40;
                         margin-top: 5px;
-                        // margin-bottom: 16px;
                         visibility: hidden;
                         opacity: 0;
                     }
@@ -107,7 +102,7 @@
                                 font-weight: bold;
                                 visibility: hidden;
                                 opacity: 0;
-                                transition: all 0.125s ease-in-out; /* Sanfte Übergänge */
+                                transition: all 0.125s ease-in-out;
                             }
                             &:hover {
                                 cursor: pointer;
@@ -115,33 +110,26 @@
                         }
                         .privacy-accept {
                             .highlight {
-                              color: $primary1;
-                              cursor: pointer;
-                              text-decoration: none;
+                                color: $primary1;
+                                cursor: pointer;
+                                text-decoration: none;
                             }
                         }
                         ::ng-deep .privacy-accept .highlight:hover {
-                        text-decoration: underline;
-                        cursor: pointer;
+                            text-decoration: underline;
+                            cursor: pointer;
                         } 
                     }
-                    // & .error-checkbox {
-                    //     visibility: hidden;
-                    //     opacity: 0;
-                    //     color: #E61C40;
-                    //     transition: all 0.125s ease-in-out; 
-                    // }
                     .error-checkbox {
                         opacity: 1;
                         color: #E61C40;
                         transition: opacity 0.125s ease;
-                        // min-height: 1em; /* oder so viel, wie der Text braucht */
                     }
                     .invisible {
                         opacity: 0;
                         pointer-events: none;
                     }
-                    & .btn-send-message {
+                    .btn-send-message {
                         padding: 10px 20px;
                         width: fit-content;
                         text-align: center;
@@ -159,7 +147,7 @@
                             background-color: $primary2;
                         }
                     }
-                    & .thank-you {
+                    .thank-you {
                         margin: 0px auto 0 auto;
                         color: $primary1;
                         opacity: 0;
@@ -183,34 +171,28 @@
         align-items: center;
         transition: all 0.125s ease-in-out;
         z-index: 90;
-  img {
-    width: 20px;
-    height: 20px;
-  }
-
-  .arrow-green {
-    display: none;
-  }
-
-  .arrow-white {
-    display: flex;
-  }
-
-  &:hover {
-    cursor: pointer;
-    border: 2px solid $primary1;
-    .arrow-green {
-      display: flex;
+        img {
+            width: 20px;
+            height: 20px;
+        }
+        .arrow-green {
+            display: none;
+        }
+        .arrow-white {
+            display: flex;
+        }
+        &:hover {
+            cursor: pointer;
+            border: 2px solid $primary1;
+            .arrow-green {
+                display: flex;
+            }
+            .arrow-white {
+                display: none;
+            }
+        }
     }
-
-    .arrow-white {
-      display: none;
-    }
-  }
 }
-
-}
-
 
 .thank-you-visible {
     animation: show-message 6s ease-in-out;
@@ -281,30 +263,24 @@
 }
 
 .checkbox-ok {
-        visibility: visible !important;
-        opacity: 1 !important;
-        transition: all 0.125s ease-in-out; 
+    visibility: visible !important;
+    opacity: 1 !important;
+    transition: all 0.125s ease-in-out; 
 }
 
 .checkbox-not-ok {
-        visibility: visible !important;
-        opacity: 1 !important;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
 @media (max-width: 1100px) {
     .title-line {
-        & .purple-line {
-            // top: 30px !important;
+        .purple-line {
             width: 37% !important;
-            // height: 2px;
-            // background-color: $primary2;
         }
-        & h1 {
+        h1 {
             margin: 20px auto 30px auto !important;
             text-align: center;
-            // position: absolute;
-            // left: 50%;
-            // transform: translate(-50%);
         }
     }
     .form-intro-ctn {
@@ -324,7 +300,6 @@
         }
     }
     .shadow {
-        // bottom: -10% !important;
         max-height: 500px !important;
     }
     .arrow-up {
@@ -342,7 +317,6 @@
 @media (max-width: 700px) {
         .title-line {
         & .purple-line {
-            // top: 28px !important;
             width: 32% !important;
         }
     }
@@ -358,7 +332,7 @@
     .shadow {
         bottom: 0% !important;
     }
-        .arrow-up {
+    .arrow-up {
         bottom: 0px !important;
         right: 30px !important;
     }
@@ -367,7 +341,6 @@
 @media (max-width: 500px) {
         .title-line {
         & .purple-line {
-            // top: 24px !important;
             width: 30% !important;
         }
     }
@@ -383,9 +356,7 @@
 @media (max-width: 360px) {
         .title-line {
         & .purple-line {
-            // top: 24px !important;
             width: 27% !important;
         }
     }
-    
 }

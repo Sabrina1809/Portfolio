@@ -1,4 +1,5 @@
 @import '../../styles.scss'; 
+
 .impressum-ctn {
     width: 100%;
     max-width: 1440px;
@@ -16,49 +17,44 @@
         font-size: 22px;
     }
     & .last-part {
-      padding-bottom: 70px;
+        padding-bottom: 70px;
     }
 }
-
-   .arrow-up {
-        width: 35px;
-        height: 35px;
-        aspect-ratio: 1 / 1;
-        position: absolute;
-        bottom: 30px;
-        right: calc(50% - 770px + 80px);
-        border-radius: 50%;
-        border: 2px solid white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: all 0.125s ease-in-out;
-        z-index: 90;
-  img {
-    width: 20px;
-    height: 20px;
-    rotate: -90deg;
-  }
-
-  .arrow-green {
-    display: none;
-  }
-
-  .arrow-white {
+.arrow-up {
+    width: 35px;
+    height: 35px;
+    aspect-ratio: 1 / 1;
+    position: absolute;
+    bottom: 30px;
+    right: calc(50% - 770px + 80px);
+    border-radius: 50%;
+    border: 2px solid white;
     display: flex;
-  }
-
-  &:hover {
-    cursor: pointer;
-    border: 2px solid $primary1;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.125s ease-in-out;
+    z-index: 90;
+    img {
+        width: 20px;
+        height: 20px;
+        rotate: -90deg;
+    }
     .arrow-green {
-      display: flex;
+        display: none;
     }
-
     .arrow-white {
-      display: none;
+        display: flex;
     }
-  }
+    &:hover {
+        cursor: pointer;
+        border: 2px solid $primary1;
+        .arrow-green {
+            display: flex;
+        }
+        .arrow-white {
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 1440px) {
@@ -73,18 +69,17 @@
         margin: 160px auto 60px auto !important;
         min-height: calc(100vh - 410px) !important;
     }
-      .arrow-up {
-    right: 50px !important;
-  }
-
+    .arrow-up {
+        right: 50px !important;
+    }
 }
 
 @media (max-width: 550px) {
-  .impressum-ctn {
-    padding: 0 30px !important;
-  }
-  .arrow-up {
-    right: 30px !important;
-    bottom: 0px !important;
-  }
+    .impressum-ctn {
+        padding: 0 30px !important;
+    }
+    .arrow-up {
+        right: 30px !important;
+        bottom: 0px !important;
+    }
 }

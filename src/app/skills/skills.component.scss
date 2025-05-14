@@ -1,4 +1,4 @@
-@import '../../styles.scss';  // Pfad zu deiner styles.scss
+@import '../../styles.scss';
 
 .skills-wrapper {
     position: relative;
@@ -18,10 +18,9 @@
             background-color: $primary2;
         }
         & h1 {
-            // text-align: center;
             margin-left: 59%;
         }
-     }
+    }
 }
 
 .shadow {
@@ -35,9 +34,9 @@
     opacity: 0;
     animation: fadeInFloat 3s ease-out forwards;
     animation-delay: 0.5s;
-  }
+}
 
-  @keyframes fadeInFloat {
+@keyframes fadeInFloat {
     0% {
       opacity: 0;
       transform: translateY(20px);
@@ -50,7 +49,7 @@
       opacity: 1;
       transform: translateY(0);
     }
-  }
+}
 
 .skills-ctn {
     display: flex;
@@ -68,23 +67,6 @@
         height: 100px;
         z-index: 13;
         top: 100px;
-        // & .skills-title-ctn {
-        //     display: flex;
-        //     width: 100%;
-        //     align-items: center;
-        //     justify-content: right;
-        //     gap: 20px;
-        //     z-index: 50;
-        //     margin-bottom: 20px;
-        //     & .skills-title {
-        //         // font-size: clamp(1.875rem, 1.1993rem + 3.3784vw, 5rem) !important;
-        //     }
-        //     & .purple-line {
-        //         width: 100px;
-        //         height: 2px;
-        //         background-color: $primary2;
-        //     }
-        // }
         & p {
             margin-bottom: 20px;
         }
@@ -133,7 +115,6 @@
         & a {
             text-decoration: none;
         }
-     
         & .skills-question {
             font-size: 24px;
             font-weight: bold;
@@ -162,18 +143,15 @@
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.6s ease;
-  
     &.animate-in {
       opacity: 1;
       transform: translateY(0);
     }
-  
     & span {
       color: $primary2;
     }
-  }
+}
   
-
 .skills-ctn .skills-text .skills-question .highlight {
     color: #9747FF !important;
 }
@@ -182,29 +160,18 @@
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.6s ease;
-  }
+}
   
-  .skill.animate-in {
+.skill.animate-in {
     opacity: 1;
     transform: translateY(0);
-  }
- 
-@media (max-width: 1600px) {
-    .purple-line {
-        // width: 27% !important;
-    }
-        h1 {
-        // text-align: center;
-        // margin-left: 60% !important;
-    }
 }
 
 @media (max-width: 1100px) {
     .purple-line {
         width: calc(50% - 90px) !important;
     }
-        h1 {
-        // text-align: center;
+    h1 {
         margin: 0 auto !important;
     }
     .part-two {
@@ -245,9 +212,6 @@
 @media(max-width: 660px) {
       .purple-line {
         width: calc(50% - 80px) !important;
-    }
-    .skills-icons {
-        // justify-content: center !important;
     }
     .skills-contact-btn {
         margin: 40px auto 0 auto !important;

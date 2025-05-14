@@ -1,147 +1,137 @@
 {
     "NAV": {
-      "ABOUT": "Über mich",
-      "SKILLS": "Skills",
-      "PORTFOLIO": "Portfolio",
-      "CONTACT": "Kontakt"
+        "ABOUT": "Über mich",
+        "SKILLS": "Skills",
+        "PORTFOLIO": "Portfolio",
+        "CONTACT": "Kontakt"
     },
     "ME": {
-      "IAM": "Ich bin",
-      "BUTTON": "Lass uns sprechen!",
-      "SCROLL": "Nach unten scrollen"
+        "IAM": "Ich bin",
+        "BUTTON": "Lass uns sprechen!",
+        "SCROLL": "Nach unten scrollen"
     }, 
     "ABOUT": {
-      "TITLE": "Über mich",
-      "INTRO": "Digitale Lösungen, entwickelt mit Herz, Verstand und einer Leidenschaft für Design. Nach vielen Jahren in der Industrie habe ich in der Webentwicklung mein neues berufliches Zuhause gefunden. Ob Website, Anwendung oder interaktive Idee – ich liebe es, Strukturen zu schaffen, kreative Wege zu finden, Probleme zu knacken und an Details zu feilen, bis alles rund läuft. Und dieses besondere Gefühl, wenn am Ende alles funktioniert? Einfach unbeschreiblich.",
-      "LOCATION": "Mein zu Hause ist in Gengenbach im Schwarzwald, ich bin offen für Remote-Arbeit, Freelancer-Projekte oder Festanstellungen. Vor Ort? Gerne nach Absprache – ich freue mich auf spannende Möglichkeiten.",
-      "LEARNING": "Jede Herausforderung ist eine Chance, zu wachsen. Ich freue mich darauf, immer weiter zu lernen, neue Technologien zu entdecken und meine Fähigkeiten auszubauen – um das bestmögliche Ergebnis zu erzielen.",
-      "SOLVE": "Probleme zu lösen heißt für mich, kreativ und strukturiert an die Sache heranzugehen. Zielstrebigkeit, analytisches Denken und ein guter Austausch im Team sind für mich unverzichtbar, um die beste Lösung zu finden."
+        "TITLE": "Über mich",
+        "INTRO": "Digitale Lösungen, entwickelt mit Herz, Verstand und einer Leidenschaft für Design. Nach vielen Jahren in der Industrie habe ich in der Webentwicklung mein neues berufliches Zuhause gefunden. Ob Website, Anwendung oder interaktive Idee – ich liebe es, Strukturen zu schaffen, kreative Wege zu finden, Probleme zu knacken und an Details zu feilen, bis alles rund läuft. Und dieses besondere Gefühl, wenn am Ende alles funktioniert? Einfach unbeschreiblich.",
+        "LOCATION": "Mein zu Hause ist in Gengenbach im Schwarzwald, ich bin offen für Remote-Arbeit, Freelancer-Projekte oder Festanstellungen. Vor Ort? Gerne nach Absprache – ich freue mich auf spannende Möglichkeiten.",
+        "LEARNING": "Jede Herausforderung ist eine Chance, zu wachsen. Ich freue mich darauf, immer weiter zu lernen, neue Technologien zu entdecken und meine Fähigkeiten auszubauen – um das bestmögliche Ergebnis zu erzielen.",
+        "SOLVE": "Probleme zu lösen heißt für mich, kreativ und strukturiert an die Sache heranzugehen. Zielstrebigkeit, analytisches Denken und ein guter Austausch im Team sind für mich unverzichtbar, um die beste Lösung zu finden."
     }, 
     "SKILLS": {
-      "CURRENT": "Ich entwickle durchdachte, ästhetische und funktionale Weblösungen mit modernen Skills und Tools.",
-      "QUESTION": "Fehlt ein <span class='highlight'>bestimmter Skill</span>?",
-      "LEARNING": "Ich eigne mir gerne Neues an, um jedes Projekt erfolgreich umzusetzen.",  
-      "CONTACT": "Kontaktiere mich",
-      "IMG_LERN": "lernfreudig"
+        "CURRENT": "Ich entwickle durchdachte, ästhetische und funktionale Weblösungen mit modernen Skills und Tools.",
+        "QUESTION": "Fehlt ein <span class='highlight'>bestimmter Skill</span>?",
+        "LEARNING": "Ich eigne mir gerne Neues an, um jedes Projekt erfolgreich umzusetzen.",  
+        "CONTACT": "Kontaktiere mich",
+        "IMG_LERN": "lernfreudig"
     },
     "PORTFOLIO": {
-      "INTRO": "Tauche ein in meine Projektwelt – interaktiv, responsiv und mit Leidenschaft umgesetzt.",
-      "BUTTONS": {
-        "LIVE": "testen",
-        "GITHUB": "GitHub"
-      },
-      "PROJECTS": {
-        "JOIN": {
-          "DESCRIPTION": "Ein modernes Task-Management-Tool, das Teamarbeit vereinfacht. Mit intuitivem Drag-and-Drop, Nutzerverwaltung, Status-Tracking und responsivem Interface."
+        "INTRO": "Tauche ein in meine Projektwelt – interaktiv, responsiv und mit Leidenschaft umgesetzt.",
+        "BUTTONS": {
+            "LIVE": "testen",
+            "GITHUB": "GitHub"
         },
-        "POKEDEX": {
-          "DESCRIPTION": "Ein interaktives Pokédex mit API-Anbindung, detaillierten Infos, Typzuordnung, Suchfunktion und einer liebevoll gestalteten Darstellung jedes Pokémon."
-        },
-        "ELPOLLOLOCO": {
-          "DESCRIPTION": "Ein Jump’n’Run-Spiel – entwickelt mit objektorientiertem JavaScript und Liebe zum Detail. Mit animierten Charakteren, Soundeffekten, verschiedenen Schwierigkeitsstufen und dynamischem Gameplay. Hilf unserem mexikanischen Freund Pepe, die verrückt gewordenen Hühnchen zu erlegen. ¡Arriba!"
-        },
-        "PORTFOLIO": {
-          "DESCRIPTION": "Mein persönliches Portfolio – modern, performant und modular aufgebaut."
+        "PROJECTS": {
+            "JOIN": {
+                "DESCRIPTION": "Ein modernes Task-Management-Tool, das Teamarbeit vereinfacht. Mit intuitivem Drag-and-Drop, Nutzerverwaltung, Status-Tracking und responsivem Interface."
+            },
+            "POKEDEX": {
+                "DESCRIPTION": "Ein interaktives Pokédex mit API-Anbindung, detaillierten Infos, Typzuordnung, Suchfunktion und einer liebevoll gestalteten Darstellung jedes Pokémon."
+            },
+            "ELPOLLOLOCO": {
+                "DESCRIPTION": "Ein Jump’n’Run-Spiel – entwickelt mit objektorientiertem JavaScript und Liebe zum Detail. Mit animierten Charakteren, Soundeffekten, verschiedenen Schwierigkeitsstufen und dynamischem Gameplay. Hilf unserem mexikanischen Freund Pepe, die verrückt gewordenen Hühnchen zu erlegen. ¡Arriba!"
+            },
+            "PORTFOLIO": {
+                "DESCRIPTION": "Mein persönliches Portfolio – modern, performant und modular aufgebaut."
+            }
         }
-      }
     },
     "CONTACT": {
-      "TITLE": "Kontakt",
-      "INTRO" : {
-        "FIRST" : "Du hast eine Idee und brauchst eine Lösung?",
-        "SECOND" : "Von der ersten Idee bis zur fertigen Anwendung: ich gestalte und entwickle strukturiert, sorgfältig und mit viel Liebe zum Detail.",
-        "THIRD": "Lass uns starten – <b>ich freue mich auf deine Nachricht.</b>"
-      },
-      "INPUT" : {
-        "NAME-PLACEHOLDER" : "Dein Name",
-        "NAME-ERROR" : "Dein Name ist erforderlich.",
-        "EMAIL-PLACEHOLDER" : "Deine Email",
-        "EMAIL-ERROR" : "Deine Email ist erforderlich.",
-        "MESSAGE-PLACEHOLDER": "Deine Nachricht",
-        "MESSAGE-ERROR" : "Mindestens 10 Zeichen."
-      }, 
-      "PRIVACY_PART1": "Ich habe die",
-      "PRIVACY_LINK": "Datenschutzerklärung",
-      "PRIVACY_PART2": "gelesen und stimme der Verarbeitung meiner Daten wie darin beschrieben zu.",
-      "PRIVACY-ERROR" : "Bitte akzeptiere die Datenschutzbedingungen.",
-      "SEND" : "Nachricht senden :)",
-      "THANK-YOU" : "Vielen Dank für deine Nachricht."
+        "TITLE": "Kontakt",
+        "INTRO" : {
+            "FIRST" : "Du hast eine Idee und brauchst eine Lösung?",
+            "SECOND" : "Von der ersten Idee bis zur fertigen Anwendung: ich gestalte und entwickle strukturiert, sorgfältig und mit viel Liebe zum Detail.",
+            "THIRD": "Lass uns starten – <b>ich freue mich auf deine Nachricht.</b>"
+        },
+        "INPUT" : {
+            "NAME-PLACEHOLDER" : "Dein Name",
+            "NAME-ERROR" : "Dein Name ist erforderlich.",
+            "EMAIL-PLACEHOLDER" : "Deine Email",
+            "EMAIL-ERROR" : "Deine Email ist erforderlich.",
+            "MESSAGE-PLACEHOLDER": "Deine Nachricht",
+            "MESSAGE-ERROR" : "Mindestens 10 Zeichen."
+        }, 
+        "PRIVACY_PART1": "Ich habe die",
+        "PRIVACY_LINK": "Datenschutzerklärung",
+        "PRIVACY_PART2": "gelesen und stimme der Verarbeitung meiner Daten wie darin beschrieben zu.",
+        "PRIVACY-ERROR" : "Bitte akzeptiere die Datenschutzbedingungen.",
+        "SEND" : "Nachricht senden :)",
+        "THANK-YOU" : "Vielen Dank für deine Nachricht."
     },
     "PRIVACY": {
-      "TITLE": "Datenschutz<wbr>erklärung",
-  
-      "GENERAL": {
-        "TITLE": "1. Allgemeine Hinweise",
-        "TEXT": "Der Schutz deiner persönlichen Daten ist mir ein besonderes Anliegen. Ich behandle deine personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung."
-      },
-  
-      "CONTROLLER": {
-        "TITLE": "2. Verantwortliche Stelle",
-        "TEXT-NAME": "Sabrina Fritz",
-        "TEXT-STREET": "Mühlmatt 54",
-        "TEXT-CITY": "77723 Gengenbach",
-        "TEXT-MAIL": "E-Mail: kontakt@deine-domain.de"
-      },
-  
-      "FORMDATA": {
-        "TITLE": "3. Erhebung und Speicherung personenbezogener Daten bei Nutzung des Kontaktformulars",
-        "INTRO": "Wenn du mir über das Kontaktformular eine Nachricht schreibst, werden folgende Daten erhoben:",
-        "LIST": [
-          "Name",
-          "E-Mail-Adresse",
-          "Inhalt der Nachricht"
-        ],
-        "NOTE": "Diese Daten werden ausschließlich zum Zweck der Bearbeitung deiner Anfrage und für mögliche Anschlussfragen gespeichert. Eine Weitergabe an Dritte erfolgt nicht."
-      },
-  
-      "LEGALBASIS": {
-        "TITLE": "4. Rechtsgrundlage",
-        "TEXT": "Die Verarbeitung der eingegebenen Daten erfolgt gemäß Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) und Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen)."
-      },
-  
-      "STORAGE": {
-        "TITLE": "5. Speicherdauer",
-        "TEXT": "Deine Daten werden gelöscht, sobald sie für die Bearbeitung deiner Anfrage nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungsfristen bestehen."
-      },
-  
-      "RIGHTS": {
-        "TITLE": "6. Deine Rechte",
-        "TEXT": "Du hast jederzeit das Recht auf:",
-        "LIST": [
-          "Auskunft über deine gespeicherten Daten (Art. 15 DSGVO)",
-          "Berichtigung unrichtiger Daten (Art. 16 DSGVO)",
-          "Löschung deiner Daten (Art. 17 DSGVO)",
-          "Einschränkung der Verarbeitung (Art. 18 DSGVO)",
-          "Datenübertragbarkeit (Art. 20 DSGVO)",
-          "Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)",
-          "Widerruf deiner Einwilligung (Art. 7 Abs. 3 DSGVO)"
-        ],
-        "NOTE": "Zudem steht dir ein Beschwerderecht bei einer Aufsichtsbehörde zu (Art. 77 DSGVO)."
-      },
-  
-      "SSL": {
-        "TITLE": "7. SSL- bzw. TLS-Verschlüsselung",
-        "TEXT": "Diese Website nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte eine SSL-Verschlüsselung. Du erkennst eine verschlüsselte Verbindung an der Adresszeile deines Browsers (\"https://\")."
-      },
-  
-      "HOSTING": {
-        "TITLE": "8. Hosting",
-        "TEXT": "Die Website wird bei einem externen Dienstleister gehostet (z. B. Netlify, GitHub Pages, Vercel, IONOS o. ä.). Dabei können technische Daten (z. B. IP-Adresse, Zeitpunkt des Seitenaufrufs) verarbeitet werden. Diese Verarbeitung erfolgt auf Grundlage eines berechtigten Interesses gemäß Art. 6 Abs. 1 lit. f DSGVO."
-      },
-  
-      "CONTACT": {
-        "TITLE": "9. Kontakt",
-        "TEXT": "Bei Fragen zum Datenschutz kannst du dich jederzeit an mich wenden:\nE-Mail: kontakt@deine-domain.de"
-      }
+        "TITLE": "Datenschutz<wbr>erklärung",
+        "GENERAL": {
+            "TITLE": "1. Allgemeine Hinweise",
+            "TEXT": "Der Schutz deiner persönlichen Daten ist mir ein besonderes Anliegen. Ich behandle deine personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung."
+        },
+        "CONTROLLER": {
+            "TITLE": "2. Verantwortliche Stelle",
+            "TEXT-NAME": "Sabrina Fritz",
+            "TEXT-STREET": "Mühlmatt 54",
+            "TEXT-CITY": "77723 Gengenbach",
+            "TEXT-MAIL": "E-Mail: kontakt@deine-domain.de"
+        },
+        "FORMDATA": {
+            "TITLE": "3. Erhebung und Speicherung personenbezogener Daten bei Nutzung des Kontaktformulars",
+            "INTRO": "Wenn du mir über das Kontaktformular eine Nachricht schreibst, werden folgende Daten erhoben:",
+            "LIST": [
+            "Name",
+            "E-Mail-Adresse",
+            "Inhalt der Nachricht"
+            ],
+            "NOTE": "Diese Daten werden ausschließlich zum Zweck der Bearbeitung deiner Anfrage und für mögliche Anschlussfragen gespeichert. Eine Weitergabe an Dritte erfolgt nicht."
+        },
+        "LEGALBASIS": {
+            "TITLE": "4. Rechtsgrundlage",
+            "TEXT": "Die Verarbeitung der eingegebenen Daten erfolgt gemäß Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) und Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen)."
+        },
+        "STORAGE": {
+            "TITLE": "5. Speicherdauer",
+            "TEXT": "Deine Daten werden gelöscht, sobald sie für die Bearbeitung deiner Anfrage nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungsfristen bestehen."
+        },
+        "RIGHTS": {
+            "TITLE": "6. Deine Rechte",
+            "TEXT": "Du hast jederzeit das Recht auf:",
+            "LIST": [
+            "Auskunft über deine gespeicherten Daten (Art. 15 DSGVO)",
+            "Berichtigung unrichtiger Daten (Art. 16 DSGVO)",
+            "Löschung deiner Daten (Art. 17 DSGVO)",
+            "Einschränkung der Verarbeitung (Art. 18 DSGVO)",
+            "Datenübertragbarkeit (Art. 20 DSGVO)",
+            "Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)",
+            "Widerruf deiner Einwilligung (Art. 7 Abs. 3 DSGVO)"
+            ],
+            "NOTE": "Zudem steht dir ein Beschwerderecht bei einer Aufsichtsbehörde zu (Art. 77 DSGVO)."
+        },
+        "SSL": {
+            "TITLE": "7. SSL- bzw. TLS-Verschlüsselung",
+            "TEXT": "Diese Website nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte eine SSL-Verschlüsselung. Du erkennst eine verschlüsselte Verbindung an der Adresszeile deines Browsers (\"https://\")."
+        },
+        "HOSTING": {
+            "TITLE": "8. Hosting",
+            "TEXT": "Die Website wird bei einem externen Dienstleister gehostet (z. B. Netlify, GitHub Pages, Vercel, IONOS o. ä.). Dabei können technische Daten (z. B. IP-Adresse, Zeitpunkt des Seitenaufrufs) verarbeitet werden. Diese Verarbeitung erfolgt auf Grundlage eines berechtigten Interesses gemäß Art. 6 Abs. 1 lit. f DSGVO."
+        },
+        "CONTACT": {
+            "TITLE": "9. Kontakt",
+            "TEXT": "Bei Fragen zum Datenschutz kannst du dich jederzeit an mich wenden:\nE-Mail: kontakt@deine-domain.de"
+        }
     },
-     "LEGAL-NOTICE" : "Impressum",
-       "LEGAL-PAGE" : {
+    "LEGAL-NOTICE" : "Impressum",
+    "LEGAL-PAGE" : {
         "TITLE" : "Legal notice",
         "HEADER-ONE" : "Angaben gemäß § 5 TMG:",
         "PHONE" : "Telefon",
         "HEADER-TWO" : "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:",
         "TEXT" : "Sabrina Fritz (Anschrift wie oben)"
-      } 
-     
-  }
-  
+    },
+    "THANK-YOU" : "Vielen Dank für deine Nachricht." 
+}
