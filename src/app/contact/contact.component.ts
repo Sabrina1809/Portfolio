@@ -37,52 +37,20 @@ export class ContactComponent {
     mailTest = true;
     checkboxChecked: boolean = false;
     showThankYou: boolean = false;
+    
     /**
      * Configuration for the HTTP POST request.
      */
     post = {
         endPoint: 'https://sabrina-fritz.de/sendMail.php',
-         /**
-         * Converts payload to JSON string.
-         * @param payload The form data to send
-         * @returns A JSON stringified version of the payload
-         */
         body: (payload: any) => JSON.stringify(payload),
         options: {
-        headers: {
-            'Content-Type': 'text/plain',
-            responseType: 'text',
-        },
+            headers: {
+            'Content-Type': 'application/json',
+            },
+            responseType: 'json' as const,  // wichtig für TypeScript!
         },
     };
-
-    /**
-     * [Deprecated] Handles contact form submission with test mode.
-     * Shows thank-you message without sending HTTP request if mailTest is true.
-     * @param ngForm The submitted contact form
-     */
-    // onSubmit(ngForm: NgForm) {
-    //     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
-    //         this.http.post(this.post.endPoint, this.post.body(this.contactData))
-    //         .subscribe({
-    //             next: (response) => {
-    //                 ngForm.resetForm();
-    //                 console.log('Test');
-    //             },
-    //             error: (error) => {
-    //                 console.error(error);
-    //             },
-    //             complete: () => console.info('send post complete'),
-    //         });
-    //     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-    //         this.showThankYou = true;
-    //         setTimeout(() => {
-    //             this.showThankYou = false;
-    //             this.checkboxChecked = false;
-    //             ngForm.resetForm();
-    //         }, 5000);
-    //     }
-    // }
 
     /**
      * Sends contact form data if valid and displays a thank-you message.
@@ -94,10 +62,10 @@ export class ContactComponent {
         this.http.post(this.post.endPoint, this.post.body(this.contactData)).subscribe({
             next: () => {
                 this.showThankYou = true;
-                this.checkboxChecked = false;
-                ngForm.resetForm();
                 setTimeout(() => {
                     this.showThankYou = false;
+                    this.checkboxChecked = false;
+                    ngForm.resetForm();
                 }, 5000);
             },
             error: (error) => console.error(error),
