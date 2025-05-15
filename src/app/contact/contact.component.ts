@@ -41,7 +41,7 @@ export class ContactComponent {
      * Configuration for the HTTP POST request.
      */
     post = {
-        endPoint: 'https://deineDomain.de/sendMail.php',
+        endPoint: 'https://sabrina-fritz.de/sendMail.php',
          /**
          * Converts payload to JSON string.
          * @param payload The form data to send
