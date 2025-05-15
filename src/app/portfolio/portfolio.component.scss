@@ -78,6 +78,10 @@
     padding: 70px 50px 0 50px;
     margin: 0 auto;
     text-align: center;
+    & .portfolio-intro {
+        position: relative;
+        z-index: 20;
+    }
     & .portfolio-projects {
         & .project-ctn {
             position: relative;

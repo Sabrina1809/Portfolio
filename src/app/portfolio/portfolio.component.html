@@ -5,7 +5,7 @@
          <div class="purple-line line-right"></div>
     </div>
     <div class="portfolio-ctn">
-        <p>{{ 'PORTFOLIO.INTRO' | translate }}</p>
+        <p class="portfolio-intro">{{ 'PORTFOLIO.INTRO' | translate }}</p>
         <div class="portfolio-projects">
             <div class="project-ctn" *ngFor="let project of projects; let i = index" [class.visible]="project.visible">
                 <img

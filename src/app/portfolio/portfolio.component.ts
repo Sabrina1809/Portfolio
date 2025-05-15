@@ -45,7 +45,7 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
                 'assets/img/display-screenshot/good/pokedex3.png'
             ],
             githubLink: 'https://github.com/Sabrina1809/Pokedex3',
-            liveLink: 'https://sabrina-fritz.developerakademie.net/Modul9-Pokedex3/index.html',
+            liveLink: 'https://sabrina-fritz.de/pokedex/index.html',
             currentImageIndex: 0,
             key: "POKEDEX"
         },
@@ -59,7 +59,7 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
                 'assets/img/display-screenshot/good/join4.png'
             ],
             githubLink: 'https://github.com/Sabrina1809/Join',
-            liveLink: 'https://join-384.developerakademie.net/Join/log_in.html',
+            liveLink: 'https://sabrina-fritz.de/join/log_in.html',
             currentImageIndex: 0,
             key: "JOIN"
         },
@@ -72,7 +72,7 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
                 'assets/img/display-screenshot/good/pollo3.png'
             ],
             githubLink: 'https://github.com/Sabrina1809/El-Pollo-Loco',
-            liveLink: 'https://sabrina-fritz.developerakademie.net/Modul12-ElPolloLoco/index.html',
+            liveLink: 'https://sabrina-fritz.de/elpolloloco/index.html',
             currentImageIndex: 0,
             key: "ELPOLLOLOCO"
         },
