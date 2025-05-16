@@ -160,15 +160,19 @@
                     }
                 }
             }
-            .scroll-down {
-                rotate: 90deg;
+            .scroll-ctn {
+                width: 100%;
                 position: absolute;
-                bottom: 40px;
-                right: -20px;
-                color: white; // oder deine Wunschfarbe
-                animation: scrollHintAnim 2s ease-in-out infinite;
-                transform-origin: center;
-                z-index: 30;
+                z-index: 100;
+                top: 200px;
+                left: 200px;
+                .scroll-down {
+                    rotate: 90deg;
+                    color: white; // oder deine Wunschfarbe
+                    animation: scrollHintAnim 2s ease-in-out infinite;
+                    transform-origin: center;
+                    z-index: 30;
+                }
             }
         }
     }

@@ -9,6 +9,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { HeroComponent } from './hero/hero.component';
 
 /**
  * The root component of the application.
@@ -18,7 +19,7 @@ import { FooterComponent } from './footer/footer.component';
 @Component({
     selector: 'app-root',
     standalone: true,
-    imports: [CommonModule, RouterOutlet, HeaderComponent, MeComponent, TranslateModule, AboutComponent, SkillsComponent, PortfolioComponent, ContactComponent, FooterComponent],
+    imports: [CommonModule, RouterOutlet, HeaderComponent, MeComponent, TranslateModule, AboutComponent, SkillsComponent, PortfolioComponent, ContactComponent, FooterComponent, HeroComponent],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss'
 })
