@@ -36,19 +36,19 @@ interface Project {
 export class PortfolioComponent implements OnInit, AfterViewInit {
     @ViewChildren('projectElement', { read: ElementRef }) projectElements!: QueryList<ElementRef>;
     projects: Project[] = [
-        {
-            title: 'Pokedex',
-            skills: ['HTML', 'CSS', 'JavaScript', 'Rest Api'],
-            images: [
-                'assets/img/display-screenshot/good/pokedex1.png',
-                'assets/img/display-screenshot/good/pokedex2.png',
-                'assets/img/display-screenshot/good/pokedex3.png'
-            ],
-            githubLink: 'https://github.com/Sabrina1809/Pokedex3',
-            liveLink: 'https://sabrina-fritz.de/pokedex/index.html',
-            currentImageIndex: 0,
-            key: "POKEDEX"
-        },
+        // {
+        //     title: 'Pokedex',
+        //     skills: ['HTML', 'CSS', 'JavaScript', 'Rest Api'],
+        //     images: [
+        //         'assets/img/display-screenshot/good/pokedex1.png',
+        //         'assets/img/display-screenshot/good/pokedex2.png',
+        //         'assets/img/display-screenshot/good/pokedex3.png'
+        //     ],
+        //     githubLink: 'https://github.com/Sabrina1809/Pokedex3',
+        //     liveLink: 'https://sabrina-fritz.de/pokedex/index.html',
+        //     currentImageIndex: 0,
+        //     key: "POKEDEX"
+        // },
         {
             title: 'Join',
             skills: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
@@ -76,18 +76,18 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
             currentImageIndex: 0,
             key: "ELPOLLOLOCO"
         },
-        {
-            title: 'Portfolio',
-            skills: ['HTML', 'SCSS', 'TypeScript', 'Angular', '♥'],
-            images: [
-                'assets/img/display-screenshot/good/portfolio1.png',
-                'assets/img/display-screenshot/good/portfolio2.png'
-            ],
-            githubLink: 'https://github.com/Sabrina1809/Portfolio',
-            liveLink: 'https://your-pollo-game.netlify.app',
-            currentImageIndex: 0,
-            key: "PORTFOLIO"
-        },
+        // {
+        //     title: 'Portfolio',
+        //     skills: ['HTML', 'SCSS', 'TypeScript', 'Angular', '♥'],
+        //     images: [
+        //         'assets/img/display-screenshot/good/portfolio1.png',
+        //         'assets/img/display-screenshot/good/portfolio2.png'
+        //     ],
+        //     githubLink: 'https://github.com/Sabrina1809/Portfolio',
+        //     liveLink: 'https://your-pollo-game.netlify.app',
+        //     currentImageIndex: 0,
+        //     key: "PORTFOLIO"
+        // },
     ];
 
     /**
