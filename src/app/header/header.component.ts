@@ -27,12 +27,17 @@ export class HeaderComponent {
     }
 
     /**
-     * Switches the current language.
-     * @param lang The language code to switch to
+     * Switches the language of the application.
+     * @param lang The language code to switch to ('de' or 'en').
      */
     switchLanguage(lang: string) {
-        this.translate.use(lang);
-        this.currentLang = lang;
+        console.log(lang);
+        
+        if (this.currentLang !== lang) {
+            this.currentLang = lang;
+            this.translate.use(lang);
+            localStorage.setItem('languageFrontendPortfolio', lang);
+        }
     }
 
     /**
