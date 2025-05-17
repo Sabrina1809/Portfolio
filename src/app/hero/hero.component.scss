@@ -1,10 +1,6 @@
 @import '../../styles.scss';
-* {
-    // border: 1px solid orange;
-}
 
 .hero-wrapper {
-    // border: 3px solid red;
     position: relative;
     overflow-x: clip;
     overflow-y: hidden;
@@ -16,7 +12,6 @@
         width: 100%;
         height: 100%;
         max-width: 1440px;
-        // border: 1px solid lightblue;
         position: absolute;
         z-index: 5;
         left: 50%;
@@ -38,7 +33,9 @@
                 max-width: 1100px;
                 z-index: 1;
                 object-fit: contain;
-                opacity: 1;
+                animation: _ngcontent-ng-c3288832519_zoomInFade 2.5s ease-out forwards;
+                animation-delay: 0.25s;
+                opacity: 0;
                 margin-top: 10%;
             }
             & .profil-picture {
@@ -48,9 +45,9 @@
                 max-width: 900px;
                 z-index: 2;
                 object-fit: contain;
-                animation: _ngcontent-ng-c155788781_zoomInFade 2.5s ease-out forwards;
+                animation: _ngcontent-ng-c3288832519_zoomInFade 1.5s ease-out forwards;
                 animation-delay: 0s;
-                opacity: 1;
+                opacity: 0;
                 margin-top: -10%;
             }
         }
@@ -60,11 +57,8 @@
         bottom: 0;
         width: 100%;
         height: 100%;
-        // background-color: rgba(48, 166, 69, 0.542);
-        // border: 1px solid lightcoral;
         z-index: 6;
         .img-curve {
-            // border: 1px solid green;
             width: 100vw;
             position: absolute;
             height: 100%;
@@ -76,7 +70,6 @@
     & .text-ctn {
         width: 100%;
         height: 100%;
-        // border: 1px solid lightblue;
         position: absolute;
         z-index: 10;
         max-width: 1440px;
@@ -87,22 +80,20 @@
             padding-right: 30px;
             width: 60%;
             height: 80%;
-            // background-color: rgba(124, 23, 23, 0.51);
-            // border: 1px solid lightgrey;
             z-index: 5;
             position: absolute;
             right: 0;
             top: 0;
             .me-text-area {
-                // width: 100%;
-                // height: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 gap: 24px;
-                // margin-left: -150px;
+                opacity: 0;
                 margin-top: 300px;
+                animation: slideUpFade 2.0s ease-out forwards;
+                animation-delay: 0.5s;
                 & .me-text {
                     display: flex;
                     align-items: center;
@@ -154,21 +145,23 @@
         }
     }
     & .scroll-ctn {
-        // border: 1px solid orange;
         width: 100%;
         max-width: 1440px;
         position: absolute;
         left: 50%;
         translate: -50%;
         bottom: 15%;
-        z-index: 20;
+        z-index: 50;
         display: flex;
         justify-content: end;
         .scroll-down {
             rotate: 90deg;
-            color: white; // oder deine Wunschfarbe
+            color: white;
             animation: scrollHintAnim 2s ease-in-out infinite;
-            margin-right: -50px;
+            // margin-right: -50px;
+            margin-top: -100px;
+            position: relative;
+            z-index: 50;
         }
     }
     & .social-links-ctn {
@@ -206,11 +199,9 @@
 @keyframes zoomInFade {
     0% {
         opacity: 0;
-        // transform: scale(0.9);
     }
     100% {
         opacity: 1;
-        // transform: scale(1);
     }
 }
 
@@ -237,137 +228,6 @@
     }
 }
 
-// @media (max-width: 2400px) { 
-//     .purple-line {
-//         width: 30% !important;
-//     }
-// }
-
-// @media (max-width: 1100px) {
-//     .img-ctn {
-//         object-fit: cover !important;
-//     }
-// }
-
-// @media (max-width: 1440px) {
-//     .me-text {
-//         scale: 0.7 !important;
-//     }
-//     .purple-line {
-//         width: 25% !important;
-//     }
-//     .scroll-ctn {
-//         right: -30px !important;
-//     }
-// }
-
-
-// @media (max-height: 900px) and (min-width: 1440px) {
-//     .me-text-area {
-//         margin-top: 90px !important;
-//         gap: 12px !important;
-//     }
-//     .me-text {
-//         scale: 0.9 !important;
-//     }
-// }
-
-// @media (max-height: 800px) {
-//     .me-text-area {
-//         margin-top: 40px !important;
-//     }
-// }
-
-// @media (max-width: 1100px) {
-//      .me-text-area {
-//         & .me-text {
-//             margin-left: -30px !important;
-//         }
-//     }
-//     .image-ctn {
-//         height: 85% !important;
-//         & .image-width {
-//             width: 100% !important;
-//             height: 100% !important;
-//             & .profil-picture {
-//                 margin: -10% auto 0 auto !important;
-//             }
-//         }
-//     }
-//     .text-ctn {
-//         height: auto !important;
-//         bottom: 6% !important;
-//         & .text-width {
-//             width: 100% !important;
-//             height: 100% !important;
-//             position: unset !important;
-//             padding-right: 0px !important;
-//             display: flex !important;
-//             justify-content: center !important;
-//             align-items: end !important;
-//             padding-bottom: 4% !important;
-//             & .me-text-area {
-//                 margin-top: 0 !important;
-//             }
-//         }
-//     }
-//     .social-links-ctn {
-//         bottom: 2% !important;
-//     }
-//     .scroll-ctn {
-//         bottom: 9% !important;
-//     }
-// }
-
-// @media (max-width: 700px) {
-//     .profil-picture {
-//         height: 90% !important;
-//     }
-//     .profil-picture-shadow {
-//         height: 90% !important;
-//     }
-//     .scroll-ctn {
-//         display: none !important;
-//     }
-//     .text-ctn {
-//         bottom: 7% !important;
-//     }
-// }
-
-// @media (max-width: 550px)  {
-//     .profil-picture {
-//         height: 80% !important;
-//     }
-//     .profil-picture-shadow {
-//         height: 80% !important;
-//     }
-//     .curve-ctn {
-//         bottom: 11% !important;
-//     }
-//     .text-ctn {
-//         bottom: 17% !important;
-//     }
-//     .me-text-area {
-//         gap: 0px !important
-//     }
-// }
-
-// @media (max-width: 450px)  {
-//     .profil-picture {
-//         height: 75% !important;
-//     }
-//     .profil-picture-shadow {
-//         height: 75% !important;
-//     }
-//     .text-ctn {
-//         bottom: 11% !important;
-//     }
-//     .me-text {
-//         scale: 0.6 !important;
-//     }
-// }
-
-/* Landscape-Modus */
 @media screen and (orientation: landscape) {
     .img-curve {
         object-fit: fill !important;
@@ -377,12 +237,6 @@
 @media screen and (orientation: landscape) and (max-width: 3000px) {
     .purple-line {
         width: 30% !important;
-    }
-}
-
-@media screen and (orientation: landscape) and (max-height: 1500px) {
-    .me-text-area {
-        // margin-top: 300px !important;
     }
 }
 
@@ -419,7 +273,6 @@
     }
 }
 
-/* Portrait-Modus */
 @media screen and (orientation: portrait) {
     .img-curve {
         object-fit: cover !important;
@@ -436,17 +289,11 @@
     .me-text {
         scale: 0.9 !important;
     }
-    .me-text-area {
-        // margin-top: 440px !important;
-    }
 }
 
 @media screen and (orientation: portrait) and (max-width: 1300px) {
     .me-text {
         scale: 0.85 !important;
-    }
-    .me-text-area {
-        margin-top: 350px !important;
     }
 }
 
@@ -524,9 +371,6 @@
 @media screen and (orientation: portrait) and (max-width: 450px) {
     .profil-picture {
         height: 75% !important;
-    }
-    .profil-picture-shadow {
-        // height: 65% !important;
     }
     .img-curve {
         bottom: -20% !important;

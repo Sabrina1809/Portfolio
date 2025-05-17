@@ -79,3 +79,7 @@ body {
 .title-fontsize {
     font-size: clamp(1.875rem, 1.4464rem + 2.1429vw, 3.375rem);
 }
+
+.scroll-down {
+    z-index: 50 !important;
+}
