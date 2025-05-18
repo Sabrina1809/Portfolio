@@ -37,6 +37,9 @@ export class ContactComponent {
     mailTest = true;
     checkboxChecked: boolean = false;
     showThankYou: boolean = false;
+    nameValid: boolean | null = null;
+    emailValid: boolean | null = null;
+    messageValid: boolean | null = null;
     
     /**
      * Configuration for the HTTP POST request.
@@ -87,10 +90,20 @@ export class ContactComponent {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    validateTrimmedName() {
+    validateName() {
         const trimmed = this.contactData.name?.trim();
-        if (trimmed === '') {
-            this.contactData.name = ''; // Setzt es leer zurück, damit `required` greift
-        }
+        this.nameValid = !!trimmed;
+    }
+
+    validateEmail() {
+        const email = this.contactData.email?.trim();
+        const emailRegex = /^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/;
+        this.emailValid = emailRegex.test(email);
+    }
+
+    
+    validateMessage() {
+        const trimmed = this.contactData.message?.trim();
+        this.messageValid = trimmed?.length >= 10;
     }
 }
