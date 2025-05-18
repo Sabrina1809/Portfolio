@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Ausnahme: sendMail.php NICHT umleiten
+  RewriteCond %{REQUEST_URI} ^/sendMail\.php$ [NC]
+  RewriteRule ^ - [L]
+
+  # Wenn Datei oder Verzeichnis existiert, liefere es aus
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+
+  # Andernfalls leite alles auf index.html um
+  RewriteRule ^ index.html [L]
+</IfModule>

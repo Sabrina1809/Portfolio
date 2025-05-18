@@ -86,4 +86,11 @@ export class ContactComponent {
     scrollToTop(): void {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
+
+    validateTrimmedName() {
+        const trimmed = this.contactData.name?.trim();
+        if (trimmed === '') {
+            this.contactData.name = ''; // Setzt es leer zurück, damit `required` greift
+        }
+    }
 }

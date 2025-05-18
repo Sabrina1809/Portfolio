@@ -14,7 +14,7 @@ import { CommonModule } from '@angular/common';
  * HeaderComponent handles the website header, including language switching and menu control.
  */
 export class HeaderComponent {
-    currentLang: string = 'de';
+    currentLang: string = '';
     menuOpen: boolean = false;
     
     /**
@@ -22,8 +22,10 @@ export class HeaderComponent {
      * @param translate The TranslateService for language management
      */
     constructor(private translate: TranslateService) {
-        this.translate.setDefaultLang('de');
-        this.translate.use('de');
+        let savedLang = localStorage.getItem('languageFrontendPortfolio') || 'de';
+        this.currentLang = savedLang;
+        this.translate.setDefaultLang(this.currentLang);
+        this.translate.use(this.currentLang);
     }
 
     /**
@@ -31,8 +33,6 @@ export class HeaderComponent {
      * @param lang The language code to switch to ('de' or 'en').
      */
     switchLanguage(lang: string) {
-        console.log(lang);
-        
         if (this.currentLang !== lang) {
             this.currentLang = lang;
             this.translate.use(lang);

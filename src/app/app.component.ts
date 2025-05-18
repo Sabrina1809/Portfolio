@@ -37,39 +37,11 @@ export class AppComponent {
      * Adds languages ('de', 'en') and sets the default language to 'de'.
      * @param translate The `TranslateService` instance for handling translations.
      */
-    // constructor(private translate: TranslateService) {
-    //     translate.addLangs(['de', 'en']);
-    //     translate.setDefaultLang('de');
-    // }
  constructor(private translate: TranslateService) {
         translate.addLangs(['de', 'en']);
-        translate.setDefaultLang('de');
-
-        // Prüfe, ob im Local Storage eine Sprache gespeichert ist
-        const savedLang = localStorage.getItem('languageFrontendPortfolio');
-
-        if (savedLang) {
-            this.currentLang = savedLang;
-            translate.use(savedLang);
-        } else {
-            this.currentLang = 'de';
-            translate.use('de');
-            localStorage.setItem('languageFrontendPortfolio', 'de');
-        }
+        const savedLang = localStorage.getItem('languageFrontendPortfolio') || 'de';
+        this.currentLang = savedLang;
+        translate.use(savedLang);
+        localStorage.setItem('languageFrontendPortfolio', savedLang);
     }
-
-
-    // /**
-    //  * Switches the language of the application.
-    //  * @param lang The language code to switch to ('de' or 'en').
-    //  */
-    // switchLanguage(lang: string) {
-    //     console.log(lang);
-        
-    //     if (this.currentLang !== lang) {
-    //         this.currentLang = lang;
-    //         this.translate.use(lang);
-    //         localStorage.setItem('language', lang);
-    //     }
-    // }
 }
