@@ -46,7 +46,6 @@
     animation-delay: 0.5s;
 }
 
-
 .shadow-two {
     position: absolute;
     width: 50%;
@@ -231,14 +230,8 @@
     &.fade {
         opacity: 0.7;
     };
-    // &:hover {
-    //     transform: scale(1.02);
-    //     filter: drop-shadow(0 0 15px white);
-    //     cursor: pointer;
-    // }
 }
 
-  
 .project-info {
     transform: perspective(1000px) rotateY(90deg) scale(0.95);
     opacity: 0;
@@ -345,7 +338,6 @@
         }
     }
 }
-
 
 @media(max-width: 500px) {
     .title-line {

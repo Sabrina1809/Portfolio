@@ -26,7 +26,6 @@
           border: 2px solid $primary1;
         }
         .green-line {
-            // position: absolute;
           right: 0;
           top: calc(50% + 200px);
           width: calc(50% - 500px);
@@ -131,12 +130,6 @@
     }
 }
 
-@media(max-width: 1280px) {
-    .about-ctn {
-        // margin-top: -30% !important;
-    }
-}
-
 @media(max-width: 1100px) {
     .about-ctn {
         margin-top: 5% !important;
@@ -164,13 +157,6 @@
 
 @media(max-width: 550px) {
     .about-ctn {
-        // margin-top: 10% !important;
         padding: 30px !important;
-    }
-}
-
-@media(max-width: 450px) {
-    .about-ctn {
-        // margin-top: 20% !important;
     }
 }

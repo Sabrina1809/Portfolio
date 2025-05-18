@@ -90,18 +90,26 @@ export class ContactComponent {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
+    /**
+     * Checks if the name is non-empty after trimming whitespace.
+     */
     validateName() {
         const trimmed = this.contactData.name?.trim();
         this.nameValid = !!trimmed;
     }
 
+    /**
+     * Validates the email format after trimming whitespace.
+     */
     validateEmail() {
         const email = this.contactData.email?.trim();
         const emailRegex = /^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/;
         this.emailValid = emailRegex.test(email);
     }
 
-    
+    /**
+     * Checks if the message has at least 10 non-whitespace characters.
+     */
     validateMessage() {
         const trimmed = this.contactData.message?.trim();
         this.messageValid = trimmed?.length >= 10;

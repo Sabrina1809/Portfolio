@@ -1,4 +1,4 @@
-<div class="contact-wrapper"  id="contact" >
+<div class="contact-wrapper"  id="contact">
     <div class="title-line">
         <div class="purple-line"></div>
         <h1 class="title-fontsize"> {{ 'CONTACT.TITLE' | translate }} </h1>
@@ -74,22 +74,20 @@
                             {{ 'CONTACT.PRIVACY_PART1' | translate }}
                             <a class="highlight" [routerLink]="['/privacy-policy/']" (click)="scrollToTop()" fragment="top">{{ 'CONTACT.PRIVACY_LINK' | translate }}</a>
                             {{ 'CONTACT.PRIVACY_PART2' | translate }}
-                          </p>
+                        </p>
                     </div>
                     <p class="error-checkbox"
                         [ngClass]="{
                         'checkbox-not-ok': contactForm.valid && !checkboxChecked,
-                        'invisible': !contactForm.valid || checkboxChecked
-                    }">
-                        {{ 'CONTACT.PRIVACY-ERROR' | translate }}
+                        'invisible': !contactForm.valid || checkboxChecked}">
+                            {{ 'CONTACT.PRIVACY-ERROR' | translate }}
                     </p>
                     <button
                         class="btn-send-message"
                         type="submit"
                         [ngClass]="{'btn-disabled': !contactForm.valid || !checkboxChecked}"
-                        [disabled]="!contactForm.valid || !checkboxChecked"
-                    >
-                        {{ 'CONTACT.SEND' | translate }}
+                        [disabled]="!contactForm.valid || !checkboxChecked">
+                            {{ 'CONTACT.SEND' | translate }}
                     </button>     
                     <p class="thank-you" [ngClass]="{'thank-you-visible': showThankYou}">{{ 'CONTACT.THANK-YOU' | translate }}</p>           
                 </form>

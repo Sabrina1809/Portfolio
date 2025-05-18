@@ -33,7 +33,6 @@ export class HeroComponent implements OnInit {
     startTypewriter(): void {
         this.typedName = '';
         let index = 0;
-
         clearInterval(this.typingInterval);
         setTimeout(() => {
             this.typingInterval = setInterval(() => {
